@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './index.css';
 
 function App() {
@@ -70,8 +70,8 @@ function App() {
   return (
     <div className="container">
       <header style={{ textAlign: 'center', marginBottom: '4rem' }}>
-        <h1>SchemeConnect</h1>
-        <p style={{ color: 'var(--text-secondary)' }}>Discover government schemes you didn't know you were eligible for.</p>
+        <h1>OpenAid 🇮🇳</h1>
+        <p style={{ color: 'var(--text-secondary)' }}>Bridging the gap between citizens and government welfare schemes using AI.</p>
       </header>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '2rem', alignItems: 'start' }}>
@@ -215,7 +215,122 @@ function App() {
         </div>
       </div>
       <Footer />
+      <Chatbot />
     </div>
+  );
+}
+
+function Chatbot() {
+  const [open, setOpen] = useState(false);
+  const [messages, setMessages] = useState([
+    { role: 'model', text: '🙏 Namaste! I am OpenAid Assistant. Ask me anything about government schemes in English or Hindi.\n\nनमस्ते! मैं OpenAid सहायक हूँ। सरकारी योजनाओं के बारे में कुछ भी पूछें।' }
+  ]);
+  const [input, setInput] = useState('');
+  const [loading, setLoading] = useState(false);
+  const bottomRef = useRef(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
+  const send = async () => {
+    if (!input.trim() || loading) return;
+    const userMsg = { role: 'user', text: input };
+    const history = messages.filter(m => m.role !== 'model' || messages.indexOf(m) > 0);
+    setMessages(prev => [...prev, userMsg]);
+    setInput('');
+    setLoading(true);
+
+    try {
+      const res = await fetch('http://localhost:5000/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: input, history })
+      });
+      const data = await res.json();
+      setMessages(prev => [...prev, { role: 'model', text: data.reply || data.error }]);
+    } catch {
+      setMessages(prev => [...prev, { role: 'model', text: 'Sorry, something went wrong.' }]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <>
+      {/* Floating Button */}
+      <button
+        onClick={() => setOpen(o => !o)}
+        style={{
+          position: 'fixed', bottom: '2rem', right: '2rem',
+          width: '60px', height: '60px', borderRadius: '50%',
+          background: 'var(--primary)', border: 'none', cursor: 'pointer',
+          fontSize: '1.5rem', boxShadow: '0 4px 20px rgba(99,102,241,0.5)',
+          zIndex: 1000, transition: 'transform 0.2s'
+        }}
+        title="Chat with OpenAid"
+      >
+        {open ? '✕' : '🤖'}
+      </button>
+
+      {/* Chat Window */}
+      {open && (
+        <div style={{
+          position: 'fixed', bottom: '5.5rem', right: '2rem',
+          width: '360px', height: '500px',
+          background: '#0f172a', border: '1px solid var(--glass-border)',
+          borderRadius: '20px', display: 'flex', flexDirection: 'column',
+          boxShadow: '0 8px 40px rgba(0,0,0,0.5)', zIndex: 999, overflow: 'hidden'
+        }}>
+          {/* Header */}
+          <div style={{ padding: '1rem 1.2rem', background: 'rgba(99,102,241,0.15)', borderBottom: '1px solid var(--glass-border)' }}>
+            <strong>🤖 OpenAid Assistant</strong>
+            <p style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', margin: 0 }}>Ask about any government scheme</p>
+          </div>
+
+          {/* Messages */}
+          <div style={{ flex: 1, overflowY: 'auto', padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+            {messages.map((m, i) => (
+              <div key={i} style={{
+                alignSelf: m.role === 'user' ? 'flex-end' : 'flex-start',
+                maxWidth: '85%',
+                background: m.role === 'user' ? 'var(--primary)' : 'rgba(255,255,255,0.07)',
+                padding: '0.7rem 1rem', borderRadius: m.role === 'user' ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+                fontSize: '0.85rem', lineHeight: '1.5', whiteSpace: 'pre-wrap'
+              }}>
+                {m.text}
+              </div>
+            ))}
+            {loading && (
+              <div style={{ alignSelf: 'flex-start', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+                AI is thinking...
+              </div>
+            )}
+            <div ref={bottomRef} />
+          </div>
+
+          {/* Input */}
+          <div style={{ padding: '0.8rem', borderTop: '1px solid var(--glass-border)', display: 'flex', gap: '0.5rem' }}>
+            <input
+              value={input}
+              onChange={e => setInput(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && send()}
+              placeholder="Ask in English or Hindi..."
+              style={{
+                flex: 1, background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)',
+                borderRadius: '10px', padding: '0.6rem 0.8rem', color: 'white', outline: 'none', fontSize: '0.85rem'
+              }}
+            />
+            <button onClick={send} disabled={loading} style={{
+              background: 'var(--primary)', border: 'none', borderRadius: '10px',
+              padding: '0.6rem 1rem', color: 'white', cursor: 'pointer', fontWeight: 600
+            }}>
+              ➤
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

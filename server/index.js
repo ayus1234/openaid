@@ -121,6 +121,30 @@ app.post('/api/explain', async (req, res) => {
   }
 });
 
+app.post('/api/chat', async (req, res) => {
+  const { message, history = [] } = req.body;
+
+  if (!process.env.GEMINI_API_KEY) {
+    return res.json({ reply: "AI is disabled. Please add a Gemini API key." });
+  }
+
+  try {
+    const systemPrompt = `You are OpenAid, a helpful assistant for Indian government welfare schemes. 
+Know about: PM Kisan, Ayushman Bharat, PM Ujjwala, MUDRA Yojana, PM Vidyalaxmi, Atal Pension, PM Vishwakarma, and more.
+Always reply in both English and Hindi. Keep answers short and friendly.`;
+
+    const fullMessage = history.length === 0
+      ? `${systemPrompt}\n\nUser: ${message}`
+      : `${systemPrompt}\n\n${history.map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.text}`).join('\n')}\nUser: ${message}`;
+
+    const result = await model.generateContent(fullMessage);
+    res.json({ reply: result.response.text() });
+  } catch (error) {
+    console.error('Chat error:', error.message);
+    res.status(500).json({ error: 'Chat failed' });
+  }
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
