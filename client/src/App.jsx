@@ -27,10 +27,12 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
-      if (import.meta.env.PROD) console.log('Fetching schemes from:', baseUrl);
+      const rawBase = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
+      const baseUrl = rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
       
-      const response = await fetch(`${baseUrl}/api/match`, {
+      if (import.meta.env.PROD) console.log('Fetching schemes from:', `${baseUrl}/match`);
+      
+      const response = await fetch(`${baseUrl}/match`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(profile)
@@ -65,8 +67,10 @@ function App() {
     setSchemes(prev => prev.map(s => s.id === schemeId ? { ...s, loadingAI: true } : s));
     
     try {
-      const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
-      const response = await fetch(`${baseUrl}/api/explain`, {
+      const rawBase = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
+      const baseUrl = rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
+      
+      const response = await fetch(`${baseUrl}/explain`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ scheme, profile })
@@ -89,10 +93,12 @@ function App() {
     setChatLoading(true);
 
     try {
-      const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
-      if (import.meta.env.PROD) console.log('Chat API call to:', `${baseUrl}/api/chat`);
+      const rawBase = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
+      const baseUrl = rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
+      
+      if (import.meta.env.PROD) console.log('Chat API call to:', `${baseUrl}/chat`);
 
-      const response = await fetch(`${baseUrl}/api/chat`, {
+      const response = await fetch(`${baseUrl}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userMessage.text, history: messages })
@@ -105,9 +111,10 @@ function App() {
       const data = await response.json();
       setMessages(prev => [...prev, { role: 'assistant', text: data.reply }]);
     } catch (error) {
+      const rawBase = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
       console.error('Chat Connection Error Details:', {
         message: error.message,
-        baseUrl: import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : ''),
+        baseUrl: rawBase,
         env: import.meta.env.MODE
       });
       setMessages(prev => [...prev, { role: 'assistant', text: 'Sorry, I am having trouble connecting. \n\nक्षमा करें, मुझे जुड़ने में समस्या हो रही है।' }]);
