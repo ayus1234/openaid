@@ -8,7 +8,7 @@ require('dotenv').config({ path: require('path').join(__dirname, '.env') });
 let model = null;
 if (process.env.GEMINI_API_KEY) {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
+  model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }, { apiVersion: "v1" });
 }
 
 const app = express();
