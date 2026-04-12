@@ -15,6 +15,14 @@ function App() {
   const [schemes, setSchemes] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  // Chatbot State
+  const [chatOpen, setChatOpen] = useState(false);
+  const [messages, setMessages] = useState([
+    { role: 'assistant', text: 'Namaste! I am OpenAid. How can I help you today? \n\nनमस्ते! मैं OpenAid हूँ। मैं आपकी कैसे मदद कर सकता हूँ?' }
+  ]);
+  const [inputValue, setInputValue] = useState('');
+  const [chatLoading, setChatLoading] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -69,6 +77,32 @@ function App() {
     }
   };
 
+  const sendChatMessage = async (e) => {
+    e.preventDefault();
+    if (!inputValue.trim() || chatLoading) return;
+
+    const userMessage = { role: 'user', text: inputValue };
+    setMessages(prev => [...prev, userMessage]);
+    setInputValue('');
+    setChatLoading(true);
+
+    try {
+      const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
+      const response = await fetch(`${baseUrl}/api/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: userMessage.text, history: messages })
+      });
+      const data = await response.json();
+      setMessages(prev => [...prev, { role: 'assistant', text: data.reply }]);
+    } catch (error) {
+      console.error('Chat error:', error);
+      setMessages(prev => [...prev, { role: 'assistant', text: 'Sorry, I am having trouble connecting. \n\nक्षमा करें, मुझे जुड़ने में समस्या हो रही है।' }]);
+    } finally {
+      setChatLoading(false);
+    }
+  };
+
   return (
     <div className="container">
       <header style={{ textAlign: 'center', marginBottom: '4rem' }}>
@@ -113,7 +147,7 @@ function App() {
               </select>
             </div>
             <div>
-              <label>Annual Income (Γé╣)</label>
+              <label>Annual Income (₹)</label>
               <input type="number" name="income" value={profile.income} onChange={handleChange} className="input-field" />
             </div>
             <div>
@@ -164,7 +198,7 @@ function App() {
                     {scheme.matchScore}% Match
                   </div>
                   <div style={{ fontSize: '0.7rem', color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '4px', fontWeight: 'bold' }}>
-                    <span style={{ fontSize: '1rem' }}>Γ£ô</span> Verified
+                    <span style={{ fontSize: '1rem' }}>✓</span> Verified
                   </div>
                 </div>
                 <h3 style={{ margin: '0.5rem 0' }}>{scheme.name}</h3>
@@ -175,8 +209,8 @@ function App() {
                 
                 {scheme.explanation ? (
                   <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(99, 102, 241, 0.1)', borderRadius: '12px', border: '1px solid rgba(99, 102, 241, 0.2)' }}>
-                    <p style={{ fontSize: '0.85rem', marginBottom: '0.5rem' }}>Γ£¿ {scheme.explanation.explanation}</p>
-                    <p style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>≡ƒç«≡ƒç│ {scheme.explanation.hindi}</p>
+                    <p style={{ fontSize: '0.85rem', marginBottom: '0.5rem' }}>✨ {scheme.explanation.explanation}</p>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>🇮🇳 {scheme.explanation.hindi}</p>
                   </div>
                 ) : (
                   <button 
@@ -185,7 +219,7 @@ function App() {
                     style={{ marginTop: '1rem', width: '100%', fontSize: '0.8rem', background: 'transparent', border: '1px solid var(--primary)' }}
                     disabled={scheme.loadingAI}
                   >
-                    {scheme.loadingAI ? 'AI is thinking...' : 'Γ£¿ Why am I eligible?'}
+                    {scheme.loadingAI ? 'AI is thinking...' : '✨ Why am I eligible?'}
                   </button>
                 )}
                 
@@ -216,6 +250,38 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Floating Chatbot */}
+      <div className={`chat-container ${chatOpen ? 'open' : ''}`}>
+        <div className="chat-window glass-card">
+          <div className="chat-header">
+            <h3>OpenAid Assistant ✨</h3>
+            <button onClick={() => setChatOpen(false)} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', fontSize: '1.2rem' }}>×</button>
+          </div>
+          <div className="chat-messages">
+            {messages.map((msg, i) => (
+              <div key={i} className={`message ${msg.role === 'user' ? 'user-msg' : 'bot-msg'}`}>
+                {msg.text}
+              </div>
+            ))}
+            {chatLoading && <div className="message bot-msg">Thinking...</div>}
+          </div>
+          <form onSubmit={sendChatMessage} className="chat-input-area">
+            <input 
+              type="text" 
+              value={inputValue} 
+              onChange={(e) => setInputValue(e.target.value)} 
+              placeholder="Ask about schemes..." 
+              className="chat-input"
+            />
+            <button type="submit" className="chat-send-btn">Send</button>
+          </form>
+        </div>
+        <button className="chat-bubble" onClick={() => setChatOpen(!chatOpen)}>
+          {chatOpen ? '×' : '💬'}
+        </button>
+      </div>
+
       <Footer />
     </div>
   );
