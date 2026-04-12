@@ -82,7 +82,7 @@ function App() {
       const response = await fetch(`${baseUrl}/explain`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ scheme, profile, lang: language })
+        body: JSON.stringify({ scheme, profile })
       });
       const data = await response.json();
       setSchemes(prev => prev.map(s => s.id === schemeId ? { ...s, explanation: data, loadingAI: false } : s));
@@ -258,7 +258,7 @@ function App() {
                 
                 {scheme.explanation ? (
                   <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(99, 102, 241, 0.1)', borderRadius: '12px', border: '1px solid rgba(99, 102, 241, 0.2)' }}>
-                    <p style={{ fontSize: '0.85rem' }}>{scheme.explanation.explanation}</p>
+                    <p style={{ fontSize: '0.85rem' }}>{language === 'en' ? scheme.explanation.en : scheme.explanation.hi}</p>
                   </div>
                 ) : (
                   <button 

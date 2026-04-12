@@ -113,30 +113,35 @@ app.post('/api/match', (req, res) => {
 });
 
 app.post('/api/explain', async (req, res) => {
-  const { scheme, profile, lang = 'en' } = req.body;
+  const { scheme, profile } = req.body;
   
   const aiModel = initAI();
   if (!aiModel) {
     return res.json({ 
-      explanation: lang === 'hi' 
-        ? `आप ${scheme.name_hi || scheme.name} के लिए पात्र हैं क्योंकि आप मानदंडों से मेल खाते हैं। (AI अक्षम है)`
-        : `You are eligible for ${scheme.name} because you match the criteria. (AI disabled)`
+      en: `You are eligible for ${scheme.name} because you match the criteria. (AI disabled)`,
+      hi: `आप ${scheme.name_hi || scheme.name} के लिए पात्र हैं क्योंकि आप मानदंडों से मेल खाते हैं। (AI अक्षम है)`
     });
   }
 
   try {
-    const languageName = lang === 'hi' ? 'Hindi' : 'English';
     const prompt = `You are a professional government scheme counselor. 
-    Explain why this user is eligible for the "${lang === 'hi' ? scheme.name_hi : scheme.name}" scheme.
+    Explain why this user is eligible for the "${scheme.name}" scheme. 
     User Profile: ${JSON.stringify(profile)}
-    Scheme Benefits: ${lang === 'hi' ? scheme.benefits_hi : scheme.benefits}
+    Scheme Benefits: ${scheme.benefits}
     
-    Provide exactly one concise sentence in ${languageName} explaining why they are eligible.
+    Provide exactly two concise sentences:
+    1. First sentence in English explaining why they are eligible.
+    2. Second sentence in Hindi explaining the same.
     Do not use markdown. Just plain text.`;
 
     const result = await aiModel.generateContent(prompt);
     const text = result.response.text().trim();
-    res.json({ explanation: text });
+    const lines = text.split('\n').filter(l => l.trim());
+    
+    res.json({ 
+      en: lines[0] || text,
+      hi: lines[1] || "प्राप्त जानकारी के अनुसार।"
+    });
   } catch (error) {
     console.error('Gemini Explain error:', error);
     res.status(500).json({ error: 'AI explanation failed', detail: error.message });
