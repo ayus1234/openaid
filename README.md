@@ -82,10 +82,5 @@ OpenAid was built to solve the **Awareness Crisis** in government welfare. By co
 
 - **Localized AI**: Doesn't just translate text; it thinks in the user's preferred language.
 - **Accessibility First**: Focused on speed, readability, and cultural relevance.
-- **Scalable Design**: Prepared for integration with 1000+ state and central schemes.
+- **Scalable Design**: Modular architecture built to seamlessly integrate hundreds of additional state and central schemes.
 
----
-
-## 📄 License
-
-MIT © 2026 [ayus1234](https://github.com/ayus1234)
