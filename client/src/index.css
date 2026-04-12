@@ -80,24 +80,14 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #fff 0%, var(--text-secondary) 100%);
+  background: linear-gradient(to right, #fff, #94a3b8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.5rem;
-  filter: drop-shadow(0 4px 12px rgba(255,255,255,0.1));
-}
-
-.tagline {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .scheme-grid {
@@ -255,81 +245,10 @@ h1 {
   opacity: 0.9;
 }
 
-/* Footer Styles */
-.footer-container {
-  margin-top: 6rem;
-  padding: 4rem 1rem 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-}
-
-.footer-links {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.social-link {
-  color: var(--text-secondary);
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.social-link:hover {
-  color: var(--primary);
-  transform: translateY(-2px);
-}
-
-.social-link svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.built-badge {
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  padding: 6px 16px;
-  border-radius: 100px;
-  font-size: 0.85rem;
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-}
-
-.built-badge:hover {
-  background: rgba(99, 102, 241, 0.2);
-  border-color: var(--primary);
-}
-
-.heart-icon {
-  color: #ef4444;
-  animation: heartPulse 1.5s infinite ease-in-out;
-}
-
-@keyframes heartPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-}
-
-@media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-  .footer-links { gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+@media (max-width: 480px) {
+  .chat-window {
+    width: calc(100vw - 2rem);
+    right: 1rem;
+    bottom: 5rem;
+  }
 }
