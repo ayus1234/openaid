@@ -136,8 +136,10 @@ app.post('/api/explain', async (req, res) => {
 
 app.post('/api/chat', async (req, res) => {
   const { message, history = [] } = req.body;
+  console.log('Incoming chat request:', message);
 
   if (!process.env.GEMINI_API_KEY) {
+    console.warn('Chat failed: GEMINI_API_KEY is not set');
     return res.json({ reply: "AI is disabled. Please add a Gemini API key." });
   }
 

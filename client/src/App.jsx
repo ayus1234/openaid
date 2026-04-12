@@ -28,6 +28,8 @@ function App() {
     setLoading(true);
     try {
       const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
+      if (import.meta.env.PROD) console.log('Fetching schemes from:', baseUrl);
+      
       const response = await fetch(`${baseUrl}/api/match`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -88,15 +90,26 @@ function App() {
 
     try {
       const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
+      if (import.meta.env.PROD) console.log('Chat API call to:', `${baseUrl}/api/chat`);
+
       const response = await fetch(`${baseUrl}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userMessage.text, history: messages })
       });
+
+      if (!response.ok) {
+        throw new Error(`Server responded with ${response.status}`);
+      }
+
       const data = await response.json();
       setMessages(prev => [...prev, { role: 'assistant', text: data.reply }]);
     } catch (error) {
-      console.error('Chat error:', error);
+      console.error('Chat Connection Error Details:', {
+        message: error.message,
+        baseUrl: import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : ''),
+        env: import.meta.env.MODE
+      });
       setMessages(prev => [...prev, { role: 'assistant', text: 'Sorry, I am having trouble connecting. \n\nक्षमा करें, मुझे जुड़ने में समस्या हो रही है।' }]);
     } finally {
       setChatLoading(false);
