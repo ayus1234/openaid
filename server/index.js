@@ -19,7 +19,6 @@ const corsOptions = {
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
 app.use(cors(corsOptions));
-app.options('(.*)', cors(corsOptions)); // explicit preflight handler
 app.use(express.json());
 
 const schemes = JSON.parse(fs.readFileSync(path.join(__dirname, 'schemes.json'), 'utf8'));
