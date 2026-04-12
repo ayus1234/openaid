@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import './index.css';
 
 function App() {
@@ -19,7 +19,8 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/match`, {
+      const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
+      const response = await fetch(`${baseUrl}/api/match`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(profile)
@@ -54,7 +55,8 @@ function App() {
     setSchemes(prev => prev.map(s => s.id === schemeId ? { ...s, loadingAI: true } : s));
     
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/explain`, {
+      const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
+      const response = await fetch(`${baseUrl}/api/explain`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ scheme, profile })
@@ -71,7 +73,7 @@ function App() {
     <div className="container">
       <header style={{ textAlign: 'center', marginBottom: '4rem' }}>
         <h1>OpenAid 🇮🇳</h1>
-        <p style={{ color: 'var(--text-secondary)' }}>Bridging the gap between citizens and government welfare schemes using AI.</p>
+        <p style={{ color: 'var(--text-secondary)' }}>Discover government schemes you didn't know you were eligible for.</p>
       </header>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '2rem', alignItems: 'start' }}>
@@ -96,17 +98,22 @@ function App() {
               <label>Occupation</label>
               <select name="occupation" value={profile.occupation} onChange={handleChange} className="input-field" required>
                 <option value="">Select Occupation</option>
-                <option value="Student">Student</option>
                 <option value="Farmer">Farmer</option>
-                <option value="Business Owner">Business</option>
-                <option value="Self-Employed">Self-Employed</option>
+                <option value="Student">Student</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Business Owner">Business Owner</option>
+                <option value="Laborer">Laborer</option>
+                <option value="Street Vendor">Street Vendor</option>
+                <option value="Artisan">Artisan/Craftsman</option>
+                <option value="Home Maker">Home Maker</option>
+                <option value="Retired">Retired</option>
                 <option value="Unemployed">Unemployed</option>
-                <option value="Laborer">Labourer</option>
-                <option value="Artisan">Artisan</option>
               </select>
             </div>
             <div>
-              <label>Annual Income (₹)</label>
+              <label>Annual Income (Γé╣)</label>
               <input type="number" name="income" value={profile.income} onChange={handleChange} className="input-field" />
             </div>
             <div>
@@ -157,7 +164,7 @@ function App() {
                     {scheme.matchScore}% Match
                   </div>
                   <div style={{ fontSize: '0.7rem', color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '4px', fontWeight: 'bold' }}>
-                    <span style={{ fontSize: '1rem' }}>✓</span> Verified
+                    <span style={{ fontSize: '1rem' }}>Γ£ô</span> Verified
                   </div>
                 </div>
                 <h3 style={{ margin: '0.5rem 0' }}>{scheme.name}</h3>
@@ -168,8 +175,8 @@ function App() {
                 
                 {scheme.explanation ? (
                   <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(99, 102, 241, 0.1)', borderRadius: '12px', border: '1px solid rgba(99, 102, 241, 0.2)' }}>
-                    <p style={{ fontSize: '0.85rem', marginBottom: '0.5rem' }}>✨ {scheme.explanation.explanation}</p>
-                    <p style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>🇮🇳 {scheme.explanation.hindi}</p>
+                    <p style={{ fontSize: '0.85rem', marginBottom: '0.5rem' }}>Γ£¿ {scheme.explanation.explanation}</p>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>≡ƒç«≡ƒç│ {scheme.explanation.hindi}</p>
                   </div>
                 ) : (
                   <button 
@@ -178,7 +185,7 @@ function App() {
                     style={{ marginTop: '1rem', width: '100%', fontSize: '0.8rem', background: 'transparent', border: '1px solid var(--primary)' }}
                     disabled={scheme.loadingAI}
                   >
-                    {scheme.loadingAI ? 'AI is thinking...' : '✨ Why am I eligible?'}
+                    {scheme.loadingAI ? 'AI is thinking...' : 'Γ£¿ Why am I eligible?'}
                   </button>
                 )}
                 
@@ -210,124 +217,7 @@ function App() {
         </div>
       </div>
       <Footer />
-      <Chatbot />
     </div>
-  );
-}
-
-function Chatbot() {
-  const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState([
-    { role: 'model', text: '🙏 Namaste! I am OpenAid Assistant. Ask me anything about government schemes in English or Hindi.\n\nनमस्ते! मैं OpenAid सहायक हूँ। सरकारी योजनाओं के बारे में कुछ भी पूछें।' }
-  ]);
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
-  const bottomRef = useRef(null);
-
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
-
-  const send = async () => {
-    if (!input.trim() || loading) return;
-    const userMsg = { role: 'user', text: input };
-    const history = messages.filter(m => m.role !== 'model' || messages.indexOf(m) > 0);
-    setMessages(prev => [...prev, userMsg]);
-    setInput('');
-    setLoading(true);
-
-    try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/chat`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: input, history })
-      });
-      const text = await res.text();
-      const data = text ? JSON.parse(text) : {};
-      setMessages(prev => [...prev, { role: 'model', text: data.reply || data.error || `Server error (${res.status})` }]);
-    } catch (err) {
-      console.error('Chat fetch error:', err);
-      setMessages(prev => [...prev, { role: 'model', text: 'Sorry, something went wrong. Please try again.' }]);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <>
-      {/* Floating Button */}
-      <button
-        onClick={() => setOpen(o => !o)}
-        style={{
-          position: 'fixed', bottom: '2rem', right: '2rem',
-          width: '60px', height: '60px', borderRadius: '50%',
-          background: 'var(--primary)', border: 'none', cursor: 'pointer',
-          fontSize: '1.5rem', boxShadow: '0 4px 20px rgba(99,102,241,0.5)',
-          zIndex: 1000, transition: 'transform 0.2s'
-        }}
-        title="Chat with OpenAid"
-      >
-        {open ? '✕' : '🤖'}
-      </button>
-
-      {/* Chat Window */}
-      {open && (
-        <div style={{
-          position: 'fixed', bottom: '5.5rem', right: '2rem',
-          width: '360px', height: '500px',
-          background: '#0f172a', border: '1px solid var(--glass-border)',
-          borderRadius: '20px', display: 'flex', flexDirection: 'column',
-          boxShadow: '0 8px 40px rgba(0,0,0,0.5)', zIndex: 999, overflow: 'hidden'
-        }}>
-          {/* Header */}
-          <div style={{ padding: '1rem 1.2rem', background: 'rgba(99,102,241,0.15)', borderBottom: '1px solid var(--glass-border)' }}>
-            <strong>🤖 OpenAid Assistant</strong>
-            <p style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', margin: 0 }}>Ask about any government scheme</p>
-          </div>
-
-          {/* Messages */}
-          <div style={{ flex: 1, overflowY: 'auto', padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-            {messages.map((m, i) => (
-              <div key={i} style={{
-                alignSelf: m.role === 'user' ? 'flex-end' : 'flex-start',
-                maxWidth: '85%',
-                background: m.role === 'user' ? 'var(--primary)' : 'rgba(255,255,255,0.07)',
-                padding: '0.7rem 1rem', borderRadius: m.role === 'user' ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
-                fontSize: '0.85rem', lineHeight: '1.5', whiteSpace: 'pre-wrap'
-              }}>
-                {m.text}
-              </div>
-            ))}
-            {loading && (
-              <div style={{ alignSelf: 'flex-start', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-                AI is thinking...
-              </div>
-            )}
-            <div ref={bottomRef} />
-          </div>
-
-          {/* Input */}
-          <div style={{ padding: '0.8rem', borderTop: '1px solid var(--glass-border)', display: 'flex', gap: '0.5rem' }}>
-            <input
-              value={input}
-              onChange={e => setInput(e.target.value)}
-              onKeyDown={e => e.key === 'Enter' && send()}
-              placeholder="Ask in English or Hindi..."
-              style={{
-                flex: 1, background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)',
-                borderRadius: '10px', padding: '0.6rem 0.8rem', color: 'white', outline: 'none', fontSize: '0.85rem'
-              }}
-            />
-            <button onClick={send} disabled={loading} style={{
-              background: 'var(--primary)', border: 'none', borderRadius: '10px',
-              padding: '0.6rem 1rem', color: 'white', cursor: 'pointer', fontWeight: 600
-            }}>
-              ➤
-            </button>
-          </div>
-        </div>
-      )}
-    </>
   );
 }
 
@@ -338,7 +228,7 @@ function Footer() {
         "Helping users discover schemes they didn't know they were eligible for."
       </p>
       <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.5rem', opacity: 0.6 }}>
-        Build with ❤️ for the Hackathon Demo | April 2026
+        Build with Γ¥ñ∩╕Å for the Hackathon Demo | April 2026
       </p>
     </footer>
   );
