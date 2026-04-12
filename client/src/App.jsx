@@ -96,18 +96,13 @@ function App() {
               <label>Occupation</label>
               <select name="occupation" value={profile.occupation} onChange={handleChange} className="input-field" required>
                 <option value="">Select Occupation</option>
-                <option value="Farmer">Farmer</option>
                 <option value="Student">Student</option>
-                <option value="Software Engineer">Software Engineer</option>
-                <option value="Teacher">Teacher</option>
-                <option value="Doctor">Doctor</option>
-                <option value="Business Owner">Business Owner</option>
-                <option value="Laborer">Laborer</option>
-                <option value="Street Vendor">Street Vendor</option>
-                <option value="Artisan">Artisan/Craftsman</option>
-                <option value="Home Maker">Home Maker</option>
-                <option value="Retired">Retired</option>
+                <option value="Farmer">Farmer</option>
+                <option value="Business Owner">Business</option>
+                <option value="Self-Employed">Self-Employed</option>
                 <option value="Unemployed">Unemployed</option>
+                <option value="Laborer">Labourer</option>
+                <option value="Artisan">Artisan</option>
               </select>
             </div>
             <div>
