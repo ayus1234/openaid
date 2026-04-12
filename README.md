@@ -25,7 +25,7 @@ OpenAid helps Indian citizens discover government schemes they are eligible for 
 | Backend    | Node.js + Express                 |
 | AI         | Google Gemini 2.5 Flash API       |
 | Data       | Curated JSON dataset (20 schemes) |
-| Deployment | Vercel (frontend) + Render (backend) |
+| Deployment | Netlify (frontend) + Railway (backend) |
 
 ---
 
