@@ -158,6 +158,15 @@ Always reply in both English and Hindi. Keep answers short and friendly.`;
   }
 });
 
+// Serve built client
+const clientBuild = path.join(__dirname, '../client/dist');
+if (fs.existsSync(clientBuild)) {
+  app.use(express.static(clientBuild));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(clientBuild, 'index.html'));
+  });
+}
+
 process.on('uncaughtException', (err) => {
   console.error('Uncaught Exception:', err);
 });

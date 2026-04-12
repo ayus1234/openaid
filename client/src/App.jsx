@@ -19,7 +19,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/match`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/match`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(profile)
@@ -54,7 +54,7 @@ function App() {
     setSchemes(prev => prev.map(s => s.id === schemeId ? { ...s, loadingAI: true } : s));
     
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/explain`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/explain`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ scheme, profile })
@@ -237,7 +237,7 @@ function Chatbot() {
     setLoading(true);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ''}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input, history })
