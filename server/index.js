@@ -158,7 +158,16 @@ Always reply in both English and Hindi. Keep answers short and friendly.`;
   }
 });
 
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (reason) => {
+  console.error('Unhandled Rejection:', reason);
+});
+
 const PORT = process.env.PORT || 5000;
+console.log('Starting server, PORT env:', process.env.PORT);
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
