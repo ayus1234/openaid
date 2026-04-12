@@ -21,6 +21,12 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
+// Global Request Logger for Troubleshooting
+app.use((req, res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+  next();
+});
+
 const schemes = JSON.parse(fs.readFileSync(path.join(__dirname, 'schemes.json'), 'utf8'));
 
 // Professional Occupation Mapping
@@ -159,6 +165,11 @@ Always reply in both English and Hindi. Keep answers short and friendly.`;
     res.status(500).json({ error: 'Chat failed', detail: error.message });
   }
 });
+
+// Alias routes for resilience
+app.post('/match', (req, res) => res.redirect(307, '/api/match'));
+app.post('/chat', (req, res) => res.redirect(307, '/api/chat'));
+app.post('/explain', (req, res) => res.redirect(307, '/api/explain'));
 
 // Serve built client
 const clientBuild = path.join(__dirname, '../client/dist');
