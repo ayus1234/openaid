@@ -1,0 +1,253 @@
+[
+  {
+    "id": "pm-kisan",
+    "name": "PM Kisan Samman Nidhi",
+    "description": "Income support for all landholding farmer families.",
+    "benefits": "₹6,000 per year in three equal installments.",
+    "eligibility": {
+      "occupation": ["Farmer"],
+      "landholding": true,
+      "incomeLimit": null,
+      "ageRange": [18, null],
+      "gender": "All"
+    },
+    "tags": ["Agriculture", "Income Support"],
+    "link": "https://pmkisan.gov.in/"
+  },
+  {
+    "id": "ayushman-bharat",
+    "name": "Ayushman Bharat (PM-JAY)",
+    "description": "Health insurance cover for secondary and tertiary care hospitalization.",
+    "benefits": "Health cover of ₹5 lakh per family per year.",
+    "eligibility": {
+      "category": ["Low Income", "BPL"],
+      "occupation": ["Laborer", "Unorganized Sector", "Farmer", "Unemployed"],
+      "ageRange": [0, null],
+      "gender": "All"
+    },
+    "tags": ["Healthcare", "Insurance"],
+    "link": "https://pmjay.gov.in/"
+  },
+  {
+    "id": "pm-ujjwala",
+    "name": "PM Ujjwala Yojana",
+    "description": "Providing LPG connections to women from BPL households.",
+    "benefits": "Free LPG connection and first refill.",
+    "eligibility": {
+      "gender": "Female",
+      "ageRange": [18, null],
+      "category": ["BPL", "SC", "ST"]
+    },
+    "tags": ["Energy", "Women Welfare"],
+    "link": "https://www.pmuy.gov.in/"
+  },
+  {
+    "id": "stand-up-india",
+    "name": "Stand Up India",
+    "description": "Facilitating bank loans to SC/ST and Women entrepreneurs.",
+    "benefits": "Bank loans between ₹10 lakh and ₹1 crore.",
+    "eligibility": {
+      "gender": "Female",
+      "category": ["SC", "ST"],
+      "ageRange": [18, null],
+      "occupation": ["Entrepreneur", "Business"]
+    },
+    "tags": ["Business", "Loans"],
+    "link": "https://www.standupmitra.in/"
+  },
+  {
+    "id": "pm-awas-urban",
+    "name": "PM Awas Yojana (Urban)",
+    "description": "Providing affordable housing for the urban poor and middle class.",
+    "benefits": "Subsidized interest rate on housing loans.",
+    "eligibility": {
+      "incomeLimit": 1800000,
+      "ageRange": [18, null],
+      "urban": true
+    },
+    "tags": ["Housing", "Urban Development"],
+    "link": "https://pmay-urban.gov.in/"
+  },
+  {
+    "id": "sukanya-samriddhi",
+    "name": "Sukanya Samriddhi Yojana",
+    "description": "Savings scheme for the girl child as part of 'Beti Bachao, Beti Padhao'.",
+    "benefits": "High interest rate and tax benefits for girl child education/marriage.",
+    "eligibility": {
+      "gender": "Female",
+      "ageRange": [0, 10]
+    },
+    "tags": ["Savings", "Girl Child"],
+    "link": "https://www.indiapost.gov.in/"
+  },
+  {
+    "id": "atal-pension",
+    "name": "Atal Pension Yojana",
+    "description": "Pension scheme for citizens in the unorganized sector.",
+    "benefits": "Guaranteed minimum pension of ₹1,000 to ₹5,000 per month.",
+    "eligibility": {
+      "ageRange": [18, 40],
+      "category": ["Low Income"],
+      "occupation": ["Unorganized Sector", "Laborer", "Farmer"]
+    },
+    "tags": ["Pension", "Social Security"],
+    "link": "https://www.npscra.nsdl.co.in/atal-pension-yojana.php"
+  },
+  {
+    "id": "pm-mudra",
+    "name": "PM MUDRA Yojana",
+    "description": "Loans for non-corporate, non-farm small/micro enterprises.",
+    "benefits": "Loans up to ₹10 lakh under Shishu, Kishore, and Tarun categories.",
+    "eligibility": {
+      "occupation": ["Entrepreneur", "Small Business", "Self-Employed"],
+      "ageRange": [18, null]
+    },
+    "tags": ["Business", "Loans"],
+    "link": "https://www.mudra.org.in/"
+  },
+  {
+    "id": "pm-vidyalaxmi",
+    "name": "PM Vidyalaxmi",
+    "description": "Financial support to meritorious students for higher education.",
+    "benefits": "Collateral-free, guarantor-free education loans with interest subvention.",
+    "eligibility": {
+      "occupation": ["Student"],
+      "ageRange": [15, 30],
+      "incomeLimit": 800000
+    },
+    "tags": ["Education", "Students"],
+    "link": "https://pmvidyalaxmi.co.in/"
+  },
+  {
+    "id": "scss",
+    "name": "Senior Citizen Savings Scheme (SCSS)",
+    "description": "Secure government-backed investment for retirees.",
+    "benefits": "High interest rate (8.2%) with quarterly payouts.",
+    "eligibility": {
+      "ageRange": [60, null]
+    },
+    "tags": ["Savings", "Senior Citizens"],
+    "link": "https://www.indiapost.gov.in/"
+  },
+  {
+    "id": "pm-vishwakarma",
+    "name": "PM Vishwakarma",
+    "description": "Support for traditional artisans and craftspeople.",
+    "benefits": "Skill training, toolkits, and collateral-free loans at 5% interest.",
+    "eligibility": {
+      "occupation": ["Artisan", "Tailor", "Carpenter", "Blacksmith", "Barber", "Potter"],
+      "ageRange": [18, null]
+    },
+    "tags": ["Skills", "Livelihood"],
+    "link": "https://pmvishwakarma.gov.in/"
+  },
+  {
+    "id": "pmsbym",
+    "name": "PM Suraksha Bima Yojana",
+    "description": "Accident insurance for bank account holders.",
+    "benefits": "₹2 lakh cover for accidental death for only ₹20 premium per year.",
+    "eligibility": {
+      "ageRange": [18, 70],
+      "universal": true
+    },
+    "tags": ["Insurance", "Social Security"],
+    "link": "https://www.jansuraksha.gov.in/"
+  },
+  {
+    "id": "pmjjby",
+    "name": "PM Jeevan Jyoti Bima Yojana",
+    "description": "Life insurance cover for bank account holders.",
+    "benefits": "₹2 lakh life cover for a low annual premium.",
+    "eligibility": {
+      "ageRange": [18, 50],
+      "universal": true
+    },
+    "tags": ["Insurance", "Social Security"],
+    "link": "https://www.jansuraksha.gov.in/"
+  },
+  {
+    "id": "mahila-samman",
+    "name": "Mahila Samman Savings Certificate",
+    "description": "One-time small savings scheme for women.",
+    "benefits": "Fixed interest rate of 7.5% for 2 years with tax benefits.",
+    "eligibility": {
+      "gender": "Female",
+      "ageRange": [0, null]
+    },
+    "tags": ["Savings", "Women Welfare"],
+    "link": "https://www.indiapost.gov.in/"
+  },
+  {
+    "id": "pm-vaya-vandana",
+    "name": "PM Vaya Vandana Yojana",
+    "description": "Pension scheme for senior citizens managed by LIC.",
+    "benefits": "Guaranteed annual return for 10 years.",
+    "eligibility": {
+      "ageRange": [60, null]
+    },
+    "tags": ["Pension", "Senior Citizens"],
+    "link": "https://www.licindia.in/"
+  },
+  {
+    "id": "pmkvy",
+    "name": "PM Kaushal Vikas Yojana",
+    "description": "Skill certification scheme to enable youth to take up industry-relevant training.",
+    "benefits": "Free skill training and certification for better jobs.",
+    "eligibility": {
+      "occupation": ["Unemployed", "Student"],
+      "ageRange": [15, 45]
+    },
+    "tags": ["Skills", "Education"],
+    "link": "https://www.skillindiadigital.gov.in/pmkvy-landing"
+  },
+  {
+    "id": "ab-pmjay-senior",
+    "name": "Ayushman Bharat (Senior Citizens 70+)",
+    "description": "Universal health insurance for all citizens aged 70 and above.",
+    "benefits": "Health cover of ₹5 lakh per year regardless of income.",
+    "eligibility": {
+      "ageRange": [70, null],
+      "universal": true
+    },
+    "tags": ["Healthcare", "Senior Citizens"],
+    "link": "https://dashboard.nha.gov.in/public-dashboard"
+  },
+  {
+    "id": "svanidhi",
+    "name": "PM SVANidhi",
+    "description": "Micro-credit facility for street vendors.",
+    "benefits": "Working capital loan up to ₹10,000 for urban livelihoods.",
+    "eligibility": {
+      "occupation": ["Street Vendor", "Small Business"],
+      "ageRange": [18, null]
+    },
+    "tags": ["Loans", "Urban Poor"],
+    "link": "https://pmsvanidhi.mohua.gov.in/"
+  },
+  {
+    "id": "pm-sym",
+    "name": "PM Shram Yogi Maandhan",
+    "description": "Old age protection and social security for unorganized workers.",
+    "benefits": "Assured monthly pension of ₹3,000.",
+    "eligibility": {
+      "ageRange": [18, 40],
+      "occupation": ["Laborer", "Unorganized Sector", "Street Vendor"],
+      "incomeLimit": 180000
+    },
+    "tags": ["Pension", "Social Security"],
+    "link": "https://maandhan.in/"
+  },
+  {
+    "id": "post-matric-scholarship",
+    "name": "Post Matric Scholarship for SC/ST",
+    "description": "Financial assistance to students belonging to SC/ST categories.",
+    "benefits": "Reimbursement of tuition fees and maintenance allowance.",
+    "eligibility": {
+      "occupation": ["Student"],
+      "category": ["SC", "ST"],
+      "incomeLimit": 250000
+    },
+    "tags": ["Education", "Scholarship"],
+    "link": "https://scholarships.gov.in/"
+  }
+]
