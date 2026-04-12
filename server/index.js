@@ -10,7 +10,7 @@ const initAI = () => {
   if (model) return model;
   if (!process.env.GEMINI_API_KEY) return null;
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }, { apiVersion: "v1beta" });
+  model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
   console.log('AI Model Initialized (Key starts with:', process.env.GEMINI_API_KEY.substring(0, 4) + '...)');
   return model;
 };
