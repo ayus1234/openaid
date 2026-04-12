@@ -6,10 +6,14 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 require('dotenv').config({ path: require('path').join(__dirname, '.env') });
 
 let model = null;
-if (process.env.GEMINI_API_KEY) {
+const initAI = () => {
+  if (model) return model;
+  if (!process.env.GEMINI_API_KEY) return null;
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }, { apiVersion: "v1" });
-}
+  console.log('AI Model Initialized (Key starts with:', process.env.GEMINI_API_KEY.substring(0, 4) + '...)');
+  return model;
+};
 
 const app = express();
 
@@ -111,7 +115,8 @@ app.post('/api/match', (req, res) => {
 app.post('/api/explain', async (req, res) => {
   const { scheme, profile } = req.body;
   
-  if (!process.env.GEMINI_API_KEY) {
+  const aiModel = initAI();
+  if (!aiModel) {
     return res.json({ 
       explanation: `You are eligible for ${scheme.name} because you match the criteria. (AI disabled - Add API Key for detailed insights)`,
       hindi: `आप ${scheme.name} के लिए पात्र हैं। (AI अक्षम - विस्तृत जानकारी के लिए API कुंजी जोड़ें)`
@@ -129,14 +134,14 @@ app.post('/api/explain', async (req, res) => {
     2. One concise sentence in Hindi for the same.
     Do not use markdown. Just plain text.`;
 
-    const result = await model.generateContent(prompt);
+    const result = await aiModel.generateContent(prompt);
     const text = result.response.text();
     const [english, hindi] = text.split('\n').filter(l => l.trim());
 
     res.json({ explanation: english || text, hindi: hindi || "प्राप्त जानकारी के अनुसार।" });
   } catch (error) {
-    console.error('Gemini error:', error);
-    res.status(500).json({ error: 'AI explanation failed' });
+    console.error('Gemini Explain error:', error);
+    res.status(500).json({ error: 'AI explanation failed', detail: error.message });
   }
 });
 
@@ -144,9 +149,10 @@ app.post('/api/chat', async (req, res) => {
   const { message, history = [] } = req.body;
   console.log('Incoming chat request:', message);
 
-  if (!process.env.GEMINI_API_KEY) {
-    console.warn('Chat failed: GEMINI_API_KEY is not set');
-    return res.json({ reply: "AI is disabled. Please add a Gemini API key." });
+  const aiModel = initAI();
+  if (!aiModel) {
+    console.warn('Chat failed: GEMINI_API_KEY is not set or model init failed');
+    return res.json({ reply: "AI is disabled. Please add a Gemini API key to Railway variables." });
   }
 
   try {
@@ -158,7 +164,7 @@ Always reply in both English and Hindi. Keep answers short and friendly.`;
       ? `${systemPrompt}\n\nUser: ${message}`
       : `${systemPrompt}\n\n${history.map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.text}`).join('\n')}\nUser: ${message}`;
 
-    const result = await model.generateContent(fullMessage);
+    const result = await aiModel.generateContent(fullMessage);
     res.json({ reply: result.response.text() });
   } catch (error) {
     console.error('Chat error full:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
