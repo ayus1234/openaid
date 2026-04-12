@@ -127,6 +127,7 @@ h1 {
   flex-direction: column;
   align-items: flex-end;
   gap: 1rem;
+  pointer-events: none;
 }
 
 .chat-bubble {
@@ -143,6 +144,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: auto;
 }
 
 .chat-bubble:hover {
