@@ -127,7 +127,8 @@ function App() {
 
   return (
     <div className="container">
-      <header style={{ textAlign: 'center', marginBottom: '4rem' }}>
+      <div className={chatOpen ? 'content-blur' : ''} style={{ transition: 'all 0.4s ease' }}>
+        <header style={{ textAlign: 'center', marginBottom: '4rem' }}>
         <h1>OpenAid 🇮🇳</h1>
         <p style={{ color: 'var(--text-secondary)' }}>Discover government schemes you didn't know you were eligible for.</p>
       </header>
@@ -272,6 +273,8 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
+    </div>
 
       {/* Floating Chatbot */}
       <div className={`chat-container ${chatOpen ? 'open' : ''}`}>
@@ -304,7 +307,6 @@ function App() {
         </button>
       </div>
 
-      <Footer />
     </div>
   );
 }
