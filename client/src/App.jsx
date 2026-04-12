@@ -237,6 +237,7 @@ function Chatbot() {
     setLoading(true);
 
     try {
+      console.log('Sending chat to:', `${import.meta.env.VITE_API_URL}/api/chat`);
       const res = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -244,8 +245,9 @@ function Chatbot() {
       });
       const data = await res.json();
       setMessages(prev => [...prev, { role: 'model', text: data.reply || data.error }]);
-    } catch {
-      setMessages(prev => [...prev, { role: 'model', text: 'Sorry, something went wrong.' }]);
+    } catch (err) {
+      console.error('Chat fetch error:', err);
+      setMessages(prev => [...prev, { role: 'model', text: `Sorry, something went wrong. (${err.message})` }]);
     } finally {
       setLoading(false);
     }
