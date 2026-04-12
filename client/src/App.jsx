@@ -237,17 +237,17 @@ function Chatbot() {
     setLoading(true);
 
     try {
-      console.log('Sending chat to:', `${import.meta.env.VITE_API_URL}/api/chat`);
       const res = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input, history })
       });
-      const data = await res.json();
-      setMessages(prev => [...prev, { role: 'model', text: data.reply || data.error }]);
+      const text = await res.text();
+      const data = text ? JSON.parse(text) : {};
+      setMessages(prev => [...prev, { role: 'model', text: data.reply || data.error || `Server error (${res.status})` }]);
     } catch (err) {
       console.error('Chat fetch error:', err);
-      setMessages(prev => [...prev, { role: 'model', text: `Sorry, something went wrong. (${err.message})` }]);
+      setMessages(prev => [...prev, { role: 'model', text: 'Sorry, something went wrong. Please try again.' }]);
     } finally {
       setLoading(false);
     }
