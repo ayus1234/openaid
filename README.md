@@ -1,19 +1,20 @@
 # OpenAid 🇮🇳 — AI Govt Scheme Finder
 
-> "Bridging the gap between citizens and government welfare schemes using AI"
+> "Empowering citizens through AI-driven government scheme discovery and accessibility."
 
-OpenAid helps Indian citizens discover government schemes they are eligible for — with AI-powered explanations in both **English and Hindi**.
+OpenAid is a professional-grade dashboard designed to bridge the awareness gap in Indian government welfare. It features a high-fidelity glassmorphism interface and a sophisticated multi-language engine powered by **Google Gemini 2.5 Flash**.
 
 ---
 
 ## ✨ Features
 
-- 👤 User profile form (age, income, state, category, occupation)
-- 🎯 Smart scheme matching engine across 20+ major Indian schemes
-- 🤖 AI explanations via Google Gemini (why you're eligible, in Hindi + English)
-- 🔗 Direct links to official scheme portals
-- 📊 Eligibility match score per scheme
-- 📱 Clean, mobile-friendly glassmorphism UI
+- **🌐 Full Multi-Language Support**: Seamlessly switch between **English** and **Hindi** for the entire platform including UI, search results, and AI logic.
+- **🎯 Dynamic Background Focus**: Premium "Focused Chat Mode" that elegantly blurs and dims the dashboard when the AI assistant is active.
+- **🤖 Intelligent AI Explanations**: Real-time, localized eligibility insights powered by Gemini 2.5 Flash. Now with synchronized multi-language support.
+- **💬 Smart Chat Assistant**: A context-aware chatbot that respects your language preference—replying in Hindi mode even if you type in English/Hinglish.
+- **👤 Targeted Accessibility**: Optimized profile matching for rural and urban low-income groups (Farmers, Students, Laborers, Artisans).
+- **📊 Match Scoring**: Real-time eligibility confidence scores for 20+ major schemes.
+- **💎 High-Fidelity UI**: Modern glassmorphism design with deep shadows, smooth transitions, and mobile-first responsiveness.
 
 ---
 
@@ -21,11 +22,11 @@ OpenAid helps Indian citizens discover government schemes they are eligible for 
 
 | Layer      | Technology                        |
 |------------|-----------------------------------|
-| Frontend   | React 19 + Vite                   |
-| Backend    | Node.js + Express                 |
-| AI         | Google Gemini 2.5 Flash API       |
-| Data       | Curated JSON dataset (20 schemes) |
-| Deployment | Netlify (frontend) + Railway (backend) |
+| **Frontend** | React 19 + Vite + CSS3 (Glassmorphism) |
+| **Backend**  | Node.js + Express (Robust API Layer) |
+| **AI Engine**| Google Gemini 2.5 Flash |
+| **I18n**     | Custom Multi-Language Engine (EN/HI) |
+| **Data**     | Curated JSON scheme dataset (20+ schemes) |
 
 ---
 
@@ -33,31 +34,28 @@ OpenAid helps Indian citizens discover government schemes they are eligible for 
 
 ### Prerequisites
 - Node.js v18+
-- A [Gemini API key](https://aistudio.google.com/app/apikey) (free tier works)
+- A [Gemini API Key](https://aistudio.google.com/app/apikey)
 
-### 1. Clone the repo
+### 1. Clone & Install
 ```bash
 git clone https://github.com/ayus1234/scheme-connect.git
 cd scheme-connect
 ```
 
-### 2. Setup the backend
+### 2. Configure Backend
 ```bash
 cd server
-cp .env.example .env
-# Add your GEMINI_API_KEY to .env
 npm install
-node index.js
+# Create .env and add GEMINI_API_KEY
+npm start
 ```
 
-### 3. Setup the frontend
+### 3. Launch Frontend
 ```bash
 cd client
 npm install
 npm run dev
 ```
-
-Frontend runs at `http://localhost:5173`, backend at `http://localhost:5000`.
 
 ---
 
@@ -65,36 +63,26 @@ Frontend runs at `http://localhost:5173`, backend at `http://localhost:5000`.
 
 ```
 openaid/
-├── client/          # React frontend (Vite)
+├── client/              # High-fidelity React Frontend
 │   └── src/
-│       ├── App.jsx
-│       └── index.css
-├── server/          # Node.js backend
-│   ├── index.js
-│   ├── schemes.json # Curated scheme dataset
-│   └── .env.example
-├── README.md
-└── .gitignore
+│       ├── App.jsx      # Core dashboard logic
+│       ├── translations.js # Multi-language dictionary
+│       └── index.css    # Premium glassmorphism styles
+├── server/              # Fast Express Backend
+│   ├── index.js         # API and AI integration
+│   └── schemes.json     # Localized scheme database
+└── README.md
 ```
 
 ---
 
-## 🎤 Demo Flow
+## 🏆 Hackathon Innovation
 
-1. Fill in your profile (age, income, occupation, category)
-2. Click "Find Eligible Schemes"
-3. Browse matched schemes with eligibility scores
-4. Click "✨ Why am I eligible?" for an AI explanation in Hindi + English
-5. Click "View Full Details" to go to the official scheme portal
+OpenAid was built to solve the **Awareness Crisis** in government welfare. By combining **localized AI logic** with a **mobile-first intuitive design**, it ensures that even the most digitally underserved citizens can find the help they are entitled to.
 
----
-
-## 🏆 Hackathon Highlights
-
-- Built for **rural accessibility** and **digital inclusion**
-- Supports **Hindi** for wider reach
-- Bridges the **awareness gap** in government welfare
-- Open-source and designed for **scalability**
+- **Localized AI**: Doesn't just translate text; it thinks in the user's preferred language.
+- **Accessibility First**: Focused on speed, readability, and cultural relevance.
+- **Scalable Design**: Prepared for integration with 1000+ state and central schemes.
 
 ---
 
