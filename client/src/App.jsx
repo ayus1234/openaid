@@ -14,6 +14,7 @@ function App() {
 
   const [schemes, setSchemes] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
   // Chatbot State
   const [chatOpen, setChatOpen] = useState(false);
@@ -26,6 +27,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setHasSearched(true);
     try {
       const rawBase = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
       const baseUrl = rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
@@ -193,7 +195,7 @@ function App() {
         {/* Results Section */}
         <div>
           <h2 style={{ marginBottom: '1.5rem' }}>
-            {schemes.length > 0 ? `Matched Schemes (${schemes.length})` : 'Start your search'}
+            {schemes.length > 0 ? `Matched Schemes (${schemes.length})` : (loading ? 'Finding matching schemes...' : (hasSearched ? 'No Matching Schemes' : 'Start your search'))}
           </h2>
           <div className="scheme-grid">
             {schemes.map((scheme, index) => (
@@ -262,7 +264,7 @@ function App() {
                 </a>
               </div>
             ))}
-            {schemes.length === 0 && !loading && (
+            {hasSearched && schemes.length === 0 && !loading && (
               <div style={{ gridColumn: '1 / -1', textAlign: 'center', color: 'var(--text-secondary)', marginTop: '4rem' }}>
                 <p>No schemes matched yet. Update your profile and search.</p>
               </div>
