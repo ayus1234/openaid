@@ -153,8 +153,8 @@ Always reply in both English and Hindi. Keep answers short and friendly.`;
     const result = await model.generateContent(fullMessage);
     res.json({ reply: result.response.text() });
   } catch (error) {
-    console.error('Chat error:', error.message);
-    res.status(500).json({ error: 'Chat failed' });
+    console.error('Chat error full:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
+    res.status(500).json({ error: 'Chat failed', detail: error.message });
   }
 });
 
