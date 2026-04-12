@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import './index.css';
+import translations from './translations';
 
 function App() {
+  const [language, setLanguage] = useState('en');
+  const t = (key) => {
+    const val = translations[language][key];
+    return typeof val === 'function' ? val : (val || key);
+  };
+
   const [profile, setProfile] = useState({
     age: '',
     gender: '',
@@ -19,7 +26,7 @@ function App() {
   // Chatbot State
   const [chatOpen, setChatOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: 'assistant', text: 'Namaste! I am OpenAid. How can I help you today? \n\nनमस्ते! मैं OpenAid हूँ। मैं आपकी कैसे मदद कर सकता हूँ?' }
+    { role: 'assistant', text: translations[language].initialHello }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [chatLoading, setChatLoading] = useState(false);
@@ -75,7 +82,7 @@ function App() {
       const response = await fetch(`${baseUrl}/explain`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ scheme, profile })
+        body: JSON.stringify({ scheme, profile, lang: language })
       });
       const data = await response.json();
       setSchemes(prev => prev.map(s => s.id === schemeId ? { ...s, explanation: data, loadingAI: false } : s));
@@ -103,7 +110,7 @@ function App() {
       const response = await fetch(`${baseUrl}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userMessage.text, history: messages })
+        body: JSON.stringify({ message: userMessage.text, history: messages, lang: language })
       });
 
       if (!response.ok) {
@@ -119,72 +126,91 @@ function App() {
         baseUrl: rawBase,
         env: import.meta.env.MODE
       });
-      setMessages(prev => [...prev, { role: 'assistant', text: 'Sorry, I am having trouble connecting. \n\nक्षमा करें, मुझे जुड़ने में समस्या हो रही है।' }]);
+      setMessages(prev => [...prev, { role: 'assistant', text: t('chatError') }]);
     } finally {
       setChatLoading(false);
+    }
+  };
+
+  const toggleLanguage = (lang) => {
+    setLanguage(lang);
+    // Refresh initial message if chat is empty or contains only the greeting
+    if (messages.length === 1 && messages[0].role === 'assistant') {
+      setMessages([{ role: 'assistant', text: translations[lang].initialHello }]);
     }
   };
 
   return (
     <div className="container">
       <div className={chatOpen ? 'content-blur' : ''} style={{ transition: 'all 0.4s ease' }}>
+        <div className="lang-toggle-container">
+          <button 
+            className={`lang-btn ${language === 'en' ? 'active' : ''}`} 
+            onClick={() => toggleLanguage('en')}
+          >English</button>
+          <button 
+            className={`lang-btn ${language === 'hi' ? 'active' : ''}`} 
+            onClick={() => toggleLanguage('hi')}
+          >हिंदी</button>
+        </div>
+
         <header style={{ textAlign: 'center', marginBottom: '4rem' }}>
-        <h1>OpenAid 🇮🇳</h1>
-        <p style={{ color: 'var(--text-secondary)' }}>Discover government schemes you didn't know you were eligible for.</p>
-      </header>
+          <h1>{t('title')}</h1>
+          <p style={{ color: 'var(--text-secondary)' }}>{t('subtitle')}</p>
+        </header>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '2rem', alignItems: 'start' }}>
         {/* Form Section */}
         <div className="glass-card">
-          <h2 style={{ marginBottom: '1.5rem' }}>Personal Profile</h2>
+          <h2 style={{ marginBottom: '1.5rem' }}>{t('personalProfile')}</h2>
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
             <div>
-              <label>Age</label>
+              <label>{t('age')}</label>
               <input type="number" name="age" value={profile.age} onChange={handleChange} className="input-field" />
             </div>
             <div>
-              <label>Gender</label>
+              <label>{t('gender')}</label>
               <select name="gender" value={profile.gender} onChange={handleChange} className="input-field" required>
-                <option value="">Select Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Others">Others</option>
+                <option value="">{t('selectGender')}</option>
+                <option value="Male">{t('male')}</option>
+                <option value="Female">{t('female')}</option>
+                <option value="Others">{t('others')}</option>
               </select>
             </div>
             <div>
-              <label>Occupation</label>
+              <label>{t('occupation')}</label>
               <select name="occupation" value={profile.occupation} onChange={handleChange} className="input-field" required>
-                <option value="">Select Occupation</option>
-                <option value="Farmer">Farmer</option>
-                <option value="Student">Student</option>
-                <option value="Laborer">Laborer</option>
-                <option value="Street Vendor">Street Vendor</option>
-                <option value="Artisan">Artisan/Craftsman</option>
-                <option value="Home Maker">Home Maker</option>
-                <option value="Retired">Retired</option>
-                <option value="Unemployed">Unemployed</option>
+                <option value="">{t('selectOccupation')}</option>
+                <option value="Farmer">{t('farmer')}</option>
+                <option value="Student">{t('student')}</option>
+                <option value="Laborer">{t('laborer')}</option>
+                <option value="Street Vendor">{t('streetVendor')}</option>
+                <option value="Artisan">{t('artisan')}</option>
+                <option value="Home Maker">{t('homeMaker')}</option>
+                <option value="Retired">{t('retired')}</option>
+                <option value="Unemployed">{t('unemployed')}</option>
               </select>
             </div>
             <div>
-              <label>Annual Income (₹)</label>
+              <label>{t('income')}</label>
               <input type="number" name="income" value={profile.income} onChange={handleChange} className="input-field" />
             </div>
             <div>
-              <label>Category</label>
+              <label>{t('category')}</label>
               <select name="category" value={profile.category} onChange={handleChange} className="input-field" required>
-                <option value="">Select Category</option>
-                <option value="General">General</option>
-                <option value="SC">SC</option>
-                <option value="ST">ST</option>
-                <option value="OBC">OBC</option>
+                <option value="">{t('selectCategory')}</option>
+                <option value="General">{t('general')}</option>
+                <option value="SC">{t('sc')}</option>
+                <option value="ST">{t('st')}</option>
+                <option value="OBC">{t('obc')}</option>
               </select>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <input type="checkbox" name="landholding" checked={profile.landholding} onChange={handleChange} />
-              <label>I own agricultural land</label>
+              <label>{t('landholding')}</label>
             </div>
             <button type="submit" className="btn-primary" disabled={loading}>
-              {loading ? 'Finding Schemes...' : 'Find Eligible Schemes'}
+              {loading ? t('findingSchemes') : t('findSchemes')}
             </button>
           </form>
         </div>
@@ -192,7 +218,9 @@ function App() {
         {/* Results Section */}
         <div>
           <h2 style={{ marginBottom: '1.5rem' }}>
-            {schemes.length > 0 ? `Matched Schemes (${schemes.length})` : (loading ? 'Finding matching schemes...' : (hasSearched ? 'No Matching Schemes' : 'Start your search'))}
+            {schemes.length > 0 
+              ? t('matchedSchemes')(schemes.length) 
+              : (loading ? t('findingMatching') : (hasSearched ? t('noMatching') : t('startSearch')))}
           </h2>
           <div className="scheme-grid">
             {schemes.map((scheme, index) => (
@@ -217,19 +245,20 @@ function App() {
                     {scheme.matchScore}% Match
                   </div>
                   <div style={{ fontSize: '0.7rem', color: 'var(--success)', display: 'flex', alignItems: 'center', gap: '4px', fontWeight: 'bold' }}>
-                    <span style={{ fontSize: '1rem' }}>✓</span> Verified
+                    <span style={{ fontSize: '1rem' }}>✓</span> {t('verified')}
                   </div>
                 </div>
-                <h3 style={{ margin: '0.5rem 0' }}>{scheme.name}</h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{scheme.description}</p>
+                <h3 style={{ margin: '0.5rem 0' }}>{language === 'en' ? scheme.name : (scheme.name_hi || scheme.name)}</h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+                  {language === 'en' ? scheme.description : (scheme.description_hi || scheme.description)}
+                </p>
                 <div style={{ background: 'rgba(255,255,255,0.02)', padding: '0.8rem', borderRadius: '8px', fontSize: '0.85rem' }}>
-                  <strong>Benefit:</strong> {scheme.benefits}
+                  <strong>{t('benefit')}</strong> {language === 'en' ? scheme.benefits : (scheme.benefits_hi || scheme.benefits)}
                 </div>
                 
                 {scheme.explanation ? (
                   <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(99, 102, 241, 0.1)', borderRadius: '12px', border: '1px solid rgba(99, 102, 241, 0.2)' }}>
-                    <p style={{ fontSize: '0.85rem', marginBottom: '0.5rem' }}>✨ {scheme.explanation.explanation}</p>
-                    <p style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>🇮🇳 {scheme.explanation.hindi}</p>
+                    <p style={{ fontSize: '0.85rem' }}>{scheme.explanation.explanation}</p>
                   </div>
                 ) : (
                   <button 
@@ -238,7 +267,7 @@ function App() {
                     style={{ marginTop: '1rem', width: '100%', fontSize: '0.8rem', background: 'transparent', border: '1px solid var(--primary)' }}
                     disabled={scheme.loadingAI}
                   >
-                    {scheme.loadingAI ? 'AI is thinking...' : '✨ Why am I eligible?'}
+                    {scheme.loadingAI ? t('thinking') : t('whyEligible')}
                   </button>
                 )}
                 
@@ -263,20 +292,20 @@ function App() {
             ))}
             {hasSearched && schemes.length === 0 && !loading && (
               <div style={{ gridColumn: '1 / -1', textAlign: 'center', color: 'var(--text-secondary)', marginTop: '4rem' }}>
-                <p>No schemes matched yet. Update your profile and search.</p>
+                <p>{t('noSchemesYet')}</p>
               </div>
             )}
           </div>
         </div>
       </div>
-      <Footer />
+        <Footer t={t} />
     </div>
 
       {/* Floating Chatbot */}
       <div className={`chat-container ${chatOpen ? 'open' : ''}`}>
         <div className="chat-window glass-card">
           <div className="chat-header">
-            <h3>OpenAid Assistant ✨</h3>
+            <h3>{t('assistantName')}</h3>
             <button onClick={() => setChatOpen(false)} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', fontSize: '1.2rem' }}>×</button>
           </div>
           <div className="chat-messages">
@@ -285,17 +314,17 @@ function App() {
                 {msg.text}
               </div>
             ))}
-            {chatLoading && <div className="message bot-msg">Thinking...</div>}
+            {chatLoading && <div className="message bot-msg">{t('thinking')}</div>}
           </div>
           <form onSubmit={sendChatMessage} className="chat-input-area">
             <input 
               type="text" 
               value={inputValue} 
               onChange={(e) => setInputValue(e.target.value)} 
-              placeholder="Ask about schemes..." 
+              placeholder={t('chatPlaceholder')} 
               className="chat-input"
             />
-            <button type="submit" className="chat-send-btn">Send</button>
+            <button type="submit" className="chat-send-btn">{t('send')}</button>
           </form>
         </div>
         <button className="chat-bubble" onClick={() => setChatOpen(!chatOpen)}>
@@ -307,14 +336,14 @@ function App() {
   );
 }
 
-function Footer() {
+function Footer({ t }) {
   return (
     <footer style={{ marginTop: 'auto', padding: '4rem 0 2rem', borderTop: '1px solid rgba(255,255,255,0.05)', textAlign: 'center' }}>
       <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-        "Helping users discover schemes they didn't know they were eligible for."
+        {t('footerQuote')}
       </p>
       <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.5rem', opacity: 0.6 }}>
-        Build with ❤️ for the Hackathon Demo | April 2026
+        {t('footerBuild')}
       </p>
     </footer>
   );

@@ -113,32 +113,30 @@ app.post('/api/match', (req, res) => {
 });
 
 app.post('/api/explain', async (req, res) => {
-  const { scheme, profile } = req.body;
+  const { scheme, profile, lang = 'en' } = req.body;
   
   const aiModel = initAI();
   if (!aiModel) {
     return res.json({ 
-      explanation: `You are eligible for ${scheme.name} because you match the criteria. (AI disabled - Add API Key for detailed insights)`,
-      hindi: `आप ${scheme.name} के लिए पात्र हैं। (AI अक्षम - विस्तृत जानकारी के लिए API कुंजी जोड़ें)`
+      explanation: lang === 'hi' 
+        ? `आप ${scheme.name_hi || scheme.name} के लिए पात्र हैं क्योंकि आप मानदंडों से मेल खाते हैं। (AI अक्षम है)`
+        : `You are eligible for ${scheme.name} because you match the criteria. (AI disabled)`
     });
   }
 
   try {
+    const languageName = lang === 'hi' ? 'Hindi' : 'English';
     const prompt = `You are a professional government scheme counselor. 
-    Explain why this user is eligible for the "${scheme.name}" scheme.
+    Explain why this user is eligible for the "${lang === 'hi' ? scheme.name_hi : scheme.name}" scheme.
     User Profile: ${JSON.stringify(profile)}
-    Scheme Benefits: ${scheme.benefits}
+    Scheme Benefits: ${lang === 'hi' ? scheme.benefits_hi : scheme.benefits}
     
-    Provide exactly two sentences:
-    1. One concise sentence in English explaining the specific benefit they match.
-    2. One concise sentence in Hindi for the same.
+    Provide exactly one concise sentence in ${languageName} explaining why they are eligible.
     Do not use markdown. Just plain text.`;
 
     const result = await aiModel.generateContent(prompt);
-    const text = result.response.text();
-    const [english, hindi] = text.split('\n').filter(l => l.trim());
-
-    res.json({ explanation: english || text, hindi: hindi || "प्राप्त जानकारी के अनुसार।" });
+    const text = result.response.text().trim();
+    res.json({ explanation: text });
   } catch (error) {
     console.error('Gemini Explain error:', error);
     res.status(500).json({ error: 'AI explanation failed', detail: error.message });
@@ -146,26 +144,29 @@ app.post('/api/explain', async (req, res) => {
 });
 
 app.post('/api/chat', async (req, res) => {
-  const { message, history = [] } = req.body;
-  console.log('Incoming chat request:', message);
+  const { message, history = [], lang = 'en' } = req.body;
+  console.log(`Incoming chat request [${lang}]:`, message);
 
   const aiModel = initAI();
   if (!aiModel) {
     console.warn('Chat failed: GEMINI_API_KEY is not set or model init failed');
-    return res.json({ reply: "AI is disabled. Please add a Gemini API key to Railway variables." });
+    return res.json({ reply: lang === 'hi' ? "AI अक्षम है। कृपया Gemini API कुंजी जोड़ें।" : "AI is disabled. Please add a Gemini API key." });
   }
 
   try {
+    const languageName = lang === 'hi' ? 'Hindi' : 'English';
     const systemPrompt = `You are OpenAid, a helpful assistant for Indian government welfare schemes. 
 Know about: PM Kisan, Ayushman Bharat, PM Ujjwala, MUDRA Yojana, PM Vidyalaxmi, Atal Pension, PM Vishwakarma, and more.
-Always reply in both English and Hindi. Keep answers short and friendly.`;
+STRICT RULE: You must respond ONLY in ${languageName}. 
+Even if the user types in English, if the language mode is ${languageName}, you must reply ONLY in ${languageName}.
+Keep answers short, friendly and professional.`;
 
     const fullMessage = history.length === 0
-      ? `${systemPrompt}\n\nUser: ${message}`
-      : `${systemPrompt}\n\n${history.map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.text}`).join('\n')}\nUser: ${message}`;
+      ? `${systemPrompt}\n\nUser: ${message}\nAssistant [In ${languageName}]:`
+      : `${systemPrompt}\n\n${history.map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.text}`).join('\n')}\nUser: ${message}\nAssistant [In ${languageName}]:`;
 
     const result = await aiModel.generateContent(fullMessage);
-    res.json({ reply: result.response.text() });
+    res.json({ reply: result.response.text().trim() });
   } catch (error) {
     console.error('Chat error full:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
     res.status(500).json({ error: 'Chat failed', detail: error.message });
