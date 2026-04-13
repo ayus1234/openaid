@@ -38,8 +38,8 @@ OpenAid is a professional-grade dashboard designed to bridge the awareness gap i
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/ayus1234/scheme-connect.git
-cd scheme-connect
+git clone https://github.com/ayus1234/openaid.git
+cd openaid
 ```
 
 ### 2. Configure Backend
