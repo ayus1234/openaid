@@ -353,7 +353,7 @@ function App() {
                   <button 
                     onClick={() => explainScheme(scheme.id)} 
                     className="btn-primary" 
-                    style={{ marginTop: '1rem', width: '100%', fontSize: '0.8rem', background: 'transparent', border: '1px solid var(--primary)' }}
+                    style={{ marginTop: '1rem', width: '100%', fontSize: '0.8rem', background: 'transparent', border: '1px solid var(--primary)', color: 'var(--primary)' }}
                     disabled={scheme.loadingAI}
                   >
                     {scheme.loadingAI ? t('thinking') : t('whyEligible')}
