@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    title: "OpenAid 🇮🇳",
+    title: "OpenAid",
     subtitle: "Discover government schemes you didn't know you were eligible for.",
     personalProfile: "Personal Profile",
     age: "Age",
@@ -48,7 +48,7 @@ const translations = {
     initialHello: "Namaste! I am OpenAid. How can I help you today?"
   },
   hi: {
-    title: "ओपनएड (OpenAid) 🇮🇳",
+    title: "ओपनएड (OpenAid)",
     subtitle: "उन सरकारी योजनाओं की खोज करें जिनके लिए आप पात्र हैं और आप नहीं जानते थे।",
     personalProfile: "व्यक्तिगत प्रोफ़ाइल",
     age: "आयु",

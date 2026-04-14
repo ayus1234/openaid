@@ -2,6 +2,32 @@ import React, { useState } from 'react';
 import './index.css';
 import translations from './translations';
 
+const IndianFlag = ({ size = 32 }) => (
+  <svg 
+    width={size} 
+    height={size * 0.67} 
+    viewBox="0 0 900 600" 
+    style={{ borderRadius: '4px', boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}
+  >
+    <rect width="900" height="200" fill="#FF9933"/>
+    <rect y="200" width="900" height="200" fill="#FFFFFF"/>
+    <rect y="400" width="900" height="200" fill="#138808"/>
+    <g transform="translate(450,300)">
+      <circle r="92.5" fill="none" stroke="#000080" strokeWidth="6.5"/>
+      <circle r="17.5" fill="#000080"/>
+      {Array.from({ length: 24 }).map((_, i) => (
+        <line
+          key={i}
+          x1="0" y1="0" x2="0" y2="92.5"
+          transform={`rotate(${i * 15})`}
+          stroke="#000080"
+          strokeWidth="6"
+        />
+      ))}
+    </g>
+  </svg>
+);
+
 function App() {
   const [language, setLanguage] = useState('en');
   const t = (key) => {
@@ -155,7 +181,10 @@ function App() {
         </div>
 
         <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <h1>{t('title')}</h1>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1rem' }}>
+            <h1 style={{ marginBottom: 0 }}>{t('title')}</h1>
+            <IndianFlag size={45} />
+          </div>
           <p style={{ color: 'var(--text-secondary)' }}>{t('subtitle')}</p>
         </header>
 
