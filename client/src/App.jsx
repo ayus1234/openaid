@@ -213,12 +213,26 @@ function App() {
           <h2 style={{ marginBottom: '1.5rem' }}>{t('personalProfile')}</h2>
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
             <div>
-              <label>{t('age')}</label>
-              <input type="number" name="age" value={profile.age} onChange={handleChange} className="input-field" />
+              <label htmlFor="age-input">{t('age')}</label>
+              <input 
+                id="age-input"
+                type="number" 
+                name="age" 
+                value={profile.age} 
+                onChange={handleChange} 
+                className="input-field" 
+              />
             </div>
             <div>
-              <label>{t('gender')}</label>
-              <select name="gender" value={profile.gender} onChange={handleChange} className="input-field" required>
+              <label htmlFor="gender-select">{t('gender')}</label>
+              <select 
+                id="gender-select"
+                name="gender" 
+                value={profile.gender} 
+                onChange={handleChange} 
+                className="input-field" 
+                required
+              >
                 <option value="">{t('selectGender')}</option>
                 <option value="Male">{t('male')}</option>
                 <option value="Female">{t('female')}</option>
@@ -226,8 +240,15 @@ function App() {
               </select>
             </div>
             <div>
-              <label>{t('occupation')}</label>
-              <select name="occupation" value={profile.occupation} onChange={handleChange} className="input-field" required>
+              <label htmlFor="occupation-select">{t('occupation')}</label>
+              <select 
+                id="occupation-select"
+                name="occupation" 
+                value={profile.occupation} 
+                onChange={handleChange} 
+                className="input-field" 
+                required
+              >
                 <option value="">{t('selectOccupation')}</option>
                 <option value="Farmer">{t('farmer')}</option>
                 <option value="Student">{t('student')}</option>
@@ -240,12 +261,26 @@ function App() {
               </select>
             </div>
             <div>
-              <label>{t('income')}</label>
-              <input type="number" name="income" value={profile.income} onChange={handleChange} className="input-field" />
+              <label htmlFor="income-input">{t('income')}</label>
+              <input 
+                id="income-input"
+                type="number" 
+                name="income" 
+                value={profile.income} 
+                onChange={handleChange} 
+                className="input-field" 
+              />
             </div>
             <div>
-              <label>{t('category')}</label>
-              <select name="category" value={profile.category} onChange={handleChange} className="input-field" required>
+              <label htmlFor="category-select">{t('category')}</label>
+              <select 
+                id="category-select"
+                name="category" 
+                value={profile.category} 
+                onChange={handleChange} 
+                className="input-field" 
+                required
+              >
                 <option value="">{t('selectCategory')}</option>
                 <option value="General">{t('general')}</option>
                 <option value="SC">{t('sc')}</option>
@@ -254,8 +289,14 @@ function App() {
               </select>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <input type="checkbox" name="landholding" checked={profile.landholding} onChange={handleChange} />
-              <label>{t('landholding')}</label>
+              <input 
+                id="landholding-checkbox"
+                type="checkbox" 
+                name="landholding" 
+                checked={profile.landholding} 
+                onChange={handleChange} 
+              />
+              <label htmlFor="landholding-checkbox">{t('landholding')}</label>
             </div>
             <button type="submit" className="btn-primary" disabled={loading}>
               {loading ? t('findingSchemes') : t('findSchemes')}
@@ -366,11 +407,13 @@ function App() {
           </div>
           <form onSubmit={sendChatMessage} className="chat-input-area">
             <input 
+              id="chat-input-field"
               type="text" 
               value={inputValue} 
               onChange={(e) => setInputValue(e.target.value)} 
               placeholder={t('chatPlaceholder')} 
               className="chat-input"
+              aria-label={t('assistantName')}
             />
             <button type="submit" className="chat-send-btn">{t('send')}</button>
           </form>
