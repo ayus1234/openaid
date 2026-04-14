@@ -345,6 +345,13 @@ h1 {
   flex-wrap: wrap;
 }
 
+@media (max-width: 640px) {
+  .controls-container {
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+}
+
 .toggle-group {
   display: flex;
   background: var(--input-bg);
