@@ -183,7 +183,7 @@ function App() {
         <header style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 10vh, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5em', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
             <h1 style={{ marginBottom: 0 }}>{t('title')}</h1>
-            <IndianFlag size="1.2em" />
+            <IndianFlag size="1.8em" />
           </div>
           <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.9rem, 2vw, 1.1rem)' }}>{t('subtitle')}</p>
         </header>
