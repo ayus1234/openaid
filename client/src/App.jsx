@@ -172,27 +172,19 @@ function App() {
     }
   };
 
-  const themes = [
-    { id: 'dark', icon: '🌙' },
-    { id: 'light', icon: '☀️' }
-  ];
-
   return (
     <div className="container">
       <div className={chatOpen ? 'content-blur' : ''} style={{ transition: 'all 0.4s ease' }}>
-          <div className="controls-container">
-            {/* Theme Toggle */}
-            <div className="toggle-group">
-              {themes.map((th) => (
-                <button
-                  key={th.id}
-                  className={`theme-btn ${theme === th.id ? 'active' : ''}`}
-                  onClick={() => setTheme(th.id)}
-                >
-                  {th.icon} {t(th.id)}
-                </button>
-              ))}
-            </div>
+        <div className="controls-container">
+            {/* Theme Toggle Button */}
+            <button
+              className="theme-toggle-btn"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              aria-label="Toggle Theme"
+              title={t(theme === 'dark' ? 'light' : 'dark')}
+            >
+              {theme === 'dark' ? '🌙' : '☀️'}
+            </button>
 
             {/* Language Toggle */}
             <div className="toggle-group">
