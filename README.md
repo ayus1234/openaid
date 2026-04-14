@@ -2,7 +2,7 @@
 
 > "Empowering citizens through AI-driven government scheme discovery and accessibility."
 
-OpenAid is a professional-grade dashboard designed to bridge the awareness gap in Indian government welfare. It features a high-fidelity glassmorphism interface and a sophisticated multi-language engine powered by **Google Gemini 1.5 Flash**.
+OpenAid is a professional-grade dashboard designed to bridge the awareness gap in Indian government welfare. It features a high-fidelity glassmorphism interface and a sophisticated multi-language engine powered by **Google Gemini 2.5 Flash**.
 
 ---
 
@@ -12,7 +12,7 @@ OpenAid is a professional-grade dashboard designed to bridge the awareness gap i
 - **📱 Mobile-First Design**: Fully responsive architecture that adapts perfectly to smartphones, tablets, and desktops.
 - **🌐 Full Multi-Language Support**: Seamlessly switch between **English** and **Hindi** for the entire platform including UI, search results, and AI logic.
 - **🎯 Dynamic Background Focus**: Premium "Focused Chat Mode" that elegantly blurs and dims the dashboard when the AI assistant is active.
-- **🤖 Intelligent AI Explanations**: Real-time, localized eligibility insights powered by Gemini 1.5 Flash. Now with synchronized multi-language support (English/Hindi).
+- **🤖 Intelligent AI Explanations**: Real-time, localized eligibility insights powered by Gemini 2.5 Flash. Now with synchronized multi-language support (English/Hindi).
 - **💬 Context-Aware Chatbot**: A smart assistant that respects your language preference—replying in Hindi mode even if you type in English/Hinglish.
 - **🛡️ Security Hardened**: Production-ready configuration with strict Content Security Policy (CSP) and optimized headers for Netlify.
 - **📊 Real-time Matching**: Instant eligibility confidence scores for 20+ major schemes with localized "No Match" feedback.
@@ -25,7 +25,7 @@ OpenAid is a professional-grade dashboard designed to bridge the awareness gap i
 |------------|-----------------------------------|
 | **Frontend** | React 19 + Vite + CSS3 (Glassmorphism) |
 | **Backend**  | Node.js + Express (Robust API Layer) |
-| **AI Engine**| Google Gemini 1.5 Flash |
+| **AI Engine**| Google Gemini 2.5 Flash |
 | **Styling**  | Managed CSS Variables (Light/Dark themes) |
 | **I18n**     | Custom Multi-Language Engine (EN/HI) |
 | **Security** | Netlify-optimized CSP Headers |
