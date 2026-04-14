@@ -45,7 +45,12 @@ const translations = {
     st: "ST",
     obc: "OBC",
     chatError: "Sorry, I am having trouble connecting.",
-    initialHello: "Namaste! I am OpenAid. How can I help you today?"
+    initialHello: "Namaste! I am OpenAid. How can I help you today?",
+    theme: "Theme",
+    light: "Light",
+    dark: "Dark",
+    neon: "Neon",
+    default: "Default"
   },
   hi: {
     title: "ओपनएड (OpenAid)",
@@ -93,7 +98,12 @@ const translations = {
     st: "अनुसूचित जनजाति (ST)",
     obc: "अन्य पिछड़ा वर्ग (OBC)",
     chatError: "क्षमा करें, मुझे जुड़ने में समस्या हो रही है।",
-    initialHello: "नमस्ते! मैं ओपनएड हूँ। आज मैं आपकी कैसे मदद कर सकता हूँ?"
+    initialHello: "नमस्ते! मैं ओपनएड हूँ। आज मैं आपकी कैसे मदद कर सकता हूँ?",
+    theme: "थीम",
+    light: "लाइट (Light)",
+    dark: "डार्क (Dark)",
+    neon: "नियॉन (Neon)",
+    default: "डिफ़ॉल्ट (Default)"
   }
 };
 

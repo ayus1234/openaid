@@ -30,6 +30,8 @@ const IndianFlag = ({ size = "1.2em" }) => (
 
 function App() {
   const [language, setLanguage] = useState('en');
+  const [theme, setTheme] = useState('default');
+
   const t = (key) => {
     const val = translations[language][key];
     return typeof val === 'function' ? val : (val || key);
@@ -166,19 +168,38 @@ function App() {
     }
   };
 
+  const themes = ['default', 'light', 'dark', 'neon'];
+
   return (
-    <div className="container">
-      <div className={chatOpen ? 'content-blur' : ''} style={{ transition: 'all 0.4s ease' }}>
-        <div className="lang-toggle-container">
-          <button 
-            className={`lang-btn ${language === 'en' ? 'active' : ''}`} 
-            onClick={() => toggleLanguage('en')}
-          >English</button>
-          <button 
-            className={`lang-btn ${language === 'hi' ? 'active' : ''}`} 
-            onClick={() => toggleLanguage('hi')}
-          >हिंदी</button>
-        </div>
+    <div className="theme-wrapper" data-theme={theme}>
+      <div className="container">
+        <div className={chatOpen ? 'content-blur' : ''} style={{ transition: 'all 0.4s ease' }}>
+          <div className="controls-container">
+            {/* Theme Toggle */}
+            <div className="toggle-group">
+              {themes.map((tName) => (
+                <button
+                  key={tName}
+                  className={`theme-btn ${theme === tName ? 'active' : ''}`}
+                  onClick={() => setTheme(tName)}
+                >
+                  {t(tName)}
+                </button>
+              ))}
+            </div>
+
+            {/* Language Toggle */}
+            <div className="toggle-group">
+              <button 
+                className={`lang-btn ${language === 'en' ? 'active' : ''}`} 
+                onClick={() => toggleLanguage('en')}
+              >English</button>
+              <button 
+                className={`lang-btn ${language === 'hi' ? 'active' : ''}`} 
+                onClick={() => toggleLanguage('hi')}
+              >हिंदी</button>
+            </div>
+          </div>
 
         <header style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 10vh, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5em', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
@@ -361,6 +382,7 @@ function App() {
         </button>
       </div>
 
+      </div>
     </div>
   );
 }
