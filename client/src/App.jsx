@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './index.css';
 import translations from './translations';
 
-const IndianFlag = ({ size = 32 }) => (
+const IndianFlag = ({ size = "1.2em" }) => (
   <svg 
     width={size} 
-    height={size * 0.67} 
+    height="0.67em" 
     viewBox="0 0 900 600" 
-    style={{ borderRadius: '4px', boxShadow: '0 2px 8px rgba(0,0,0,0.2)' }}
+    style={{ borderRadius: '2px', boxShadow: '0 2px 8px rgba(0,0,0,0.2)', verticalAlign: 'middle' }}
   >
     <rect width="900" height="200" fill="#FF9933"/>
     <rect y="200" width="900" height="200" fill="#FFFFFF"/>
@@ -180,12 +180,12 @@ function App() {
           >हिंदी</button>
         </div>
 
-        <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1rem' }}>
+        <header style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 10vh, 4rem)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5em', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
             <h1 style={{ marginBottom: 0 }}>{t('title')}</h1>
-            <IndianFlag size={45} />
+            <IndianFlag size="1.2em" />
           </div>
-          <p style={{ color: 'var(--text-secondary)' }}>{t('subtitle')}</p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(0.9rem, 2vw, 1.1rem)' }}>{t('subtitle')}</p>
         </header>
 
       <div className="main-layout">

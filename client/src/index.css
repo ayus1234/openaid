@@ -74,57 +74,58 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
+  padding: clamp(1rem, 5vw, 3rem);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 800;
+  line-height: 1.1;
   background: linear-gradient(to right, #fff, #94a3b8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-/* Main two-column layout */
+/* Fluid Main Layout */
 .main-layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 4vw, 2.5rem);
   align-items: start;
 }
 
-@media (max-width: 768px) {
+/* Tablet and above */
+@media (min-width: 992px) {
   .main-layout {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+/* Very large screens / TVs */
+@media (min-width: 1800px) {
+  .main-layout {
+    grid-template-columns: 400px 1fr;
+    gap: 4rem;
+  }
+  .container {
+    max-width: 1800px;
   }
 }
 
 .scheme-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(280px, 100%, 350px), 1fr));
+  gap: clamp(1rem, 3vw, 1.5rem);
   margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .scheme-grid {
     grid-template-columns: 1fr;
     margin-top: 1rem;
