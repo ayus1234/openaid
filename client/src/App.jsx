@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css';
 import translations from './translations';
 
@@ -31,6 +31,10 @@ const IndianFlag = ({ size = "1.2em" }) => (
 function App() {
   const [language, setLanguage] = useState('en');
   const [theme, setTheme] = useState('default');
+
+  useEffect(() => {
+    document.body.setAttribute('data-theme', theme);
+  }, [theme]);
 
   const t = (key) => {
     const val = translations[language][key];
@@ -171,9 +175,8 @@ function App() {
   const themes = ['default', 'light', 'dark', 'neon'];
 
   return (
-    <div className="theme-wrapper" data-theme={theme}>
-      <div className="container">
-        <div className={chatOpen ? 'content-blur' : ''} style={{ transition: 'all 0.4s ease' }}>
+    <div className="container">
+      <div className={chatOpen ? 'content-blur' : ''} style={{ transition: 'all 0.4s ease' }}>
           <div className="controls-container">
             {/* Theme Toggle */}
             <div className="toggle-group">
@@ -382,7 +385,6 @@ function App() {
         </button>
       </div>
 
-      </div>
     </div>
   );
 }
