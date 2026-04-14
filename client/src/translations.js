@@ -48,9 +48,7 @@ const translations = {
     initialHello: "Namaste! I am OpenAid. How can I help you today?",
     theme: "Theme",
     light: "Light",
-    dark: "Dark",
-    neon: "Neon",
-    default: "Default"
+    dark: "Dark"
   },
   hi: {
     title: "ओपनएड (OpenAid)",
@@ -101,9 +99,7 @@ const translations = {
     initialHello: "नमस्ते! मैं ओपनएड हूँ। आज मैं आपकी कैसे मदद कर सकता हूँ?",
     theme: "थीम",
     light: "लाइट (Light)",
-    dark: "डार्क (Dark)",
-    neon: "नियॉन (Neon)",
-    default: "डिफ़ॉल्ट (Default)"
+    dark: "डार्क (Dark)"
   }
 };
 

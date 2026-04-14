@@ -30,7 +30,7 @@ const IndianFlag = ({ size = "1.2em" }) => (
 
 function App() {
   const [language, setLanguage] = useState('en');
-  const [theme, setTheme] = useState('default');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     document.body.setAttribute('data-theme', theme);
@@ -172,7 +172,10 @@ function App() {
     }
   };
 
-  const themes = ['default', 'light', 'dark', 'neon'];
+  const themes = [
+    { id: 'dark', icon: '🌙' },
+    { id: 'light', icon: '☀️' }
+  ];
 
   return (
     <div className="container">
@@ -180,13 +183,13 @@ function App() {
           <div className="controls-container">
             {/* Theme Toggle */}
             <div className="toggle-group">
-              {themes.map((tName) => (
+              {themes.map((th) => (
                 <button
-                  key={tName}
-                  className={`theme-btn ${theme === tName ? 'active' : ''}`}
-                  onClick={() => setTheme(tName)}
+                  key={th.id}
+                  className={`theme-btn ${theme === th.id ? 'active' : ''}`}
+                  onClick={() => setTheme(th.id)}
                 >
-                  {t(tName)}
+                  {th.icon} {t(th.id)}
                 </button>
               ))}
             </div>
