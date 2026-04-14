@@ -154,12 +154,12 @@ function App() {
           >हिंदी</button>
         </div>
 
-        <header style={{ textAlign: 'center', marginBottom: '4rem' }}>
+        <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <h1>{t('title')}</h1>
           <p style={{ color: 'var(--text-secondary)' }}>{t('subtitle')}</p>
         </header>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '2rem', alignItems: 'start' }}>
+      <div className="main-layout">
         {/* Form Section */}
         <div className="glass-card">
           <h2 style={{ marginBottom: '1.5rem' }}>{t('personalProfile')}</h2>
