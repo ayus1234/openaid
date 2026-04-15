@@ -8,14 +8,14 @@ OpenAid is a professional-grade dashboard designed to bridge the awareness gap i
 
 ## ✨ Features
 
-- **🌓 Dual-Theme Support**: Seamlessly toggle between a premium, deep-space **Dark Mode** and a clean, high-contrast **Light Mode**.
-- **📱 Mobile-First Design**: Fully responsive architecture that adapts perfectly to smartphones, tablets, and desktops.
-- **🌐 Full Multi-Language Support**: Seamlessly switch between **English** and **Hindi** for the entire platform including UI, search results, and AI logic.
-- **🎯 Dynamic Background Focus**: Premium "Focused Chat Mode" that elegantly blurs and dims the dashboard when the AI assistant is active.
-- **🤖 Intelligent AI Explanations**: Real-time, localized eligibility insights powered by Gemini 2.5 Flash. Now with synchronized multi-language support (English/Hindi).
-- **💬 Context-Aware Chatbot**: A smart assistant that respects your language preference—replying in Hindi mode even if you type in English/Hinglish.
-- **🛡️ Security Hardened**: Production-ready configuration with strict Content Security Policy (CSP) and optimized headers for Netlify.
-- **📊 Real-time Matching**: Instant eligibility confidence scores for 20+ major schemes with localized "No Match" feedback.
+- **🌓 Premium Theme Engine**: Seamlessly toggle between a premium, deep-space **Dark Mode** and a clean, high-contrast **Light Mode**.
+- **🇮🇳 Total India Coverage**: Verified support for all **28 States and 8 Union Territories** with localized results for every region.
+- **🎯 Dual-Government Selection**: Advanced filtering for both **Central Government** and **State Government** schemes.
+- **📊 200+ Personalized Schemes**: A massive database of verified schemes across every category (General, SC, ST, OBC, EWS) and occupation.
+- **🤖 Synchronized AI Assistant**: Context-aware chatbot powered by **Gemini 3.0 Flash** that is synchronized with the local scheme database for real-time, accurate advice.
+- **🌐 Dual-Language Logic**: Full multi-language support (**English & Hindi**) for UI, eligibility logic, and AI consultations.
+- **📱 Responsive Glassmorphism**: High-fidelity, mobile-first design that adapts perfectly to any device.
+- **🛡️ Secure Connectivity**: Production-ready architecture with strict Content Security Policy (CSP) and verified official government portal links.
 
 ---
 
@@ -25,9 +25,10 @@ OpenAid is a professional-grade dashboard designed to bridge the awareness gap i
 |------------|-----------------------------------|
 | **Frontend** | React 19 + Vite + CSS3 (Glassmorphism) |
 | **Backend**  | Node.js + Express (Robust API Layer) |
-| **AI Engine**| Google Gemini 2.5 Flash |
+| **AI Engine**| Google Gemini 3.0 Flash |
 | **Styling**  | Managed CSS Variables (Light/Dark themes) |
 | **I18n**     | Custom Multi-Language Engine (EN/HI) |
+| **Coverage** | 200+ Schemes (36 States & UTs) |
 | **Security** | Netlify-optimized CSP Headers |
 
 ---
@@ -56,6 +57,7 @@ npm start
 ```bash
 cd client
 npm install
+# Note: VITE_API_URL can be set if backend is not on standard localhost
 npm run dev
 ```
 
@@ -68,11 +70,11 @@ openaid/
 ├── client/              # High-fidelity React Frontend
 │   └── src/
 │       ├── App.jsx      # Core dashboard logic & theme management
-│       ├── translations.js # Multi-language dictionary
+│       ├── translations.js # Multi-language dictionary (all States/UTs)
 │       └── index.css    # Premium glassmorphism & theme tokens
 ├── server/              # Fast Express Backend
-│   ├── index.js         # API and AI integration
-│   └── schemes.json     # Localized scheme database
+│   ├── index.js         # API and AI integration (Smart Context Sync)
+│   └── schemes.json     # All-India 200+ scheme database
 ├── netlify.toml         # Security and Deployment config
 └── README.md
 ```
@@ -83,6 +85,7 @@ openaid/
 
 OpenAid was built to solve the **Awareness Crisis** in government welfare. By combining **localized AI logic** with a **mobile-first intuitive design**, it ensures that even the most digitally underserved citizens can find the help they are entitled to.
 
-- **Localized AI**: Doesn't just translate text; it thinks in the user's preferred language.
+- **Universal Data Coverage**: The only platform integrating localized eligibility for all 28 states and 8 union territories into a single context-aware experience.
+- **Localized AI**: Doesn't just translate text; it thinks in the user's preferred language (Gemini 3.0 Flash).
 - **Accessibility First**: Focused on speed, readability, and cultural relevance across all devices.
-- **Scalable Design**: Modular architecture built to seamlessly integrate hundreds of additional state and central schemes.
+- **Data-Driven Advice**: Chatbot intelligence is synchronized with the live scheme database for zero-hallucination support.
