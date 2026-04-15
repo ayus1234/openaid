@@ -50,6 +50,13 @@ const matchSchemes = (profile) => {
   return schemes.filter(scheme => {
     const e = scheme.eligibility;
 
+    // 0. Scheme Type (Central/State) & State Check
+    if (profile.schemeType === 'Central') {
+      if (scheme.type !== 'Central') return false;
+    } else if (profile.schemeType === 'State') {
+      if (scheme.type !== 'State' || (scheme.state && scheme.state !== profile.state)) return false;
+    }
+
     // 1. Universal Schemes Check
     // Some schemes like Insurance apply to everyone regardless of specific occupation
     if (e.universal) {

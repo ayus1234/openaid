@@ -42,6 +42,8 @@ function App() {
   };
 
   const [profile, setProfile] = useState({
+    schemeType: 'Central',
+    state: '',
     age: '',
     gender: '',
     occupation: '',
@@ -212,6 +214,51 @@ function App() {
         <div className="glass-card">
           <h2 style={{ marginBottom: '1.5rem' }}>{t('personalProfile')}</h2>
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+            <div>
+              <label>{t('schemeType')}</label>
+              <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', fontSize: '0.9rem' }}>
+                  <input 
+                    type="radio" 
+                    name="schemeType" 
+                    value="Central" 
+                    checked={profile.schemeType === 'Central'} 
+                    onChange={handleChange} 
+                  />
+                  {t('central')}
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', fontSize: '0.9rem' }}>
+                  <input 
+                    type="radio" 
+                    name="schemeType" 
+                    value="State" 
+                    checked={profile.schemeType === 'State'} 
+                    onChange={handleChange} 
+                  />
+                  {t('state')}
+                </label>
+              </div>
+            </div>
+
+            {profile.schemeType === 'State' && (
+              <div>
+                <label htmlFor="state-select">{t('selectState')}</label>
+                <select 
+                  id="state-select"
+                  name="state" 
+                  value={profile.state} 
+                  onChange={handleChange} 
+                  className="input-field" 
+                  required
+                >
+                  <option value="">{t('selectState')}</option>
+                  {Object.entries(translations[language].states).map(([key, val]) => (
+                    <option key={key} value={key}>{val}</option>
+                  ))}
+                </select>
+              </div>
+            )}
+
             <div>
               <label htmlFor="age-input">{t('age')}</label>
               <input 

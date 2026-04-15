@@ -1,5 +1,6 @@
 [
   {
+    "type": "Central",
     "id": "pm-kisan",
     "name": "PM Kisan Samman Nidhi",
     "name_hi": "पीएम किसान सम्मान निधि",
@@ -8,16 +9,25 @@
     "benefits": "₹6,000 per year in three equal installments.",
     "benefits_hi": "तीन समान किस्तों में ₹6,000 प्रति वर्ष।",
     "eligibility": {
-      "occupation": ["Farmer"],
+      "occupation": [
+        "Farmer"
+      ],
       "landholding": true,
       "incomeLimit": null,
-      "ageRange": [18, null],
+      "ageRange": [
+        18,
+        null
+      ],
       "gender": "All"
     },
-    "tags": ["Agriculture", "Income Support"],
+    "tags": [
+      "Agriculture",
+      "Income Support"
+    ],
     "link": "https://pmkisan.gov.in/"
   },
   {
+    "type": "Central",
     "id": "ayushman-bharat",
     "name": "Ayushman Bharat (PM-JAY)",
     "name_hi": "आयुष्मान भारत (पीएम-जेएवाई)",
@@ -26,15 +36,30 @@
     "benefits": "Health cover of ₹5 lakh per family per year.",
     "benefits_hi": "प्रति परिवार प्रति वर्ष ₹5 लाख का स्वास्थ्य कवर।",
     "eligibility": {
-      "category": ["Low Income", "BPL"],
-      "occupation": ["Laborer", "Unorganized Sector", "Farmer", "Unemployed"],
-      "ageRange": [0, null],
+      "category": [
+        "Low Income",
+        "BPL"
+      ],
+      "occupation": [
+        "Laborer",
+        "Unorganized Sector",
+        "Farmer",
+        "Unemployed"
+      ],
+      "ageRange": [
+        0,
+        null
+      ],
       "gender": "All"
     },
-    "tags": ["Healthcare", "Insurance"],
+    "tags": [
+      "Healthcare",
+      "Insurance"
+    ],
     "link": "https://pmjay.gov.in/"
   },
   {
+    "type": "Central",
     "id": "pm-ujjwala",
     "name": "PM Ujjwala Yojana",
     "name_hi": "पीएम उज्ज्वला योजना",
@@ -44,13 +69,24 @@
     "benefits_hi": "मुफ्त एलपीजी कनेक्शन और पहली रिफिल।",
     "eligibility": {
       "gender": "Female",
-      "ageRange": [18, null],
-      "category": ["BPL", "SC", "ST"]
+      "ageRange": [
+        18,
+        null
+      ],
+      "category": [
+        "BPL",
+        "SC",
+        "ST"
+      ]
     },
-    "tags": ["Energy", "Women Welfare"],
+    "tags": [
+      "Energy",
+      "Women Welfare"
+    ],
     "link": "https://www.pmuy.gov.in/"
   },
   {
+    "type": "Central",
     "id": "stand-up-india",
     "name": "Stand Up India",
     "name_hi": "स्टैंड अप इंडिया",
@@ -60,14 +96,27 @@
     "benefits_hi": "₹10 लाख और ₹1 करोड़ के बीच बैंक ऋण।",
     "eligibility": {
       "gender": "Female",
-      "category": ["SC", "ST"],
-      "ageRange": [18, null],
-      "occupation": ["Entrepreneur", "Business"]
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "ageRange": [
+        18,
+        null
+      ],
+      "occupation": [
+        "Entrepreneur",
+        "Business"
+      ]
     },
-    "tags": ["Business", "Loans"],
+    "tags": [
+      "Business",
+      "Loans"
+    ],
     "link": "https://www.standupmitra.in/"
   },
   {
+    "type": "Central",
     "id": "pm-awas-urban",
     "name": "PM Awas Yojana (Urban)",
     "name_hi": "पीएम आवास योजना (शहरी)",
@@ -77,13 +126,20 @@
     "benefits_hi": "आवास ऋण पर रियायती ब्याज दर।",
     "eligibility": {
       "incomeLimit": 1800000,
-      "ageRange": [18, null],
+      "ageRange": [
+        18,
+        null
+      ],
       "urban": true
     },
-    "tags": ["Housing", "Urban Development"],
+    "tags": [
+      "Housing",
+      "Urban Development"
+    ],
     "link": "https://pmay-urban.gov.in/"
   },
   {
+    "type": "Central",
     "id": "sukanya-samriddhi",
     "name": "Sukanya Samriddhi Yojana",
     "name_hi": "सुकन्या समृद्धि योजना",
@@ -93,12 +149,19 @@
     "benefits_hi": "बालिका शिक्षा/विवाह के लिए उच्च ब्याज दर और कर लाभ।",
     "eligibility": {
       "gender": "Female",
-      "ageRange": [0, 10]
+      "ageRange": [
+        0,
+        10
+      ]
     },
-    "tags": ["Savings", "Girl Child"],
+    "tags": [
+      "Savings",
+      "Girl Child"
+    ],
     "link": "https://www.indiapost.gov.in/"
   },
   {
+    "type": "Central",
     "id": "atal-pension",
     "name": "Atal Pension Yojana",
     "name_hi": "अटल पेंशन योजना",
@@ -107,14 +170,27 @@
     "benefits": "Guaranteed minimum pension of ₹1,000 to ₹5,000 per month.",
     "benefits_hi": "₹1,000 से ₹5,000 प्रति माह की गारंटीकृत न्यूनतम पेंशन।",
     "eligibility": {
-      "ageRange": [18, 40],
-      "category": ["Low Income"],
-      "occupation": ["Unorganized Sector", "Laborer", "Farmer"]
+      "ageRange": [
+        18,
+        40
+      ],
+      "category": [
+        "Low Income"
+      ],
+      "occupation": [
+        "Unorganized Sector",
+        "Laborer",
+        "Farmer"
+      ]
     },
-    "tags": ["Pension", "Social Security"],
+    "tags": [
+      "Pension",
+      "Social Security"
+    ],
     "link": "https://www.npscra.nsdl.co.in/atal-pension-yojana.php"
   },
   {
+    "type": "Central",
     "id": "pm-mudra",
     "name": "PM MUDRA Yojana",
     "name_hi": "पीएम मुद्रा योजना",
@@ -123,13 +199,24 @@
     "benefits": "Loans up to ₹10 lakh under Shishu, Kishore, and Tarun categories.",
     "benefits_hi": "शिशु, किशोर और तरुण श्रेणियों के तहत ₹10 लाख तक का ऋण।",
     "eligibility": {
-      "occupation": ["Entrepreneur", "Small Business", "Self-Employed"],
-      "ageRange": [18, null]
+      "occupation": [
+        "Entrepreneur",
+        "Small Business",
+        "Self-Employed"
+      ],
+      "ageRange": [
+        18,
+        null
+      ]
     },
-    "tags": ["Business", "Loans"],
+    "tags": [
+      "Business",
+      "Loans"
+    ],
     "link": "https://www.mudra.org.in/"
   },
   {
+    "type": "Central",
     "id": "pm-vidyalaxmi",
     "name": "PM Vidyalaxmi",
     "name_hi": "पीएम विद्यालक्ष्मी",
@@ -138,14 +225,23 @@
     "benefits": "Collateral-free, guarantor-free education loans with interest subvention.",
     "benefits_hi": "ब्याज सब्सिडी के साथ संपार्श्विक-मुक्त, गारंटर-मुक्त शिक्षा ऋण।",
     "eligibility": {
-      "occupation": ["Student"],
-      "ageRange": [15, 30],
+      "occupation": [
+        "Student"
+      ],
+      "ageRange": [
+        15,
+        30
+      ],
       "incomeLimit": 800000
     },
-    "tags": ["Education", "Students"],
+    "tags": [
+      "Education",
+      "Students"
+    ],
     "link": "https://pmvidyalaxmi.co.in/"
   },
   {
+    "type": "Central",
     "id": "scss",
     "name": "Senior Citizen Savings Scheme (SCSS)",
     "name_hi": "वरिष्ठ नागरिक बचत योजना (एससीएसएस)",
@@ -154,12 +250,19 @@
     "benefits": "High interest rate (8.2%) with quarterly payouts.",
     "benefits_hi": "त्रैमासिक भुगतान के साथ उच्च ब्याज दर (8.2%)।",
     "eligibility": {
-      "ageRange": [60, null]
+      "ageRange": [
+        60,
+        null
+      ]
     },
-    "tags": ["Savings", "Senior Citizens"],
+    "tags": [
+      "Savings",
+      "Senior Citizens"
+    ],
     "link": "https://www.indiapost.gov.in/"
   },
   {
+    "type": "Central",
     "id": "pm-vishwakarma",
     "name": "PM Vishwakarma",
     "name_hi": "पीएम विश्वकर्मा",
@@ -168,13 +271,27 @@
     "benefits": "Skill training, toolkits, and collateral-free loans at 5% interest.",
     "benefits_hi": "कौशल प्रशिक्षण, टूलकिट और 5% ब्याज पर संपार्श्विक-मुक्त ऋण।",
     "eligibility": {
-      "occupation": ["Artisan", "Tailor", "Carpenter", "Blacksmith", "Barber", "Potter"],
-      "ageRange": [18, null]
+      "occupation": [
+        "Artisan",
+        "Tailor",
+        "Carpenter",
+        "Blacksmith",
+        "Barber",
+        "Potter"
+      ],
+      "ageRange": [
+        18,
+        null
+      ]
     },
-    "tags": ["Skills", "Livelihood"],
+    "tags": [
+      "Skills",
+      "Livelihood"
+    ],
     "link": "https://pmvishwakarma.gov.in/"
   },
   {
+    "type": "Central",
     "id": "pmsbym",
     "name": "PM Suraksha Bima Yojana",
     "name_hi": "पीएम सुरक्षा बीमा योजना",
@@ -183,13 +300,20 @@
     "benefits": "₹2 lakh cover for accidental death for only ₹20 premium per year.",
     "benefits_hi": "केवल ₹20 प्रति वर्ष प्रीमियम पर दुर्घटना मृत्यु के लिए ₹2 लाख का कवर।",
     "eligibility": {
-      "ageRange": [18, 70],
+      "ageRange": [
+        18,
+        70
+      ],
       "universal": true
     },
-    "tags": ["Insurance", "Social Security"],
+    "tags": [
+      "Insurance",
+      "Social Security"
+    ],
     "link": "https://www.jansuraksha.gov.in/"
   },
   {
+    "type": "Central",
     "id": "pmjjby",
     "name": "PM Jeevan Jyoti Bima Yojana",
     "name_hi": "पीएम जीवन ज्योति बीमा योजना",
@@ -198,13 +322,20 @@
     "benefits": "₹2 lakh life cover for a low annual premium.",
     "benefits_hi": "कम वार्षिक प्रीमियम पर ₹2 लाख का जीवन कवर।",
     "eligibility": {
-      "ageRange": [18, 50],
+      "ageRange": [
+        18,
+        50
+      ],
       "universal": true
     },
-    "tags": ["Insurance", "Social Security"],
+    "tags": [
+      "Insurance",
+      "Social Security"
+    ],
     "link": "https://www.jansuraksha.gov.in/"
   },
   {
+    "type": "Central",
     "id": "mahila-samman",
     "name": "Mahila Samman Savings Certificate",
     "name_hi": "महिला सम्मान बचत प्रमाणपत्र",
@@ -214,12 +345,19 @@
     "benefits_hi": "कर लाभ के साथ 2 वर्षों के लिए 7.5% की निश्चित ब्याज दर।",
     "eligibility": {
       "gender": "Female",
-      "ageRange": [0, null]
+      "ageRange": [
+        0,
+        null
+      ]
     },
-    "tags": ["Savings", "Women Welfare"],
+    "tags": [
+      "Savings",
+      "Women Welfare"
+    ],
     "link": "https://www.indiapost.gov.in/"
   },
   {
+    "type": "Central",
     "id": "pm-vaya-vandana",
     "name": "PM Vaya Vandana Yojana",
     "name_hi": "पीएम वय वंदना योजना",
@@ -228,12 +366,19 @@
     "benefits": "Guaranteed annual return for 10 years.",
     "benefits_hi": "10 वर्षों के लिए गारंटीकृत वार्षिक रिटर्न।",
     "eligibility": {
-      "ageRange": [60, null]
+      "ageRange": [
+        60,
+        null
+      ]
     },
-    "tags": ["Pension", "Senior Citizens"],
+    "tags": [
+      "Pension",
+      "Senior Citizens"
+    ],
     "link": "https://www.licindia.in/"
   },
   {
+    "type": "Central",
     "id": "pmkvy",
     "name": "PM Kaushal Vikas Yojana",
     "name_hi": "पीएम कौशल विकास योजना",
@@ -242,13 +387,23 @@
     "benefits": "Free skill training and certification for better jobs.",
     "benefits_hi": "बेहतर नौकरियों के लिए मुफ्त कौशल प्रशिक्षण और प्रमाणन।",
     "eligibility": {
-      "occupation": ["Unemployed", "Student"],
-      "ageRange": [15, 45]
+      "occupation": [
+        "Unemployed",
+        "Student"
+      ],
+      "ageRange": [
+        15,
+        45
+      ]
     },
-    "tags": ["Skills", "Education"],
+    "tags": [
+      "Skills",
+      "Education"
+    ],
     "link": "https://www.skillindiadigital.gov.in/pmkvy-landing"
   },
   {
+    "type": "Central",
     "id": "ab-pmjay-senior",
     "name": "Ayushman Bharat (Senior Citizens 70+)",
     "name_hi": "आयुष्मान भारत (वरिष्ठ नागरिक 70+)",
@@ -257,13 +412,20 @@
     "benefits": "Health cover of ₹5 lakh per year regardless of income.",
     "benefits_hi": "आय की परवाह किए बिना प्रति वर्ष ₹5 लाख का स्वास्थ्य कवर।",
     "eligibility": {
-      "ageRange": [70, null],
+      "ageRange": [
+        70,
+        null
+      ],
       "universal": true
     },
-    "tags": ["Healthcare", "Senior Citizens"],
+    "tags": [
+      "Healthcare",
+      "Senior Citizens"
+    ],
     "link": "https://dashboard.nha.gov.in/public-dashboard"
   },
   {
+    "type": "Central",
     "id": "svanidhi",
     "name": "PM SVANidhi",
     "name_hi": "पीएम स्वानिधि",
@@ -272,13 +434,23 @@
     "benefits": "Working capital loan up to ₹10,000 for urban livelihoods.",
     "benefits_hi": "शहरी आजीविका के लिए ₹10,000 तक का कार्यशील पूंजी ऋण।",
     "eligibility": {
-      "occupation": ["Street Vendor", "Small Business"],
-      "ageRange": [18, null]
+      "occupation": [
+        "Street Vendor",
+        "Small Business"
+      ],
+      "ageRange": [
+        18,
+        null
+      ]
     },
-    "tags": ["Loans", "Urban Poor"],
+    "tags": [
+      "Loans",
+      "Urban Poor"
+    ],
     "link": "https://pmsvanidhi.mohua.gov.in/"
   },
   {
+    "type": "Central",
     "id": "pm-sym",
     "name": "PM Shram Yogi Maandhan",
     "name_hi": "पीएम श्रम योगी मानधन",
@@ -287,14 +459,25 @@
     "benefits": "Assured monthly pension of ₹3,000.",
     "benefits_hi": "₹3,000 की सुनिश्चित मासिक पेंशन।",
     "eligibility": {
-      "ageRange": [18, 40],
-      "occupation": ["Laborer", "Unorganized Sector", "Street Vendor"],
+      "ageRange": [
+        18,
+        40
+      ],
+      "occupation": [
+        "Laborer",
+        "Unorganized Sector",
+        "Street Vendor"
+      ],
       "incomeLimit": 180000
     },
-    "tags": ["Pension", "Social Security"],
+    "tags": [
+      "Pension",
+      "Social Security"
+    ],
     "link": "https://maandhan.in/"
   },
   {
+    "type": "Central",
     "id": "post-matric-scholarship",
     "name": "Post Matric Scholarship for SC/ST",
     "name_hi": "एससी/एसटी के लिए पोस्ट मैट्रिक छात्रवृत्ति",
@@ -303,14 +486,23 @@
     "benefits": "Reimbursement of tuition fees and maintenance allowance.",
     "benefits_hi": "शिक्षण शुल्क की प्रतिपूर्ति और रखरखाव भत्ता।",
     "eligibility": {
-      "occupation": ["Student"],
-      "category": ["SC", "ST"],
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
       "incomeLimit": 250000
     },
-    "tags": ["Education", "Scholarship"],
+    "tags": [
+      "Education",
+      "Scholarship"
+    ],
     "link": "https://scholarships.gov.in/"
   },
   {
+    "type": "Central",
     "id": "post-matric-obc",
     "name": "Post Matric Scholarship for OBC Students",
     "name_hi": "ओबीसी छात्रों के लिए पोस्ट मैट्रिक छात्रवृत्ति",
@@ -319,14 +511,22 @@
     "benefits": "Provides tuition fee reimbursement and maintenance allowance for higher studies.",
     "benefits_hi": "उच्च शिक्षा के लिए शिक्षण शुल्क प्रतिपूर्ति और रखरखाव भत्ता प्रदान करता है।",
     "eligibility": {
-      "occupation": ["Student"],
-      "category": ["OBC"],
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
       "incomeLimit": 250000
     },
-    "tags": ["Education", "Scholarship"],
+    "tags": [
+      "Education",
+      "Scholarship"
+    ],
     "link": "https://scholarships.gov.in/"
   },
   {
+    "type": "Central",
     "id": "post-matric-ews",
     "name": "Post Matric Scholarship for EWS Students",
     "name_hi": "ईडब्ल्यूएस छात्रों के लिए पोस्ट मैट्रिक छात्रवृत्ति",
@@ -335,14 +535,22 @@
     "benefits": "Financial assistance for pursuing post-matric courses in recognized institutions.",
     "benefits_hi": "मान्यता प्राप्त संस्थानों में पोस्ट-मैट्रिक पाठ्यक्रम करने के लिए वित्तीय सहायता।",
     "eligibility": {
-      "occupation": ["Student"],
-      "category": ["EWS"],
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS"
+      ],
       "incomeLimit": 800000
     },
-    "tags": ["Education", "Scholarship"],
+    "tags": [
+      "Education",
+      "Scholarship"
+    ],
     "link": "https://scholarships.gov.in/"
   },
   {
+    "type": "Central",
     "id": "pm-ajay-sc",
     "name": "PM-AJAY (Pradhan Mantri Anusuchit Jaati Abhyuday Yojana)",
     "name_hi": "पीएम-अजय (Pradhan Mantri Anusuchit Jaati Abhyuday Yojana)",
@@ -351,13 +559,19 @@
     "benefits": "Livelihood projects and infrastructure development in SC-concentrated villages.",
     "benefits_hi": "अनुसूचित जाति बहुल गांवों में आजीविका परियोजनाएं और बुनियादी ढांचे का विकास।",
     "eligibility": {
-      "category": ["SC"],
+      "category": [
+        "SC"
+      ],
       "incomeLimit": 250000
     },
-    "tags": ["Development", "SC Welfare"],
+    "tags": [
+      "Development",
+      "SC Welfare"
+    ],
     "link": "https://pmajay.dosje.gov.in"
   },
   {
+    "type": "Central",
     "id": "national-fellowship-st",
     "name": "National Fellowship for ST Students",
     "name_hi": "अनुसूचित जनजाति के छात्रों के लिए राष्ट्रीय फेलोशिप",
@@ -366,14 +580,22 @@
     "benefits": "Monthly stipend and contingency grants for higher research.",
     "benefits_hi": "उच्च शोध के लिए मासिक वजीफा और आकस्मिक अनुदान।",
     "eligibility": {
-      "occupation": ["Student"],
-      "category": ["ST"],
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "ST"
+      ],
       "academic": "Research"
     },
-    "tags": ["Education", "Research"],
+    "tags": [
+      "Education",
+      "Research"
+    ],
     "link": "https://tribal.nic.in/ScholarshiP.aspx"
   },
   {
+    "type": "Central",
     "id": "pmay-g-ews",
     "name": "PM Awas Yojana (Gramin) - EWS Category",
     "name_hi": "पीएम आवास योजना (ग्रामीण) - ईडब्ल्यूएस श्रेणी",
@@ -382,11 +604,411 @@
     "benefits": "Financial grant for construction of pucca houses in rural areas.",
     "benefits_hi": "ग्रामीण क्षेत्रों में पक्के मकानों के निर्माण के लिए वित्तीय अनुदान।",
     "eligibility": {
-      "category": ["EWS"],
+      "category": [
+        "EWS"
+      ],
       "incomeLimit": 300000,
       "urban": false
     },
-    "tags": ["Housing", "Rural Development"],
+    "tags": [
+      "Housing",
+      "Rural Development"
+    ],
     "link": "https://pmayg.dord.gov.in/netiayHome/Home.aspx"
+  },
+  {
+    "type": "State",
+    "state": "Uttar Pradesh",
+    "id": "up-pms-sc",
+    "name": "UP Post Matric Scholarship (SC/ST/General)",
+    "name_hi": "यूपी पोस्ट मैट्रिक छात्रवृत्ति (SC/ST/सामान्य)",
+    "description": "Scholarship for students in UP from SC, ST and General categories.",
+    "description_hi": "SC, ST और सामान्य श्रेणियों के यूपी के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Full tuition fee reimbursement and maintenance allowance.",
+    "benefits_hi": "पूर्ण शिक्षण शुल्क प्रतिपूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST",
+        "General",
+        "EWS"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "UP"
+    ],
+    "link": "https://scholarship.up.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttar Pradesh",
+    "id": "up-pms-obc",
+    "name": "UP Post Matric Scholarship (OBC)",
+    "name_hi": "यूपी पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Uttar Pradesh.",
+    "description_hi": "उत्तर प्रदेश में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Reimbursement of fees and fixed monthly allowance.",
+    "benefits_hi": "शुल्क की प्रतिपूर्ति और निश्चित मासिक भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "UP"
+    ],
+    "link": "https://scholarship.up.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Bihar",
+    "id": "bihar-pms-bc-ebc",
+    "name": "Bihar Post Matric Scholarship (BC/EBC)",
+    "name_hi": "बिहार पोस्ट मैट्रिक छात्रवृत्ति (BC/EBC)",
+    "description": "Financial assistance for BC and EBC students in Bihar.",
+    "description_hi": "बिहार में बीसी और ईबीसी छात्रों के लिए वित्तीय सहायता।",
+    "benefits": "Scholarship amount based on course fee and maintenance.",
+    "benefits_hi": "पाठ्यक्रम शुल्क और रखरखाव के आधार पर छात्रवृत्ति राशि।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 300000
+    },
+    "tags": [
+      "Scholarship",
+      "Bihar"
+    ],
+    "link": "https://pmsonline.bih.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Bihar",
+    "id": "bihar-kanya-utthan",
+    "name": "Mukhyamantri Kanya Utthan Yojana",
+    "name_hi": "मुख्यमंत्री कन्या उत्थान योजना",
+    "description": "Incentive for girl students in Bihar to promote education.",
+    "description_hi": "शिक्षा को बढ़ावा देने के लिए बिहार में छात्राओं के लिए प्रोत्साहन।",
+    "benefits": "Financial reward of up to ₹50,000 upon graduation.",
+    "benefits_hi": "स्नातक होने पर ₹50,000 तक का वित्तीय इनाम।",
+    "eligibility": {
+      "gender": "Female",
+      "occupation": [
+        "Student"
+      ],
+      "state": "Bihar"
+    },
+    "tags": [
+      "Women Welfare",
+      "Bihar"
+    ],
+    "link": "https://edudbt.bih.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Maharashtra",
+    "id": "maha-ebc-fees",
+    "name": "Rajarshi Chhatrapati Shahu Maharaj Fee Reimbursement",
+    "name_hi": "राजर्षि छत्रपति शाहू महाराज शुल्क प्रतिपूर्ति",
+    "description": "50% fee reimbursement for EWS and OBC students in Maharashtra.",
+    "description_hi": "महाराष्ट्र में ईडब्ल्यूएस और ओबीसी छात्रों के लिए 50% शुल्क प्रतिपूर्ति।",
+    "benefits": "50% reduction in tuition and exam fees for professional courses.",
+    "benefits_hi": "व्यावसायिक पाठ्यक्रमों के लिए शिक्षण और परीक्षा शुल्क में 50% की कमी।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "OBC",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Education",
+      "Maharashtra"
+    ],
+    "link": "https://mahadbt.maharashtra.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Maharashtra",
+    "id": "maha-swadhar",
+    "name": "Dr. Babasaheb Ambedkar Swadhar Yojana",
+    "name_hi": "डॉ. बाबासाहेब अंबेडकर स्वाधार योजना",
+    "description": "Scholarship for SC/Nav-Buddhist students for higher education in Maharashtra.",
+    "description_hi": "महाराष्ट्र में उच्च शिक्षा के लिए अनुसूचित जाति/नव-बौद्ध छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Maintenance allowance of up to ₹60,000 per year for living expenses.",
+    "benefits_hi": "रहने के खर्च के लिए प्रति वर्ष ₹60,000 तक का रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Education",
+      "Maharashtra"
+    ],
+    "link": "https://sjsa.maharashtra.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Karnataka",
+    "id": "karnataka-ssp-sc-st",
+    "name": "Karnataka Post Matric Scholarship (SC/ST)",
+    "name_hi": "कर्नाटक पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Karnataka through SSP.",
+    "description_hi": "SSP के माध्यम से कर्नाटक में SC/ST छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Course fee reimbursement and monthly stipend.",
+    "benefits_hi": "पाठ्यक्रम शुल्क प्रतिपूर्ति और मासिक वजीफा।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Karnataka"
+    ],
+    "link": "https://ssp.postmatric.karnataka.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Karnataka",
+    "id": "karnataka-vidyasiri",
+    "name": "Karnataka Vidyasiri (Food & Accommodation)",
+    "name_hi": "कर्नाटक विद्यासिरी (भोजन और आवास)",
+    "description": "Food and accommodation allowance for OBC students in Karnataka.",
+    "description_hi": "कर्नाटक में ओबीसी छात्रों के लिए भोजन और आवास भत्ता।",
+    "benefits": "₹1,500 per month for food and hostel expenses.",
+    "benefits_hi": "भोजन और छात्रावास के खर्च के लिए ₹1,500 प्रति माह।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Karnataka"
+    ],
+    "link": "https://backwardclasses.kar.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Tamil Nadu",
+    "id": "tn-adim-pms",
+    "name": "TN Post Matric Scholarship (Adi Dravidar/Tribal)",
+    "name_hi": "तमिलनाडु पोस्ट मैट्रिक छात्रवृत्ति (आदि द्रविड़/जनजाति)",
+    "description": "Scholarship for SC/ST students in Tamil Nadu.",
+    "description_hi": "तमिलनाडु में SC/ST छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Maintenance allowance and special fees reimbursement.",
+    "benefits_hi": "रखरखाव भत्ता और विशेष शुल्क प्रतिपूर्ति।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Tamil Nadu"
+    ],
+    "link": "https://www.tn.gov.in/scheme/data_view/40432"
+  },
+  {
+    "type": "State",
+    "state": "Rajasthan",
+    "id": "rajasthan-pms-sc-st-obc",
+    "name": "Rajasthan Post Matric Scholarship",
+    "name_hi": "राजस्थान पोस्ट मैट्रिक छात्रवृत्ति",
+    "description": "Financial aid for students of Rajasthan belonging to SC, ST and OBC.",
+    "description_hi": "SC, ST और OBC से संबंधित राजस्थान के छात्रों के लिए वित्तीय सहायता।",
+    "benefits": "Scholarship for education and professional courses.",
+    "benefits_hi": "शिक्षा और व्यावसायिक पाठ्यक्रमों के लिए छात्रवृत्ति।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST",
+        "OBC",
+        "SBC"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Rajasthan"
+    ],
+    "link": "https://sjms.rajasthan.gov.in/sjms/Login.aspx"
+  },
+  {
+    "type": "State",
+    "state": "West Bengal",
+    "id": "wb-oasis-pms",
+    "name": "West Bengal Oasis Scholarship",
+    "name_hi": "पश्चिम बंगाल ओएसिस छात्रवृत्ति",
+    "description": "Scholarship portal for SC, ST and OBC students in West Bengal.",
+    "description_hi": "पश्चिम बंगाल में SC, ST और OBC छात्रों के लिए छात्रवृत्ति पोर्टल।",
+    "benefits": "Grant for pre-matric and post-matric education.",
+    "benefits_hi": "प्री-मैट्रिक और पोस्ट-मैट्रिक शिक्षा के लिए अनुदान।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST",
+        "OBC"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "West Bengal"
+    ],
+    "link": "https://oasis.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Delhi",
+    "id": "delhi-pms-sc-st-obc",
+    "name": "Delhi SC/ST/OBC Scholarship",
+    "name_hi": "दिल्ली SC/ST/OBC छात्रवृत्ति",
+    "description": "State-funded scholarship for Delhi residents.",
+    "description_hi": "दिल्ली के निवासियों के लिए राज्य वित्त पोषित छात्रवृत्ति।",
+    "benefits": "Maintenance and fee reimbursement for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए रखरखाव और शुल्क प्रतिपूर्ति।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST",
+        "OBC"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Delhi"
+    ],
+    "link": "https://edistrict.delhigovt.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Madhya Pradesh",
+    "id": "mp-pms-sc-st-obc",
+    "name": "MP Post Matric Scholarship",
+    "name_hi": "एमपी पोस्ट मैट्रिक छात्रवृत्ति",
+    "description": "Scholarship for backward classes in Madhya Pradesh.",
+    "description_hi": "मध्य प्रदेश में पिछड़े वर्गों के लिए छात्रवृत्ति।",
+    "benefits": "Financial support for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST",
+        "OBC"
+      ],
+      "incomeLimit": 300000
+    },
+    "tags": [
+      "Scholarship",
+      "Madhya Pradesh"
+    ],
+    "link": "https://www.scholarshipportal.mp.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Gujarat",
+    "id": "gujarat-digital-guj-pms",
+    "name": "Digital Gujarat Post Matric Scholarship",
+    "name_hi": "डिजिटल गुजरात पोस्ट मैट्रिक छात्रवृत्ति",
+    "description": "Portal for various state scholarships in Gujarat.",
+    "description_hi": "गुजरात में विभिन्न राज्य छात्रवृत्तियों के लिए पोर्टल।",
+    "benefits": "Scholarship and fee reimbursement for SC/ST/OBC students.",
+    "benefits_hi": "SC/ST/OBC छात्रों के लिए छात्रवृत्ति और शुल्क प्रतिपूर्ति।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST",
+        "OBC",
+        "EWS"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Gujarat"
+    ],
+    "link": "https://www.digitalgujarat.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Kerala",
+    "id": "kerala-e-grantz",
+    "name": "Kerala e-Grantz 3.0",
+    "name_hi": "केरल ई-ग्रांट्ज़ 3.0",
+    "description": "Direct benefit transfer for students in Kerala.",
+    "description_hi": "केरल में छात्रों के लिए प्रत्यक्ष लाभ हस्तांतरण।",
+    "benefits": "Course fee and hostel fee reimbursement.",
+    "benefits_hi": "पाठ्यक्रम शुल्क और छात्रावास शुल्क प्रतिपूर्ति।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST",
+        "OBC",
+        "EWS"
+      ],
+      "incomeLimit": 100000
+    },
+    "tags": [
+      "Scholarship",
+      "Kerala"
+    ],
+    "link": "https://www.egrantz.kerala.gov.in/"
   }
 ]
