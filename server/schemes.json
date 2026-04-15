@@ -355,7 +355,7 @@
       "incomeLimit": 250000
     },
     "tags": ["Development", "SC Welfare"],
-    "link": "https://socialjustice.gov.in/schemes/73"
+    "link": "https://pmajay.dosje.gov.in"
   },
   {
     "id": "national-fellowship-st",
@@ -387,6 +387,6 @@
       "urban": false
     },
     "tags": ["Housing", "Rural Development"],
-    "link": "https://pmayg.nic.in/"
+    "link": "https://pmayg.dord.gov.in/netiayHome/Home.aspx"
   }
 ]
