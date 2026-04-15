@@ -144,7 +144,13 @@ function App() {
       const response = await fetch(`${baseUrl}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userMessage.text, history: messages, lang: language })
+        body: JSON.stringify({ 
+          message: userMessage.text, 
+          history: messages, 
+          lang: language,
+          profile: profile,
+          matchedSchemes: schemes.map(s => ({ name: s.name, benefits: s.benefits })) // Send simplified context
+        })
       });
 
       if (!response.ok) {

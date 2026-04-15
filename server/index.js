@@ -156,7 +156,7 @@ app.post('/api/explain', async (req, res) => {
 });
 
 app.post('/api/chat', async (req, res) => {
-  const { message, history = [], lang = 'en' } = req.body;
+  const { message, history = [], lang = 'en', profile = {}, matchedSchemes = [] } = req.body;
   console.log(`Incoming chat request [${lang}]:`, message);
 
   const aiModel = initAI();
@@ -167,11 +167,21 @@ app.post('/api/chat', async (req, res) => {
 
   try {
     const languageName = lang === 'hi' ? 'Hindi' : 'English';
-    const systemPrompt = `You are OpenAid, a helpful assistant for Indian government welfare schemes. 
-Know about: PM Kisan, Ayushman Bharat, PM Ujjwala, MUDRA Yojana, PM Vidyalaxmi, Atal Pension, PM Vishwakarma, and more.
+    let contextStr = "";
+    if (profile.age) {
+      contextStr = `The user is a ${profile.age} year old ${profile.gender} ${profile.occupation} from ${profile.state || 'India'}. `;
+    }
+    if (matchedSchemes.length > 0) {
+      contextStr += `They have matched with the following schemes: ${matchedSchemes.map(s => s.name).join(', ')}. `;
+    }
+
+    const systemPrompt = `You are OpenAid, a professional and friendly assistant for Indian government welfare schemes. 
+You now support schemes for all 28 States and 8 Union Territories of India.
+Current Context: ${contextStr}
+Know about: PM Kisan, Ayushman Bharat, PM Ujjwala, State Post-Matric Scholarships (all states), and all regional DBT schemes.
 STRICT RULE: You must respond ONLY in ${languageName}. 
 Even if the user types in English, if the language mode is ${languageName}, you must reply ONLY in ${languageName}.
-Keep answers short, friendly and professional.`;
+Help the user understand their eligible schemes and how to apply. Keep answers short, friendly and professional.`;
 
     const fullMessage = history.length === 0
       ? `${systemPrompt}\n\nUser: ${message}\nAssistant [In ${languageName}]:`
