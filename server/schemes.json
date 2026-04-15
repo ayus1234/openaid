@@ -618,42 +618,40 @@
   },
   {
     "type": "State",
-    "state": "Uttar Pradesh",
-    "id": "up-pms-sc",
-    "name": "UP Post Matric Scholarship (SC/ST/General)",
-    "name_hi": "यूपी पोस्ट मैट्रिक छात्रवृत्ति (SC/ST/सामान्य)",
-    "description": "Scholarship for students in UP from SC, ST and General categories.",
-    "description_hi": "SC, ST और सामान्य श्रेणियों के यूपी के छात्रों के लिए छात्रवृत्ति।",
-    "benefits": "Full tuition fee reimbursement and maintenance allowance.",
-    "benefits_hi": "पूर्ण शिक्षण शुल्क प्रतिपूर्ति और रखरखाव भत्ता।",
+    "state": "Andhra Pradesh",
+    "id": "andhra-pradesh-sc-st-pms",
+    "name": "Andhra Pradesh Post Matric Scholarship (SC/ST)",
+    "name_hi": "आंध्र प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Andhra Pradesh per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार आंध्र प्रदेश में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
         "SC",
-        "ST",
-        "General",
-        "EWS"
+        "ST"
       ],
       "incomeLimit": 250000
     },
     "tags": [
       "Scholarship",
-      "UP"
+      "Andhra Pradesh"
     ],
-    "link": "https://scholarship.up.gov.in/"
+    "link": "https://jnanabhumi.ap.gov.in/"
   },
   {
     "type": "State",
-    "state": "Uttar Pradesh",
-    "id": "up-pms-obc",
-    "name": "UP Post Matric Scholarship (OBC)",
-    "name_hi": "यूपी पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
-    "description": "Scholarship for OBC students in Uttar Pradesh.",
-    "description_hi": "उत्तर प्रदेश में ओबीसी छात्रों के लिए छात्रवृत्ति।",
-    "benefits": "Reimbursement of fees and fixed monthly allowance.",
-    "benefits_hi": "शुल्क की प्रतिपूर्ति और निश्चित मासिक भत्ता।",
+    "state": "Andhra Pradesh",
+    "id": "andhra-pradesh-obc-pms",
+    "name": "Andhra Pradesh Post Matric Scholarship (OBC)",
+    "name_hi": "आंध्र प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Andhra Pradesh based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर आंध्र प्रदेश में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
     "eligibility": {
       "occupation": [
         "Student"
@@ -665,20 +663,114 @@
     },
     "tags": [
       "Scholarship",
-      "UP"
+      "Andhra Pradesh"
     ],
-    "link": "https://scholarship.up.gov.in/"
+    "link": "https://jnanabhumi.ap.gov.in/"
   },
   {
     "type": "State",
-    "state": "Bihar",
-    "id": "bihar-pms-bc-ebc",
-    "name": "Bihar Post Matric Scholarship (BC/EBC)",
-    "name_hi": "बिहार पोस्ट मैट्रिक छात्रवृत्ति (BC/EBC)",
-    "description": "Financial assistance for BC and EBC students in Bihar.",
-    "description_hi": "बिहार में बीसी और ईबीसी छात्रों के लिए वित्तीय सहायता।",
-    "benefits": "Scholarship amount based on course fee and maintenance.",
-    "benefits_hi": "पाठ्यक्रम शुल्क और रखरखाव के आधार पर छात्रवृत्ति राशि।",
+    "state": "Andhra Pradesh",
+    "id": "andhra-pradesh-ews-general-merit",
+    "name": "Andhra Pradesh Merit Scholarship (EWS/General)",
+    "name_hi": "आंध्र प्रदेश मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Andhra Pradesh.",
+    "description_hi": "आंध्र प्रदेश में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Andhra Pradesh"
+    ],
+    "link": "https://jnanabhumi.ap.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Andhra Pradesh",
+    "id": "andhra-pradesh-farmer-support",
+    "name": "Andhra Pradesh Agricultural & Farmer Support",
+    "name_hi": "आंध्र प्रदेश कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Andhra Pradesh.",
+    "description_hi": "आंध्र प्रदेश में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Andhra Pradesh"
+    ],
+    "link": "https://jnanabhumi.ap.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Andhra Pradesh",
+    "id": "andhra-pradesh-women-welfare",
+    "name": "Andhra Pradesh Women Welfare & Empowerment",
+    "name_hi": "आंध्र प्रदेश महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Andhra Pradesh.",
+    "description_hi": "आंध्र प्रदेश में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Andhra Pradesh"
+    ],
+    "link": "https://jnanabhumi.ap.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Arunachal Pradesh",
+    "id": "arunachal-pradesh-sc-st-pms",
+    "name": "Arunachal Pradesh Post Matric Scholarship (SC/ST)",
+    "name_hi": "अरुणाचल प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Arunachal Pradesh per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार अरुणाचल प्रदेश में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Arunachal Pradesh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Arunachal Pradesh",
+    "id": "arunachal-pradesh-obc-pms",
+    "name": "Arunachal Pradesh Post Matric Scholarship (OBC)",
+    "name_hi": "अरुणाचल प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Arunachal Pradesh based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर अरुणाचल प्रदेश में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
     "eligibility": {
       "occupation": [
         "Student"
@@ -686,7 +778,220 @@
       "category": [
         "OBC"
       ],
-      "incomeLimit": 300000
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Arunachal Pradesh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Arunachal Pradesh",
+    "id": "arunachal-pradesh-ews-general-merit",
+    "name": "Arunachal Pradesh Merit Scholarship (EWS/General)",
+    "name_hi": "अरुणाचल प्रदेश मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Arunachal Pradesh.",
+    "description_hi": "अरुणाचल प्रदेश में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Arunachal Pradesh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Arunachal Pradesh",
+    "id": "arunachal-pradesh-farmer-support",
+    "name": "Arunachal Pradesh Agricultural & Farmer Support",
+    "name_hi": "अरुणाचल प्रदेश कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Arunachal Pradesh.",
+    "description_hi": "अरुणाचल प्रदेश में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Arunachal Pradesh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Arunachal Pradesh",
+    "id": "arunachal-pradesh-women-welfare",
+    "name": "Arunachal Pradesh Women Welfare & Empowerment",
+    "name_hi": "अरुणाचल प्रदेश महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Arunachal Pradesh.",
+    "description_hi": "अरुणाचल प्रदेश में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Arunachal Pradesh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Assam",
+    "id": "assam-sc-st-pms",
+    "name": "Assam Post Matric Scholarship (SC/ST)",
+    "name_hi": "असम पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Assam per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार असम में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Assam"
+    ],
+    "link": "https://scholarship.assam.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Assam",
+    "id": "assam-obc-pms",
+    "name": "Assam Post Matric Scholarship (OBC)",
+    "name_hi": "असम पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Assam based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर असम में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Assam"
+    ],
+    "link": "https://scholarship.assam.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Assam",
+    "id": "assam-ews-general-merit",
+    "name": "Assam Merit Scholarship (EWS/General)",
+    "name_hi": "असम मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Assam.",
+    "description_hi": "असम में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Assam"
+    ],
+    "link": "https://scholarship.assam.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Assam",
+    "id": "assam-farmer-support",
+    "name": "Assam Agricultural & Farmer Support",
+    "name_hi": "असम कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Assam.",
+    "description_hi": "असम में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Assam"
+    ],
+    "link": "https://scholarship.assam.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Assam",
+    "id": "assam-women-welfare",
+    "name": "Assam Women Welfare & Empowerment",
+    "name_hi": "असम महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Assam.",
+    "description_hi": "असम में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Assam"
+    ],
+    "link": "https://scholarship.assam.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Bihar",
+    "id": "bihar-sc-st-pms",
+    "name": "Bihar Post Matric Scholarship (SC/ST)",
+    "name_hi": "बिहार पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Bihar per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार बिहार में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
     },
     "tags": [
       "Scholarship",
@@ -697,88 +1002,820 @@
   {
     "type": "State",
     "state": "Bihar",
-    "id": "bihar-kanya-utthan",
-    "name": "Mukhyamantri Kanya Utthan Yojana",
-    "name_hi": "मुख्यमंत्री कन्या उत्थान योजना",
-    "description": "Incentive for girl students in Bihar to promote education.",
-    "description_hi": "शिक्षा को बढ़ावा देने के लिए बिहार में छात्राओं के लिए प्रोत्साहन।",
-    "benefits": "Financial reward of up to ₹50,000 upon graduation.",
-    "benefits_hi": "स्नातक होने पर ₹50,000 तक का वित्तीय इनाम।",
+    "id": "bihar-obc-pms",
+    "name": "Bihar Post Matric Scholarship (OBC)",
+    "name_hi": "बिहार पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Bihar based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर बिहार में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
     "eligibility": {
-      "gender": "Female",
       "occupation": [
         "Student"
       ],
-      "state": "Bihar"
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
     },
     "tags": [
-      "Women Welfare",
+      "Scholarship",
       "Bihar"
     ],
-    "link": "https://edudbt.bih.nic.in/"
+    "link": "https://pmsonline.bih.nic.in/"
   },
   {
     "type": "State",
-    "state": "Maharashtra",
-    "id": "maha-ebc-fees",
-    "name": "Rajarshi Chhatrapati Shahu Maharaj Fee Reimbursement",
-    "name_hi": "राजर्षि छत्रपति शाहू महाराज शुल्क प्रतिपूर्ति",
-    "description": "50% fee reimbursement for EWS and OBC students in Maharashtra.",
-    "description_hi": "महाराष्ट्र में ईडब्ल्यूएस और ओबीसी छात्रों के लिए 50% शुल्क प्रतिपूर्ति।",
-    "benefits": "50% reduction in tuition and exam fees for professional courses.",
-    "benefits_hi": "व्यावसायिक पाठ्यक्रमों के लिए शिक्षण और परीक्षा शुल्क में 50% की कमी।",
+    "state": "Bihar",
+    "id": "bihar-ews-general-merit",
+    "name": "Bihar Merit Scholarship (EWS/General)",
+    "name_hi": "बिहार मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Bihar.",
+    "description_hi": "बिहार में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
         "EWS",
-        "OBC",
         "General"
       ],
       "incomeLimit": 800000
     },
     "tags": [
-      "Education",
-      "Maharashtra"
+      "Scholarship",
+      "Bihar"
     ],
-    "link": "https://mahadbt.maharashtra.gov.in/"
+    "link": "https://pmsonline.bih.nic.in/"
   },
   {
     "type": "State",
-    "state": "Maharashtra",
-    "id": "maha-swadhar",
-    "name": "Dr. Babasaheb Ambedkar Swadhar Yojana",
-    "name_hi": "डॉ. बाबासाहेब अंबेडकर स्वाधार योजना",
-    "description": "Scholarship for SC/Nav-Buddhist students for higher education in Maharashtra.",
-    "description_hi": "महाराष्ट्र में उच्च शिक्षा के लिए अनुसूचित जाति/नव-बौद्ध छात्रों के लिए छात्रवृत्ति।",
-    "benefits": "Maintenance allowance of up to ₹60,000 per year for living expenses.",
-    "benefits_hi": "रहने के खर्च के लिए प्रति वर्ष ₹60,000 तक का रखरखाव भत्ता।",
+    "state": "Bihar",
+    "id": "bihar-farmer-support",
+    "name": "Bihar Agricultural & Farmer Support",
+    "name_hi": "बिहार कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Bihar.",
+    "description_hi": "बिहार में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Bihar"
+    ],
+    "link": "https://pmsonline.bih.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Bihar",
+    "id": "bihar-women-welfare",
+    "name": "Bihar Women Welfare & Empowerment",
+    "name_hi": "बिहार महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Bihar.",
+    "description_hi": "बिहार में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Bihar"
+    ],
+    "link": "https://pmsonline.bih.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chhattisgarh",
+    "id": "chhattisgarh-sc-st-pms",
+    "name": "Chhattisgarh Post Matric Scholarship (SC/ST)",
+    "name_hi": "छत्तीसगढ़ पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Chhattisgarh per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार छत्तीसगढ़ में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
-        "SC"
+        "SC",
+        "ST"
       ],
       "incomeLimit": 250000
     },
     "tags": [
-      "Education",
-      "Maharashtra"
+      "Scholarship",
+      "Chhattisgarh"
     ],
-    "link": "https://sjsa.maharashtra.gov.in/"
+    "link": "https://postmatric-scholarship.cg.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chhattisgarh",
+    "id": "chhattisgarh-obc-pms",
+    "name": "Chhattisgarh Post Matric Scholarship (OBC)",
+    "name_hi": "छत्तीसगढ़ पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Chhattisgarh based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर छत्तीसगढ़ में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Chhattisgarh"
+    ],
+    "link": "https://postmatric-scholarship.cg.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chhattisgarh",
+    "id": "chhattisgarh-ews-general-merit",
+    "name": "Chhattisgarh Merit Scholarship (EWS/General)",
+    "name_hi": "छत्तीसगढ़ मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Chhattisgarh.",
+    "description_hi": "छत्तीसगढ़ में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Chhattisgarh"
+    ],
+    "link": "https://postmatric-scholarship.cg.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chhattisgarh",
+    "id": "chhattisgarh-farmer-support",
+    "name": "Chhattisgarh Agricultural & Farmer Support",
+    "name_hi": "छत्तीसगढ़ कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Chhattisgarh.",
+    "description_hi": "छत्तीसगढ़ में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Chhattisgarh"
+    ],
+    "link": "https://postmatric-scholarship.cg.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chhattisgarh",
+    "id": "chhattisgarh-women-welfare",
+    "name": "Chhattisgarh Women Welfare & Empowerment",
+    "name_hi": "छत्तीसगढ़ महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Chhattisgarh.",
+    "description_hi": "छत्तीसगढ़ में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Chhattisgarh"
+    ],
+    "link": "https://postmatric-scholarship.cg.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Goa",
+    "id": "goa-sc-st-pms",
+    "name": "Goa Post Matric Scholarship (SC/ST)",
+    "name_hi": "गोवा पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Goa per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार गोवा में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Goa"
+    ],
+    "link": "https://e-services.goa.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Goa",
+    "id": "goa-obc-pms",
+    "name": "Goa Post Matric Scholarship (OBC)",
+    "name_hi": "गोवा पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Goa based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर गोवा में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Goa"
+    ],
+    "link": "https://e-services.goa.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Goa",
+    "id": "goa-ews-general-merit",
+    "name": "Goa Merit Scholarship (EWS/General)",
+    "name_hi": "गोवा मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Goa.",
+    "description_hi": "गोवा में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Goa"
+    ],
+    "link": "https://e-services.goa.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Goa",
+    "id": "goa-farmer-support",
+    "name": "Goa Agricultural & Farmer Support",
+    "name_hi": "गोवा कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Goa.",
+    "description_hi": "गोवा में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Goa"
+    ],
+    "link": "https://e-services.goa.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Goa",
+    "id": "goa-women-welfare",
+    "name": "Goa Women Welfare & Empowerment",
+    "name_hi": "गोवा महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Goa.",
+    "description_hi": "गोवा में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Goa"
+    ],
+    "link": "https://e-services.goa.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Gujarat",
+    "id": "gujarat-sc-st-pms",
+    "name": "Gujarat Post Matric Scholarship (SC/ST)",
+    "name_hi": "गुजरात पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Gujarat per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार गुजरात में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Gujarat"
+    ],
+    "link": "https://www.digitalgujarat.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Gujarat",
+    "id": "gujarat-obc-pms",
+    "name": "Gujarat Post Matric Scholarship (OBC)",
+    "name_hi": "गुजरात पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Gujarat based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर गुजरात में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Gujarat"
+    ],
+    "link": "https://www.digitalgujarat.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Gujarat",
+    "id": "gujarat-ews-general-merit",
+    "name": "Gujarat Merit Scholarship (EWS/General)",
+    "name_hi": "गुजरात मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Gujarat.",
+    "description_hi": "गुजरात में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Gujarat"
+    ],
+    "link": "https://www.digitalgujarat.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Gujarat",
+    "id": "gujarat-farmer-support",
+    "name": "Gujarat Agricultural & Farmer Support",
+    "name_hi": "गुजरात कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Gujarat.",
+    "description_hi": "गुजरात में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Gujarat"
+    ],
+    "link": "https://www.digitalgujarat.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Gujarat",
+    "id": "gujarat-women-welfare",
+    "name": "Gujarat Women Welfare & Empowerment",
+    "name_hi": "गुजरात महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Gujarat.",
+    "description_hi": "गुजरात में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Gujarat"
+    ],
+    "link": "https://www.digitalgujarat.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Haryana",
+    "id": "haryana-sc-st-pms",
+    "name": "Haryana Post Matric Scholarship (SC/ST)",
+    "name_hi": "हरियाणा पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Haryana per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार हरियाणा में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Haryana"
+    ],
+    "link": "https://harchhatravratti.highereduhry.ac.in/"
+  },
+  {
+    "type": "State",
+    "state": "Haryana",
+    "id": "haryana-obc-pms",
+    "name": "Haryana Post Matric Scholarship (OBC)",
+    "name_hi": "हरियाणा पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Haryana based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर हरियाणा में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Haryana"
+    ],
+    "link": "https://harchhatravratti.highereduhry.ac.in/"
+  },
+  {
+    "type": "State",
+    "state": "Haryana",
+    "id": "haryana-ews-general-merit",
+    "name": "Haryana Merit Scholarship (EWS/General)",
+    "name_hi": "हरियाणा मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Haryana.",
+    "description_hi": "हरियाणा में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Haryana"
+    ],
+    "link": "https://harchhatravratti.highereduhry.ac.in/"
+  },
+  {
+    "type": "State",
+    "state": "Haryana",
+    "id": "haryana-farmer-support",
+    "name": "Haryana Agricultural & Farmer Support",
+    "name_hi": "हरियाणा कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Haryana.",
+    "description_hi": "हरियाणा में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Haryana"
+    ],
+    "link": "https://harchhatravratti.highereduhry.ac.in/"
+  },
+  {
+    "type": "State",
+    "state": "Haryana",
+    "id": "haryana-women-welfare",
+    "name": "Haryana Women Welfare & Empowerment",
+    "name_hi": "हरियाणा महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Haryana.",
+    "description_hi": "हरियाणा में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Haryana"
+    ],
+    "link": "https://harchhatravratti.highereduhry.ac.in/"
+  },
+  {
+    "type": "State",
+    "state": "Himachal Pradesh",
+    "id": "himachal-pradesh-sc-st-pms",
+    "name": "Himachal Pradesh Post Matric Scholarship (SC/ST)",
+    "name_hi": "हिमाचल प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Himachal Pradesh per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार हिमाचल प्रदेश में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Himachal Pradesh"
+    ],
+    "link": "https://hpepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Himachal Pradesh",
+    "id": "himachal-pradesh-obc-pms",
+    "name": "Himachal Pradesh Post Matric Scholarship (OBC)",
+    "name_hi": "हिमाचल प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Himachal Pradesh based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर हिमाचल प्रदेश में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Himachal Pradesh"
+    ],
+    "link": "https://hpepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Himachal Pradesh",
+    "id": "himachal-pradesh-ews-general-merit",
+    "name": "Himachal Pradesh Merit Scholarship (EWS/General)",
+    "name_hi": "हिमाचल प्रदेश मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Himachal Pradesh.",
+    "description_hi": "हिमाचल प्रदेश में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Himachal Pradesh"
+    ],
+    "link": "https://hpepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Himachal Pradesh",
+    "id": "himachal-pradesh-farmer-support",
+    "name": "Himachal Pradesh Agricultural & Farmer Support",
+    "name_hi": "हिमाचल प्रदेश कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Himachal Pradesh.",
+    "description_hi": "हिमाचल प्रदेश में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Himachal Pradesh"
+    ],
+    "link": "https://hpepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Himachal Pradesh",
+    "id": "himachal-pradesh-women-welfare",
+    "name": "Himachal Pradesh Women Welfare & Empowerment",
+    "name_hi": "हिमाचल प्रदेश महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Himachal Pradesh.",
+    "description_hi": "हिमाचल प्रदेश में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Himachal Pradesh"
+    ],
+    "link": "https://hpepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Jharkhand",
+    "id": "jharkhand-sc-st-pms",
+    "name": "Jharkhand Post Matric Scholarship (SC/ST)",
+    "name_hi": "झारखंड पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Jharkhand per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार झारखंड में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Jharkhand"
+    ],
+    "link": "https://ekalyan.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Jharkhand",
+    "id": "jharkhand-obc-pms",
+    "name": "Jharkhand Post Matric Scholarship (OBC)",
+    "name_hi": "झारखंड पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Jharkhand based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर झारखंड में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Jharkhand"
+    ],
+    "link": "https://ekalyan.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Jharkhand",
+    "id": "jharkhand-ews-general-merit",
+    "name": "Jharkhand Merit Scholarship (EWS/General)",
+    "name_hi": "झारखंड मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Jharkhand.",
+    "description_hi": "झारखंड में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Jharkhand"
+    ],
+    "link": "https://ekalyan.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Jharkhand",
+    "id": "jharkhand-farmer-support",
+    "name": "Jharkhand Agricultural & Farmer Support",
+    "name_hi": "झारखंड कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Jharkhand.",
+    "description_hi": "झारखंड में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Jharkhand"
+    ],
+    "link": "https://ekalyan.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Jharkhand",
+    "id": "jharkhand-women-welfare",
+    "name": "Jharkhand Women Welfare & Empowerment",
+    "name_hi": "झारखंड महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Jharkhand.",
+    "description_hi": "झारखंड में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Jharkhand"
+    ],
+    "link": "https://ekalyan.cgg.gov.in/"
   },
   {
     "type": "State",
     "state": "Karnataka",
-    "id": "karnataka-ssp-sc-st",
+    "id": "karnataka-sc-st-pms",
     "name": "Karnataka Post Matric Scholarship (SC/ST)",
     "name_hi": "कर्नाटक पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
-    "description": "Scholarship for SC/ST students in Karnataka through SSP.",
-    "description_hi": "SSP के माध्यम से कर्नाटक में SC/ST छात्रों के लिए छात्रवृत्ति।",
-    "benefits": "Course fee reimbursement and monthly stipend.",
-    "benefits_hi": "पाठ्यक्रम शुल्क प्रतिपूर्ति और मासिक वजीफा।",
+    "description": "Scholarship for SC/ST students in Karnataka per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार कर्नाटक में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
@@ -798,13 +1835,13 @@
   {
     "type": "State",
     "state": "Karnataka",
-    "id": "karnataka-vidyasiri",
-    "name": "Karnataka Vidyasiri (Food & Accommodation)",
-    "name_hi": "कर्नाटक विद्यासिरी (भोजन और आवास)",
-    "description": "Food and accommodation allowance for OBC students in Karnataka.",
-    "description_hi": "कर्नाटक में ओबीसी छात्रों के लिए भोजन और आवास भत्ता।",
-    "benefits": "₹1,500 per month for food and hostel expenses.",
-    "benefits_hi": "भोजन और छात्रावास के खर्च के लिए ₹1,500 प्रति माह।",
+    "id": "karnataka-obc-pms",
+    "name": "Karnataka Post Matric Scholarship (OBC)",
+    "name_hi": "कर्नाटक पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Karnataka based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर कर्नाटक में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
     "eligibility": {
       "occupation": [
         "Student"
@@ -818,18 +1855,1395 @@
       "Scholarship",
       "Karnataka"
     ],
-    "link": "https://backwardclasses.kar.nic.in/"
+    "link": "https://ssp.postmatric.karnataka.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Karnataka",
+    "id": "karnataka-ews-general-merit",
+    "name": "Karnataka Merit Scholarship (EWS/General)",
+    "name_hi": "कर्नाटक मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Karnataka.",
+    "description_hi": "कर्नाटक में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Karnataka"
+    ],
+    "link": "https://ssp.postmatric.karnataka.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Karnataka",
+    "id": "karnataka-farmer-support",
+    "name": "Karnataka Agricultural & Farmer Support",
+    "name_hi": "कर्नाटक कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Karnataka.",
+    "description_hi": "कर्नाटक में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Karnataka"
+    ],
+    "link": "https://ssp.postmatric.karnataka.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Karnataka",
+    "id": "karnataka-women-welfare",
+    "name": "Karnataka Women Welfare & Empowerment",
+    "name_hi": "कर्नाटक महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Karnataka.",
+    "description_hi": "कर्नाटक में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Karnataka"
+    ],
+    "link": "https://ssp.postmatric.karnataka.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Kerala",
+    "id": "kerala-sc-st-pms",
+    "name": "Kerala Post Matric Scholarship (SC/ST)",
+    "name_hi": "केरल पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Kerala per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार केरल में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Kerala"
+    ],
+    "link": "https://www.egrantz.kerala.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Kerala",
+    "id": "kerala-obc-pms",
+    "name": "Kerala Post Matric Scholarship (OBC)",
+    "name_hi": "केरल पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Kerala based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर केरल में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Kerala"
+    ],
+    "link": "https://www.egrantz.kerala.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Kerala",
+    "id": "kerala-ews-general-merit",
+    "name": "Kerala Merit Scholarship (EWS/General)",
+    "name_hi": "केरल मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Kerala.",
+    "description_hi": "केरल में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Kerala"
+    ],
+    "link": "https://www.egrantz.kerala.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Kerala",
+    "id": "kerala-farmer-support",
+    "name": "Kerala Agricultural & Farmer Support",
+    "name_hi": "केरल कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Kerala.",
+    "description_hi": "केरल में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Kerala"
+    ],
+    "link": "https://www.egrantz.kerala.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Kerala",
+    "id": "kerala-women-welfare",
+    "name": "Kerala Women Welfare & Empowerment",
+    "name_hi": "केरल महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Kerala.",
+    "description_hi": "केरल में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Kerala"
+    ],
+    "link": "https://www.egrantz.kerala.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Madhya Pradesh",
+    "id": "madhya-pradesh-sc-st-pms",
+    "name": "Madhya Pradesh Post Matric Scholarship (SC/ST)",
+    "name_hi": "मध्य प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Madhya Pradesh per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार मध्य प्रदेश में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Madhya Pradesh"
+    ],
+    "link": "https://www.scholarshipportal.mp.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Madhya Pradesh",
+    "id": "madhya-pradesh-obc-pms",
+    "name": "Madhya Pradesh Post Matric Scholarship (OBC)",
+    "name_hi": "मध्य प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Madhya Pradesh based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर मध्य प्रदेश में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Madhya Pradesh"
+    ],
+    "link": "https://www.scholarshipportal.mp.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Madhya Pradesh",
+    "id": "madhya-pradesh-ews-general-merit",
+    "name": "Madhya Pradesh Merit Scholarship (EWS/General)",
+    "name_hi": "मध्य प्रदेश मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Madhya Pradesh.",
+    "description_hi": "मध्य प्रदेश में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Madhya Pradesh"
+    ],
+    "link": "https://www.scholarshipportal.mp.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Madhya Pradesh",
+    "id": "madhya-pradesh-farmer-support",
+    "name": "Madhya Pradesh Agricultural & Farmer Support",
+    "name_hi": "मध्य प्रदेश कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Madhya Pradesh.",
+    "description_hi": "मध्य प्रदेश में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Madhya Pradesh"
+    ],
+    "link": "https://www.scholarshipportal.mp.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Madhya Pradesh",
+    "id": "madhya-pradesh-women-welfare",
+    "name": "Madhya Pradesh Women Welfare & Empowerment",
+    "name_hi": "मध्य प्रदेश महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Madhya Pradesh.",
+    "description_hi": "मध्य प्रदेश में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Madhya Pradesh"
+    ],
+    "link": "https://www.scholarshipportal.mp.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Maharashtra",
+    "id": "maharashtra-sc-st-pms",
+    "name": "Maharashtra Post Matric Scholarship (SC/ST)",
+    "name_hi": "महाराष्ट्र पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Maharashtra per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार महाराष्ट्र में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Maharashtra"
+    ],
+    "link": "https://mahadbt.maharashtra.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Maharashtra",
+    "id": "maharashtra-obc-pms",
+    "name": "Maharashtra Post Matric Scholarship (OBC)",
+    "name_hi": "महाराष्ट्र पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Maharashtra based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर महाराष्ट्र में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Maharashtra"
+    ],
+    "link": "https://mahadbt.maharashtra.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Maharashtra",
+    "id": "maharashtra-ews-general-merit",
+    "name": "Maharashtra Merit Scholarship (EWS/General)",
+    "name_hi": "महाराष्ट्र मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Maharashtra.",
+    "description_hi": "महाराष्ट्र में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Maharashtra"
+    ],
+    "link": "https://mahadbt.maharashtra.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Maharashtra",
+    "id": "maharashtra-farmer-support",
+    "name": "Maharashtra Agricultural & Farmer Support",
+    "name_hi": "महाराष्ट्र कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Maharashtra.",
+    "description_hi": "महाराष्ट्र में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Maharashtra"
+    ],
+    "link": "https://mahadbt.maharashtra.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Maharashtra",
+    "id": "maharashtra-women-welfare",
+    "name": "Maharashtra Women Welfare & Empowerment",
+    "name_hi": "महाराष्ट्र महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Maharashtra.",
+    "description_hi": "महाराष्ट्र में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Maharashtra"
+    ],
+    "link": "https://mahadbt.maharashtra.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Manipur",
+    "id": "manipur-sc-st-pms",
+    "name": "Manipur Post Matric Scholarship (SC/ST)",
+    "name_hi": "मणिपुर पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Manipur per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार मणिपुर में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Manipur"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Manipur",
+    "id": "manipur-obc-pms",
+    "name": "Manipur Post Matric Scholarship (OBC)",
+    "name_hi": "मणिपुर पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Manipur based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर मणिपुर में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Manipur"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Manipur",
+    "id": "manipur-ews-general-merit",
+    "name": "Manipur Merit Scholarship (EWS/General)",
+    "name_hi": "मणिपुर मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Manipur.",
+    "description_hi": "मणिपुर में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Manipur"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Manipur",
+    "id": "manipur-farmer-support",
+    "name": "Manipur Agricultural & Farmer Support",
+    "name_hi": "मणिपुर कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Manipur.",
+    "description_hi": "मणिपुर में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Manipur"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Manipur",
+    "id": "manipur-women-welfare",
+    "name": "Manipur Women Welfare & Empowerment",
+    "name_hi": "मणिपुर महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Manipur.",
+    "description_hi": "मणिपुर में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Manipur"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Meghalaya",
+    "id": "meghalaya-sc-st-pms",
+    "name": "Meghalaya Post Matric Scholarship (SC/ST)",
+    "name_hi": "मेघालय पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Meghalaya per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार मेघालय में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Meghalaya"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Meghalaya",
+    "id": "meghalaya-obc-pms",
+    "name": "Meghalaya Post Matric Scholarship (OBC)",
+    "name_hi": "मेघालय पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Meghalaya based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर मेघालय में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Meghalaya"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Meghalaya",
+    "id": "meghalaya-ews-general-merit",
+    "name": "Meghalaya Merit Scholarship (EWS/General)",
+    "name_hi": "मेघालय मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Meghalaya.",
+    "description_hi": "मेघालय में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Meghalaya"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Meghalaya",
+    "id": "meghalaya-farmer-support",
+    "name": "Meghalaya Agricultural & Farmer Support",
+    "name_hi": "मेघालय कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Meghalaya.",
+    "description_hi": "मेघालय में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Meghalaya"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Meghalaya",
+    "id": "meghalaya-women-welfare",
+    "name": "Meghalaya Women Welfare & Empowerment",
+    "name_hi": "मेघालय महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Meghalaya.",
+    "description_hi": "मेघालय में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Meghalaya"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Mizoram",
+    "id": "mizoram-sc-st-pms",
+    "name": "Mizoram Post Matric Scholarship (SC/ST)",
+    "name_hi": "मिजोरम पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Mizoram per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार मिजोरम में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Mizoram"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Mizoram",
+    "id": "mizoram-obc-pms",
+    "name": "Mizoram Post Matric Scholarship (OBC)",
+    "name_hi": "मिजोरम पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Mizoram based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर मिजोरम में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Mizoram"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Mizoram",
+    "id": "mizoram-ews-general-merit",
+    "name": "Mizoram Merit Scholarship (EWS/General)",
+    "name_hi": "मिजोरम मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Mizoram.",
+    "description_hi": "मिजोरम में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Mizoram"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Mizoram",
+    "id": "mizoram-farmer-support",
+    "name": "Mizoram Agricultural & Farmer Support",
+    "name_hi": "मिजोरम कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Mizoram.",
+    "description_hi": "मिजोरम में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Mizoram"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Mizoram",
+    "id": "mizoram-women-welfare",
+    "name": "Mizoram Women Welfare & Empowerment",
+    "name_hi": "मिजोरम महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Mizoram.",
+    "description_hi": "मिजोरम में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Mizoram"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Nagaland",
+    "id": "nagaland-sc-st-pms",
+    "name": "Nagaland Post Matric Scholarship (SC/ST)",
+    "name_hi": "नागालैंड पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Nagaland per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार नागालैंड में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Nagaland"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Nagaland",
+    "id": "nagaland-obc-pms",
+    "name": "Nagaland Post Matric Scholarship (OBC)",
+    "name_hi": "नागालैंड पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Nagaland based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर नागालैंड में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Nagaland"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Nagaland",
+    "id": "nagaland-ews-general-merit",
+    "name": "Nagaland Merit Scholarship (EWS/General)",
+    "name_hi": "नागालैंड मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Nagaland.",
+    "description_hi": "नागालैंड में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Nagaland"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Nagaland",
+    "id": "nagaland-farmer-support",
+    "name": "Nagaland Agricultural & Farmer Support",
+    "name_hi": "नागालैंड कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Nagaland.",
+    "description_hi": "नागालैंड में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Nagaland"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Nagaland",
+    "id": "nagaland-women-welfare",
+    "name": "Nagaland Women Welfare & Empowerment",
+    "name_hi": "नागालैंड महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Nagaland.",
+    "description_hi": "नागालैंड में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Nagaland"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Odisha",
+    "id": "odisha-sc-st-pms",
+    "name": "Odisha Post Matric Scholarship (SC/ST)",
+    "name_hi": "ओडिशा पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Odisha per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार ओडिशा में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Odisha"
+    ],
+    "link": "https://scholarship.odisha.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Odisha",
+    "id": "odisha-obc-pms",
+    "name": "Odisha Post Matric Scholarship (OBC)",
+    "name_hi": "ओडिशा पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Odisha based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर ओडिशा में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Odisha"
+    ],
+    "link": "https://scholarship.odisha.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Odisha",
+    "id": "odisha-ews-general-merit",
+    "name": "Odisha Merit Scholarship (EWS/General)",
+    "name_hi": "ओडिशा मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Odisha.",
+    "description_hi": "ओडिशा में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Odisha"
+    ],
+    "link": "https://scholarship.odisha.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Odisha",
+    "id": "odisha-farmer-support",
+    "name": "Odisha Agricultural & Farmer Support",
+    "name_hi": "ओडिशा कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Odisha.",
+    "description_hi": "ओडिशा में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Odisha"
+    ],
+    "link": "https://scholarship.odisha.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Odisha",
+    "id": "odisha-women-welfare",
+    "name": "Odisha Women Welfare & Empowerment",
+    "name_hi": "ओडिशा महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Odisha.",
+    "description_hi": "ओडिशा में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Odisha"
+    ],
+    "link": "https://scholarship.odisha.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Punjab",
+    "id": "punjab-sc-st-pms",
+    "name": "Punjab Post Matric Scholarship (SC/ST)",
+    "name_hi": "पंजाब पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Punjab per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार पंजाब में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Punjab"
+    ],
+    "link": "https://scholarships.punjab.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Punjab",
+    "id": "punjab-obc-pms",
+    "name": "Punjab Post Matric Scholarship (OBC)",
+    "name_hi": "पंजाब पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Punjab based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर पंजाब में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Punjab"
+    ],
+    "link": "https://scholarships.punjab.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Punjab",
+    "id": "punjab-ews-general-merit",
+    "name": "Punjab Merit Scholarship (EWS/General)",
+    "name_hi": "पंजाब मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Punjab.",
+    "description_hi": "पंजाब में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Punjab"
+    ],
+    "link": "https://scholarships.punjab.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Punjab",
+    "id": "punjab-farmer-support",
+    "name": "Punjab Agricultural & Farmer Support",
+    "name_hi": "पंजाब कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Punjab.",
+    "description_hi": "पंजाब में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Punjab"
+    ],
+    "link": "https://scholarships.punjab.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Punjab",
+    "id": "punjab-women-welfare",
+    "name": "Punjab Women Welfare & Empowerment",
+    "name_hi": "पंजाब महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Punjab.",
+    "description_hi": "पंजाब में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Punjab"
+    ],
+    "link": "https://scholarships.punjab.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Rajasthan",
+    "id": "rajasthan-sc-st-pms",
+    "name": "Rajasthan Post Matric Scholarship (SC/ST)",
+    "name_hi": "राजस्थान पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Rajasthan per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार राजस्थान में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Rajasthan"
+    ],
+    "link": "https://sjms.rajasthan.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Rajasthan",
+    "id": "rajasthan-obc-pms",
+    "name": "Rajasthan Post Matric Scholarship (OBC)",
+    "name_hi": "राजस्थान पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Rajasthan based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर राजस्थान में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Rajasthan"
+    ],
+    "link": "https://sjms.rajasthan.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Rajasthan",
+    "id": "rajasthan-ews-general-merit",
+    "name": "Rajasthan Merit Scholarship (EWS/General)",
+    "name_hi": "राजस्थान मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Rajasthan.",
+    "description_hi": "राजस्थान में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Rajasthan"
+    ],
+    "link": "https://sjms.rajasthan.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Rajasthan",
+    "id": "rajasthan-farmer-support",
+    "name": "Rajasthan Agricultural & Farmer Support",
+    "name_hi": "राजस्थान कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Rajasthan.",
+    "description_hi": "राजस्थान में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Rajasthan"
+    ],
+    "link": "https://sjms.rajasthan.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Rajasthan",
+    "id": "rajasthan-women-welfare",
+    "name": "Rajasthan Women Welfare & Empowerment",
+    "name_hi": "राजस्थान महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Rajasthan.",
+    "description_hi": "राजस्थान में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Rajasthan"
+    ],
+    "link": "https://sjms.rajasthan.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Sikkim",
+    "id": "sikkim-sc-st-pms",
+    "name": "Sikkim Post Matric Scholarship (SC/ST)",
+    "name_hi": "सिक्किम पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Sikkim per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार सिक्किम में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Sikkim"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Sikkim",
+    "id": "sikkim-obc-pms",
+    "name": "Sikkim Post Matric Scholarship (OBC)",
+    "name_hi": "सिक्किम पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Sikkim based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर सिक्किम में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Sikkim"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Sikkim",
+    "id": "sikkim-ews-general-merit",
+    "name": "Sikkim Merit Scholarship (EWS/General)",
+    "name_hi": "सिक्किम मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Sikkim.",
+    "description_hi": "सिक्किम में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Sikkim"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Sikkim",
+    "id": "sikkim-farmer-support",
+    "name": "Sikkim Agricultural & Farmer Support",
+    "name_hi": "सिक्किम कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Sikkim.",
+    "description_hi": "सिक्किम में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Sikkim"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Sikkim",
+    "id": "sikkim-women-welfare",
+    "name": "Sikkim Women Welfare & Empowerment",
+    "name_hi": "सिक्किम महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Sikkim.",
+    "description_hi": "सिक्किम में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Sikkim"
+    ],
+    "link": "https://scholarships.gov.in/"
   },
   {
     "type": "State",
     "state": "Tamil Nadu",
-    "id": "tn-adim-pms",
-    "name": "TN Post Matric Scholarship (Adi Dravidar/Tribal)",
-    "name_hi": "तमिलनाडु पोस्ट मैट्रिक छात्रवृत्ति (आदि द्रविड़/जनजाति)",
-    "description": "Scholarship for SC/ST students in Tamil Nadu.",
-    "description_hi": "तमिलनाडु में SC/ST छात्रों के लिए छात्रवृत्ति।",
-    "benefits": "Maintenance allowance and special fees reimbursement.",
-    "benefits_hi": "रखरखाव भत्ता और विशेष शुल्क प्रतिपूर्ति।",
+    "id": "tamil-nadu-sc-st-pms",
+    "name": "Tamil Nadu Post Matric Scholarship (SC/ST)",
+    "name_hi": "तमिलनाडु पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Tamil Nadu per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार तमिलनाडु में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
@@ -844,54 +3258,594 @@
       "Scholarship",
       "Tamil Nadu"
     ],
-    "link": "https://www.tn.gov.in/scheme/data_view/40432"
+    "link": "https://www.tn.gov.in/scheme"
   },
   {
     "type": "State",
-    "state": "Rajasthan",
-    "id": "rajasthan-pms-sc-st-obc",
-    "name": "Rajasthan Post Matric Scholarship",
-    "name_hi": "राजस्थान पोस्ट मैट्रिक छात्रवृत्ति",
-    "description": "Financial aid for students of Rajasthan belonging to SC, ST and OBC.",
-    "description_hi": "SC, ST और OBC से संबंधित राजस्थान के छात्रों के लिए वित्तीय सहायता।",
-    "benefits": "Scholarship for education and professional courses.",
-    "benefits_hi": "शिक्षा और व्यावसायिक पाठ्यक्रमों के लिए छात्रवृत्ति।",
+    "state": "Tamil Nadu",
+    "id": "tamil-nadu-obc-pms",
+    "name": "Tamil Nadu Post Matric Scholarship (OBC)",
+    "name_hi": "तमिलनाडु पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Tamil Nadu based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर तमिलनाडु में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Tamil Nadu"
+    ],
+    "link": "https://www.tn.gov.in/scheme"
+  },
+  {
+    "type": "State",
+    "state": "Tamil Nadu",
+    "id": "tamil-nadu-ews-general-merit",
+    "name": "Tamil Nadu Merit Scholarship (EWS/General)",
+    "name_hi": "तमिलनाडु मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Tamil Nadu.",
+    "description_hi": "तमिलनाडु में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Tamil Nadu"
+    ],
+    "link": "https://www.tn.gov.in/scheme"
+  },
+  {
+    "type": "State",
+    "state": "Tamil Nadu",
+    "id": "tamil-nadu-farmer-support",
+    "name": "Tamil Nadu Agricultural & Farmer Support",
+    "name_hi": "तमिलनाडु कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Tamil Nadu.",
+    "description_hi": "तमिलनाडु में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Tamil Nadu"
+    ],
+    "link": "https://www.tn.gov.in/scheme"
+  },
+  {
+    "type": "State",
+    "state": "Tamil Nadu",
+    "id": "tamil-nadu-women-welfare",
+    "name": "Tamil Nadu Women Welfare & Empowerment",
+    "name_hi": "तमिलनाडु महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Tamil Nadu.",
+    "description_hi": "तमिलनाडु में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Tamil Nadu"
+    ],
+    "link": "https://www.tn.gov.in/scheme"
+  },
+  {
+    "type": "State",
+    "state": "Telangana",
+    "id": "telangana-sc-st-pms",
+    "name": "Telangana Post Matric Scholarship (SC/ST)",
+    "name_hi": "तेलंगाना पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Telangana per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार तेलंगाना में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
         "SC",
-        "ST",
-        "OBC",
-        "SBC"
+        "ST"
       ],
       "incomeLimit": 250000
     },
     "tags": [
       "Scholarship",
-      "Rajasthan"
+      "Telangana"
     ],
-    "link": "https://sjms.rajasthan.gov.in/sjms/Login.aspx"
+    "link": "https://telanganaepass.cgg.gov.in/"
   },
   {
     "type": "State",
-    "state": "West Bengal",
-    "id": "wb-oasis-pms",
-    "name": "West Bengal Oasis Scholarship",
-    "name_hi": "पश्चिम बंगाल ओएसिस छात्रवृत्ति",
-    "description": "Scholarship portal for SC, ST and OBC students in West Bengal.",
-    "description_hi": "पश्चिम बंगाल में SC, ST और OBC छात्रों के लिए छात्रवृत्ति पोर्टल।",
-    "benefits": "Grant for pre-matric and post-matric education.",
-    "benefits_hi": "प्री-मैट्रिक और पोस्ट-मैट्रिक शिक्षा के लिए अनुदान।",
+    "state": "Telangana",
+    "id": "telangana-obc-pms",
+    "name": "Telangana Post Matric Scholarship (OBC)",
+    "name_hi": "तेलंगाना पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Telangana based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर तेलंगाना में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Telangana"
+    ],
+    "link": "https://telanganaepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Telangana",
+    "id": "telangana-ews-general-merit",
+    "name": "Telangana Merit Scholarship (EWS/General)",
+    "name_hi": "तेलंगाना मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Telangana.",
+    "description_hi": "तेलंगाना में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Telangana"
+    ],
+    "link": "https://telanganaepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Telangana",
+    "id": "telangana-farmer-support",
+    "name": "Telangana Agricultural & Farmer Support",
+    "name_hi": "तेलंगाना कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Telangana.",
+    "description_hi": "तेलंगाना में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Telangana"
+    ],
+    "link": "https://telanganaepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Telangana",
+    "id": "telangana-women-welfare",
+    "name": "Telangana Women Welfare & Empowerment",
+    "name_hi": "तेलंगाना महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Telangana.",
+    "description_hi": "तेलंगाना में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Telangana"
+    ],
+    "link": "https://telanganaepass.cgg.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Tripura",
+    "id": "tripura-sc-st-pms",
+    "name": "Tripura Post Matric Scholarship (SC/ST)",
+    "name_hi": "त्रिपुरा पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Tripura per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार त्रिपुरा में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
         "SC",
-        "ST",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Tripura"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Tripura",
+    "id": "tripura-obc-pms",
+    "name": "Tripura Post Matric Scholarship (OBC)",
+    "name_hi": "त्रिपुरा पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Tripura based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर त्रिपुरा में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
         "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Tripura"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Tripura",
+    "id": "tripura-ews-general-merit",
+    "name": "Tripura Merit Scholarship (EWS/General)",
+    "name_hi": "त्रिपुरा मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Tripura.",
+    "description_hi": "त्रिपुरा में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Tripura"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Tripura",
+    "id": "tripura-farmer-support",
+    "name": "Tripura Agricultural & Farmer Support",
+    "name_hi": "त्रिपुरा कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Tripura.",
+    "description_hi": "त्रिपुरा में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Tripura"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Tripura",
+    "id": "tripura-women-welfare",
+    "name": "Tripura Women Welfare & Empowerment",
+    "name_hi": "त्रिपुरा महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Tripura.",
+    "description_hi": "त्रिपुरा में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Tripura"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttar Pradesh",
+    "id": "uttar-pradesh-sc-st-pms",
+    "name": "Uttar Pradesh Post Matric Scholarship (SC/ST)",
+    "name_hi": "उत्तर प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Uttar Pradesh per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार उत्तर प्रदेश में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Uttar Pradesh"
+    ],
+    "link": "https://scholarship.up.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttar Pradesh",
+    "id": "uttar-pradesh-obc-pms",
+    "name": "Uttar Pradesh Post Matric Scholarship (OBC)",
+    "name_hi": "उत्तर प्रदेश पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Uttar Pradesh based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर उत्तर प्रदेश में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Uttar Pradesh"
+    ],
+    "link": "https://scholarship.up.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttar Pradesh",
+    "id": "uttar-pradesh-ews-general-merit",
+    "name": "Uttar Pradesh Merit Scholarship (EWS/General)",
+    "name_hi": "उत्तर प्रदेश मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Uttar Pradesh.",
+    "description_hi": "उत्तर प्रदेश में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Uttar Pradesh"
+    ],
+    "link": "https://scholarship.up.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttar Pradesh",
+    "id": "uttar-pradesh-farmer-support",
+    "name": "Uttar Pradesh Agricultural & Farmer Support",
+    "name_hi": "उत्तर प्रदेश कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Uttar Pradesh.",
+    "description_hi": "उत्तर प्रदेश में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Uttar Pradesh"
+    ],
+    "link": "https://scholarship.up.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttar Pradesh",
+    "id": "uttar-pradesh-women-welfare",
+    "name": "Uttar Pradesh Women Welfare & Empowerment",
+    "name_hi": "उत्तर प्रदेश महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Uttar Pradesh.",
+    "description_hi": "उत्तर प्रदेश में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Uttar Pradesh"
+    ],
+    "link": "https://scholarship.up.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttarakhand",
+    "id": "uttarakhand-sc-st-pms",
+    "name": "Uttarakhand Post Matric Scholarship (SC/ST)",
+    "name_hi": "उत्तराखंड पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Uttarakhand per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार उत्तराखंड में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Uttarakhand"
+    ],
+    "link": "https://scholarship.uk.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttarakhand",
+    "id": "uttarakhand-obc-pms",
+    "name": "Uttarakhand Post Matric Scholarship (OBC)",
+    "name_hi": "उत्तराखंड पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Uttarakhand based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर उत्तराखंड में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Uttarakhand"
+    ],
+    "link": "https://scholarship.uk.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttarakhand",
+    "id": "uttarakhand-ews-general-merit",
+    "name": "Uttarakhand Merit Scholarship (EWS/General)",
+    "name_hi": "उत्तराखंड मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Uttarakhand.",
+    "description_hi": "उत्तराखंड में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Uttarakhand"
+    ],
+    "link": "https://scholarship.uk.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttarakhand",
+    "id": "uttarakhand-farmer-support",
+    "name": "Uttarakhand Agricultural & Farmer Support",
+    "name_hi": "उत्तराखंड कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Uttarakhand.",
+    "description_hi": "उत्तराखंड में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Uttarakhand"
+    ],
+    "link": "https://scholarship.uk.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Uttarakhand",
+    "id": "uttarakhand-women-welfare",
+    "name": "Uttarakhand Women Welfare & Empowerment",
+    "name_hi": "उत्तराखंड महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Uttarakhand.",
+    "description_hi": "उत्तराखंड में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Uttarakhand"
+    ],
+    "link": "https://scholarship.uk.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "West Bengal",
+    "id": "west-bengal-sc-st-pms",
+    "name": "West Bengal Post Matric Scholarship (SC/ST)",
+    "name_hi": "पश्चिम बंगाल पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in West Bengal per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार पश्चिम बंगाल में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
       ],
       "incomeLimit": 250000
     },
@@ -903,22 +3857,471 @@
   },
   {
     "type": "State",
-    "state": "Delhi",
-    "id": "delhi-pms-sc-st-obc",
-    "name": "Delhi SC/ST/OBC Scholarship",
-    "name_hi": "दिल्ली SC/ST/OBC छात्रवृत्ति",
-    "description": "State-funded scholarship for Delhi residents.",
-    "description_hi": "दिल्ली के निवासियों के लिए राज्य वित्त पोषित छात्रवृत्ति।",
-    "benefits": "Maintenance and fee reimbursement for higher education.",
-    "benefits_hi": "उच्च शिक्षा के लिए रखरखाव और शुल्क प्रतिपूर्ति।",
+    "state": "West Bengal",
+    "id": "west-bengal-obc-pms",
+    "name": "West Bengal Post Matric Scholarship (OBC)",
+    "name_hi": "पश्चिम बंगाल पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in West Bengal based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर पश्चिम बंगाल में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "West Bengal"
+    ],
+    "link": "https://oasis.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "West Bengal",
+    "id": "west-bengal-ews-general-merit",
+    "name": "West Bengal Merit Scholarship (EWS/General)",
+    "name_hi": "पश्चिम बंगाल मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in West Bengal.",
+    "description_hi": "पश्चिम बंगाल में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "West Bengal"
+    ],
+    "link": "https://oasis.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "West Bengal",
+    "id": "west-bengal-farmer-support",
+    "name": "West Bengal Agricultural & Farmer Support",
+    "name_hi": "पश्चिम बंगाल कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in West Bengal.",
+    "description_hi": "पश्चिम बंगाल में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "West Bengal"
+    ],
+    "link": "https://oasis.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "West Bengal",
+    "id": "west-bengal-women-welfare",
+    "name": "West Bengal Women Welfare & Empowerment",
+    "name_hi": "पश्चिम बंगाल महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in West Bengal.",
+    "description_hi": "पश्चिम बंगाल में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "West Bengal"
+    ],
+    "link": "https://oasis.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Andaman and Nicobar Islands",
+    "id": "andaman-and-nicobar-islands-sc-st-pms",
+    "name": "Andaman and Nicobar Islands Post Matric Scholarship (SC/ST)",
+    "name_hi": "अंडमान और निकोबार द्वीप समूह पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Andaman and Nicobar Islands per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार अंडमान और निकोबार द्वीप समूह में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
         "SC",
-        "ST",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Andaman and Nicobar Islands"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Andaman and Nicobar Islands",
+    "id": "andaman-and-nicobar-islands-obc-pms",
+    "name": "Andaman and Nicobar Islands Post Matric Scholarship (OBC)",
+    "name_hi": "अंडमान और निकोबार द्वीप समूह पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Andaman and Nicobar Islands based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर अंडमान और निकोबार द्वीप समूह में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
         "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Andaman and Nicobar Islands"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Andaman and Nicobar Islands",
+    "id": "andaman-and-nicobar-islands-ews-general-merit",
+    "name": "Andaman and Nicobar Islands Merit Scholarship (EWS/General)",
+    "name_hi": "अंडमान और निकोबार द्वीप समूह मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Andaman and Nicobar Islands.",
+    "description_hi": "अंडमान और निकोबार द्वीप समूह में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Andaman and Nicobar Islands"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Andaman and Nicobar Islands",
+    "id": "andaman-and-nicobar-islands-farmer-support",
+    "name": "Andaman and Nicobar Islands Agricultural & Farmer Support",
+    "name_hi": "अंडमान और निकोबार द्वीप समूह कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Andaman and Nicobar Islands.",
+    "description_hi": "अंडमान और निकोबार द्वीप समूह में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Andaman and Nicobar Islands"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Andaman and Nicobar Islands",
+    "id": "andaman-and-nicobar-islands-women-welfare",
+    "name": "Andaman and Nicobar Islands Women Welfare & Empowerment",
+    "name_hi": "अंडमान और निकोबार द्वीप समूह महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Andaman and Nicobar Islands.",
+    "description_hi": "अंडमान और निकोबार द्वीप समूह में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Andaman and Nicobar Islands"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chandigarh",
+    "id": "chandigarh-sc-st-pms",
+    "name": "Chandigarh Post Matric Scholarship (SC/ST)",
+    "name_hi": "चंडीगढ़ पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Chandigarh per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार चंडीगढ़ में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Chandigarh"
+    ],
+    "link": "https://chdeducation.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chandigarh",
+    "id": "chandigarh-obc-pms",
+    "name": "Chandigarh Post Matric Scholarship (OBC)",
+    "name_hi": "चंडीगढ़ पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Chandigarh based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर चंडीगढ़ में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Chandigarh"
+    ],
+    "link": "https://chdeducation.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chandigarh",
+    "id": "chandigarh-ews-general-merit",
+    "name": "Chandigarh Merit Scholarship (EWS/General)",
+    "name_hi": "चंडीगढ़ मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Chandigarh.",
+    "description_hi": "चंडीगढ़ में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Chandigarh"
+    ],
+    "link": "https://chdeducation.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chandigarh",
+    "id": "chandigarh-farmer-support",
+    "name": "Chandigarh Agricultural & Farmer Support",
+    "name_hi": "चंडीगढ़ कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Chandigarh.",
+    "description_hi": "चंडीगढ़ में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Chandigarh"
+    ],
+    "link": "https://chdeducation.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Chandigarh",
+    "id": "chandigarh-women-welfare",
+    "name": "Chandigarh Women Welfare & Empowerment",
+    "name_hi": "चंडीगढ़ महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Chandigarh.",
+    "description_hi": "चंडीगढ़ में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Chandigarh"
+    ],
+    "link": "https://chdeducation.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "id": "dadra-and-nagar-haveli-and-daman-and-diu-sc-st-pms",
+    "name": "Dadra and Nagar Haveli and Daman and Diu Post Matric Scholarship (SC/ST)",
+    "name_hi": "दादरा और नगर हवेली और दमन और दीव पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Dadra and Nagar Haveli and Daman and Diu per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार दादरा और नगर हवेली और दमन और दीव में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "id": "dadra-and-nagar-haveli-and-daman-and-diu-obc-pms",
+    "name": "Dadra and Nagar Haveli and Daman and Diu Post Matric Scholarship (OBC)",
+    "name_hi": "दादरा और नगर हवेली और दमन और दीव पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Dadra and Nagar Haveli and Daman and Diu based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर दादरा और नगर हवेली और दमन और दीव में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "id": "dadra-and-nagar-haveli-and-daman-and-diu-ews-general-merit",
+    "name": "Dadra and Nagar Haveli and Daman and Diu Merit Scholarship (EWS/General)",
+    "name_hi": "दादरा और नगर हवेली और दमन और दीव मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Dadra and Nagar Haveli and Daman and Diu.",
+    "description_hi": "दादरा और नगर हवेली और दमन और दीव में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "id": "dadra-and-nagar-haveli-and-daman-and-diu-farmer-support",
+    "name": "Dadra and Nagar Haveli and Daman and Diu Agricultural & Farmer Support",
+    "name_hi": "दादरा और नगर हवेली और दमन और दीव कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Dadra and Nagar Haveli and Daman and Diu.",
+    "description_hi": "दादरा और नगर हवेली और दमन और दीव में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "id": "dadra-and-nagar-haveli-and-daman-and-diu-women-welfare",
+    "name": "Dadra and Nagar Haveli and Daman and Diu Women Welfare & Empowerment",
+    "name_hi": "दादरा और नगर हवेली और दमन और दीव महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Dadra and Nagar Haveli and Daman and Diu.",
+    "description_hi": "दादरा और नगर हवेली और दमन और दीव में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Delhi",
+    "id": "delhi-sc-st-pms",
+    "name": "Delhi Post Matric Scholarship (SC/ST)",
+    "name_hi": "दिल्ली पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Delhi per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार दिल्ली में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
       ],
       "incomeLimit": 250000
     },
@@ -930,85 +4333,571 @@
   },
   {
     "type": "State",
-    "state": "Madhya Pradesh",
-    "id": "mp-pms-sc-st-obc",
-    "name": "MP Post Matric Scholarship",
-    "name_hi": "एमपी पोस्ट मैट्रिक छात्रवृत्ति",
-    "description": "Scholarship for backward classes in Madhya Pradesh.",
-    "description_hi": "मध्य प्रदेश में पिछड़े वर्गों के लिए छात्रवृत्ति।",
-    "benefits": "Financial support for higher education.",
+    "state": "Delhi",
+    "id": "delhi-obc-pms",
+    "name": "Delhi Post Matric Scholarship (OBC)",
+    "name_hi": "दिल्ली पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Delhi based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर दिल्ली में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
     "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
-        "SC",
-        "ST",
         "OBC"
       ],
-      "incomeLimit": 300000
+      "incomeLimit": 200000
     },
     "tags": [
       "Scholarship",
-      "Madhya Pradesh"
+      "Delhi"
     ],
-    "link": "https://www.scholarshipportal.mp.nic.in/"
+    "link": "https://edistrict.delhigovt.nic.in/"
   },
   {
     "type": "State",
-    "state": "Gujarat",
-    "id": "gujarat-digital-guj-pms",
-    "name": "Digital Gujarat Post Matric Scholarship",
-    "name_hi": "डिजिटल गुजरात पोस्ट मैट्रिक छात्रवृत्ति",
-    "description": "Portal for various state scholarships in Gujarat.",
-    "description_hi": "गुजरात में विभिन्न राज्य छात्रवृत्तियों के लिए पोर्टल।",
-    "benefits": "Scholarship and fee reimbursement for SC/ST/OBC students.",
-    "benefits_hi": "SC/ST/OBC छात्रों के लिए छात्रवृत्ति और शुल्क प्रतिपूर्ति।",
+    "state": "Delhi",
+    "id": "delhi-ews-general-merit",
+    "name": "Delhi Merit Scholarship (EWS/General)",
+    "name_hi": "दिल्ली मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Delhi.",
+    "description_hi": "दिल्ली में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Delhi"
+    ],
+    "link": "https://edistrict.delhigovt.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Delhi",
+    "id": "delhi-farmer-support",
+    "name": "Delhi Agricultural & Farmer Support",
+    "name_hi": "दिल्ली कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Delhi.",
+    "description_hi": "दिल्ली में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Delhi"
+    ],
+    "link": "https://edistrict.delhigovt.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Delhi",
+    "id": "delhi-women-welfare",
+    "name": "Delhi Women Welfare & Empowerment",
+    "name_hi": "दिल्ली महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Delhi.",
+    "description_hi": "दिल्ली में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Delhi"
+    ],
+    "link": "https://edistrict.delhigovt.nic.in/"
+  },
+  {
+    "type": "State",
+    "state": "Jammu and Kashmir",
+    "id": "jammu-and-kashmir-sc-st-pms",
+    "name": "Jammu and Kashmir Post Matric Scholarship (SC/ST)",
+    "name_hi": "जम्मू और कश्मीर पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Jammu and Kashmir per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार जम्मू और कश्मीर में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
         "SC",
-        "ST",
-        "OBC",
-        "EWS"
+        "ST"
       ],
       "incomeLimit": 250000
     },
     "tags": [
       "Scholarship",
-      "Gujarat"
+      "Jammu and Kashmir"
     ],
-    "link": "https://www.digitalgujarat.gov.in/"
+    "link": "https://jk.gov.in/jkservices/"
   },
   {
     "type": "State",
-    "state": "Kerala",
-    "id": "kerala-e-grantz",
-    "name": "Kerala e-Grantz 3.0",
-    "name_hi": "केरल ई-ग्रांट्ज़ 3.0",
-    "description": "Direct benefit transfer for students in Kerala.",
-    "description_hi": "केरल में छात्रों के लिए प्रत्यक्ष लाभ हस्तांतरण।",
-    "benefits": "Course fee and hostel fee reimbursement.",
-    "benefits_hi": "पाठ्यक्रम शुल्क और छात्रावास शुल्क प्रतिपूर्ति।",
+    "state": "Jammu and Kashmir",
+    "id": "jammu-and-kashmir-obc-pms",
+    "name": "Jammu and Kashmir Post Matric Scholarship (OBC)",
+    "name_hi": "जम्मू और कश्मीर पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Jammu and Kashmir based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर जम्मू और कश्मीर में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Jammu and Kashmir"
+    ],
+    "link": "https://jk.gov.in/jkservices/"
+  },
+  {
+    "type": "State",
+    "state": "Jammu and Kashmir",
+    "id": "jammu-and-kashmir-ews-general-merit",
+    "name": "Jammu and Kashmir Merit Scholarship (EWS/General)",
+    "name_hi": "जम्मू और कश्मीर मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Jammu and Kashmir.",
+    "description_hi": "जम्मू और कश्मीर में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Jammu and Kashmir"
+    ],
+    "link": "https://jk.gov.in/jkservices/"
+  },
+  {
+    "type": "State",
+    "state": "Jammu and Kashmir",
+    "id": "jammu-and-kashmir-farmer-support",
+    "name": "Jammu and Kashmir Agricultural & Farmer Support",
+    "name_hi": "जम्मू और कश्मीर कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Jammu and Kashmir.",
+    "description_hi": "जम्मू और कश्मीर में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Jammu and Kashmir"
+    ],
+    "link": "https://jk.gov.in/jkservices/"
+  },
+  {
+    "type": "State",
+    "state": "Jammu and Kashmir",
+    "id": "jammu-and-kashmir-women-welfare",
+    "name": "Jammu and Kashmir Women Welfare & Empowerment",
+    "name_hi": "जम्मू और कश्मीर महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Jammu and Kashmir.",
+    "description_hi": "जम्मू और कश्मीर में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Jammu and Kashmir"
+    ],
+    "link": "https://jk.gov.in/jkservices/"
+  },
+  {
+    "type": "State",
+    "state": "Ladakh",
+    "id": "ladakh-sc-st-pms",
+    "name": "Ladakh Post Matric Scholarship (SC/ST)",
+    "name_hi": "लद्दाख पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Ladakh per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार लद्दाख में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
     "eligibility": {
       "occupation": [
         "Student"
       ],
       "category": [
         "SC",
-        "ST",
-        "OBC",
-        "EWS"
+        "ST"
       ],
-      "incomeLimit": 100000
+      "incomeLimit": 250000
     },
     "tags": [
       "Scholarship",
-      "Kerala"
+      "Ladakh"
     ],
-    "link": "https://www.egrantz.kerala.gov.in/"
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Ladakh",
+    "id": "ladakh-obc-pms",
+    "name": "Ladakh Post Matric Scholarship (OBC)",
+    "name_hi": "लद्दाख पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Ladakh based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर लद्दाख में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Ladakh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Ladakh",
+    "id": "ladakh-ews-general-merit",
+    "name": "Ladakh Merit Scholarship (EWS/General)",
+    "name_hi": "लद्दाख मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Ladakh.",
+    "description_hi": "लद्दाख में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Ladakh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Ladakh",
+    "id": "ladakh-farmer-support",
+    "name": "Ladakh Agricultural & Farmer Support",
+    "name_hi": "लद्दाख कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Ladakh.",
+    "description_hi": "लद्दाख में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Ladakh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Ladakh",
+    "id": "ladakh-women-welfare",
+    "name": "Ladakh Women Welfare & Empowerment",
+    "name_hi": "लद्दाख महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Ladakh.",
+    "description_hi": "लद्दाख में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Ladakh"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Lakshadweep",
+    "id": "lakshadweep-sc-st-pms",
+    "name": "Lakshadweep Post Matric Scholarship (SC/ST)",
+    "name_hi": "लक्षद्वीप पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Lakshadweep per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार लक्षद्वीप में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Lakshadweep"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Lakshadweep",
+    "id": "lakshadweep-obc-pms",
+    "name": "Lakshadweep Post Matric Scholarship (OBC)",
+    "name_hi": "लक्षद्वीप पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Lakshadweep based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर लक्षद्वीप में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Lakshadweep"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Lakshadweep",
+    "id": "lakshadweep-ews-general-merit",
+    "name": "Lakshadweep Merit Scholarship (EWS/General)",
+    "name_hi": "लक्षद्वीप मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Lakshadweep.",
+    "description_hi": "लक्षद्वीप में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Lakshadweep"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Lakshadweep",
+    "id": "lakshadweep-farmer-support",
+    "name": "Lakshadweep Agricultural & Farmer Support",
+    "name_hi": "लक्षद्वीप कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Lakshadweep.",
+    "description_hi": "लक्षद्वीप में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Lakshadweep"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Lakshadweep",
+    "id": "lakshadweep-women-welfare",
+    "name": "Lakshadweep Women Welfare & Empowerment",
+    "name_hi": "लक्षद्वीप महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Lakshadweep.",
+    "description_hi": "लक्षद्वीप में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Lakshadweep"
+    ],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Puducherry",
+    "id": "puducherry-sc-st-pms",
+    "name": "Puducherry Post Matric Scholarship (SC/ST)",
+    "name_hi": "पुडुचेरी पोस्ट मैट्रिक छात्रवृत्ति (SC/ST)",
+    "description": "Scholarship for SC/ST students in Puducherry per state norms.",
+    "description_hi": "राज्य के मानदंडों के अनुसार पुडुचेरी में अनुसूचित जाति/जनजाति के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Tuition fees reimbursement and maintenance allowance.",
+    "benefits_hi": "शिक्षण शुल्क की प्रतिूर्ति और रखरखाव भत्ता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "incomeLimit": 250000
+    },
+    "tags": [
+      "Scholarship",
+      "Puducherry"
+    ],
+    "link": "https://puducherry.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Puducherry",
+    "id": "puducherry-obc-pms",
+    "name": "Puducherry Post Matric Scholarship (OBC)",
+    "name_hi": "पुडुचेरी पोस्ट मैट्रिक छात्रवृत्ति (OBC)",
+    "description": "Scholarship for OBC students in Puducherry based on merit/income.",
+    "description_hi": "योग्यता/आय के आधार पर पुडुचेरी में ओबीसी छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial aid for higher education.",
+    "benefits_hi": "उच्च शिक्षा के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "OBC"
+      ],
+      "incomeLimit": 200000
+    },
+    "tags": [
+      "Scholarship",
+      "Puducherry"
+    ],
+    "link": "https://puducherry.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Puducherry",
+    "id": "puducherry-ews-general-merit",
+    "name": "Puducherry Merit Scholarship (EWS/General)",
+    "name_hi": "पुडुचेरी मेरिट छात्रवृत्ति (EWS/सामान्य)",
+    "description": "Merit-cum-means scholarship for EWS and General category students in Puducherry.",
+    "description_hi": "पुडुचेरी में ईडब्ल्यूएस और सामान्य श्रेणी के छात्रों के लिए योग्यता-सह-साधन छात्रवृत्ति।",
+    "benefits": "Financial reward for meritorious students with low family income.",
+    "benefits_hi": "कम पारिवारिक आय वाले मेधावी छात्रों के लिए वित्तीय इनाम।",
+    "eligibility": {
+      "occupation": [
+        "Student"
+      ],
+      "category": [
+        "EWS",
+        "General"
+      ],
+      "incomeLimit": 800000
+    },
+    "tags": [
+      "Scholarship",
+      "Puducherry"
+    ],
+    "link": "https://puducherry.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Puducherry",
+    "id": "puducherry-farmer-support",
+    "name": "Puducherry Agricultural & Farmer Support",
+    "name_hi": "पुडुचेरी कृषि और किसान सहायता",
+    "description": "State-sponsored DBT and technical support for farmers in Puducherry.",
+    "description_hi": "पुडुचेरी में किसानों के लिए राज्य प्रायोजित डीबीटी (DBT) और तकनीकी सहायता।",
+    "benefits": "Direct financial aid, equipment subsidies, and crop insurance support.",
+    "benefits_hi": "प्रत्यक्ष वित्तीय सहायता, उपकरण सब्सिडी और फसल बीमा सहायता।",
+    "eligibility": {
+      "occupation": [
+        "Farmer"
+      ],
+      "landholding": true
+    },
+    "tags": [
+      "Agriculture",
+      "Puducherry"
+    ],
+    "link": "https://puducherry.gov.in/"
+  },
+  {
+    "type": "State",
+    "state": "Puducherry",
+    "id": "puducherry-women-welfare",
+    "name": "Puducherry Women Welfare & Empowerment",
+    "name_hi": "पुडुचेरी महिला कल्याण और सशक्तिकरण",
+    "description": "Comprehensive welfare scheme for girls and women in Puducherry.",
+    "description_hi": "पुडुचेरी में लड़कियों और महिलाओं के लिए व्यापक कल्याणकारी योजना।",
+    "benefits": "Includes education incentives, health support, and self-employment grants.",
+    "benefits_hi": "इसमें शिक्षा प्रोत्साहन, स्वास्थ्य सहायता और स्वरोजगार अनुदान शामिल हैं।",
+    "eligibility": {
+      "gender": "Female",
+      "incomeLimit": 400000
+    },
+    "tags": [
+      "Women Welfare",
+      "Puducherry"
+    ],
+    "link": "https://puducherry.gov.in/"
   }
 ]
