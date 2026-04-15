@@ -309,5 +309,84 @@
     },
     "tags": ["Education", "Scholarship"],
     "link": "https://scholarships.gov.in/"
+  },
+  {
+    "id": "post-matric-obc",
+    "name": "Post Matric Scholarship for OBC Students",
+    "name_hi": "ओबीसी छात्रों के लिए पोस्ट मैट्रिक छात्रवृत्ति",
+    "description": "Financial support for students belonging to Other Backward Classes (OBC).",
+    "description_hi": "अन्य पिछड़ा वर्ग (OBC) से संबंधित छात्रों के लिए वित्तीय सहायता।",
+    "benefits": "Provides tuition fee reimbursement and maintenance allowance for higher studies.",
+    "benefits_hi": "उच्च शिक्षा के लिए शिक्षण शुल्क प्रतिपूर्ति और रखरखाव भत्ता प्रदान करता है।",
+    "eligibility": {
+      "occupation": ["Student"],
+      "category": ["OBC"],
+      "incomeLimit": 250000
+    },
+    "tags": ["Education", "Scholarship"],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "id": "post-matric-ews",
+    "name": "Post Matric Scholarship for EWS Students",
+    "name_hi": "ईडब्ल्यूएस छात्रों के लिए पोस्ट मैट्रिक छात्रवृत्ति",
+    "description": "Scholarship for students from Economically Weaker Sections (EWS).",
+    "description_hi": "आर्थिक रूप से कमजोर वर्ग (EWS) के छात्रों के लिए छात्रवृत्ति।",
+    "benefits": "Financial assistance for pursuing post-matric courses in recognized institutions.",
+    "benefits_hi": "मान्यता प्राप्त संस्थानों में पोस्ट-मैट्रिक पाठ्यक्रम करने के लिए वित्तीय सहायता।",
+    "eligibility": {
+      "occupation": ["Student"],
+      "category": ["EWS"],
+      "incomeLimit": 800000
+    },
+    "tags": ["Education", "Scholarship"],
+    "link": "https://scholarships.gov.in/"
+  },
+  {
+    "id": "pm-ajay-sc",
+    "name": "PM-AJAY (Pradhan Mantri Anusuchit Jaati Abhyuday Yojana)",
+    "name_hi": "पीएम-अजय (Pradhan Mantri Anusuchit Jaati Abhyuday Yojana)",
+    "description": "Welfare scheme for the development of Scheduled Castes (SC).",
+    "description_hi": "अनुसूचित जातियों (SC) के विकास के लिए कल्याणकारी योजना।",
+    "benefits": "Livelihood projects and infrastructure development in SC-concentrated villages.",
+    "benefits_hi": "अनुसूचित जाति बहुल गांवों में आजीविका परियोजनाएं और बुनियादी ढांचे का विकास।",
+    "eligibility": {
+      "category": ["SC"],
+      "incomeLimit": 250000
+    },
+    "tags": ["Development", "SC Welfare"],
+    "link": "https://socialjustice.gov.in/schemes/73"
+  },
+  {
+    "id": "national-fellowship-st",
+    "name": "National Fellowship for ST Students",
+    "name_hi": "अनुसूचित जनजाति के छात्रों के लिए राष्ट्रीय फेलोशिप",
+    "description": "Fellowship for ST students pursuing M.Phil. and Ph.D. degrees.",
+    "description_hi": "M.Phil. और Ph.D. की डिग्री करने वाले एसटी छात्रों के लिए फेलोशिप।",
+    "benefits": "Monthly stipend and contingency grants for higher research.",
+    "benefits_hi": "उच्च शोध के लिए मासिक वजीफा और आकस्मिक अनुदान।",
+    "eligibility": {
+      "occupation": ["Student"],
+      "category": ["ST"],
+      "academic": "Research"
+    },
+    "tags": ["Education", "Research"],
+    "link": "https://tribal.nic.in/ScholarshiP.aspx"
+  },
+  {
+    "id": "pmay-g-ews",
+    "name": "PM Awas Yojana (Gramin) - EWS Category",
+    "name_hi": "पीएम आवास योजना (ग्रामीण) - ईडब्ल्यूएस श्रेणी",
+    "description": "Housing assistance for rural families in the EWS category.",
+    "description_hi": "ईडब्ल्यूएस श्रेणी के ग्रामीण परिवारों के लिए आवास सहायता।",
+    "benefits": "Financial grant for construction of pucca houses in rural areas.",
+    "benefits_hi": "ग्रामीण क्षेत्रों में पक्के मकानों के निर्माण के लिए वित्तीय अनुदान।",
+    "eligibility": {
+      "category": ["EWS"],
+      "incomeLimit": 300000,
+      "urban": false
+    },
+    "tags": ["Housing", "Rural Development"],
+    "link": "https://pmayg.nic.in/"
   }
 ]

@@ -286,6 +286,7 @@ function App() {
                 <option value="SC">{t('sc')}</option>
                 <option value="ST">{t('st')}</option>
                 <option value="OBC">{t('obc')}</option>
+                <option value="EWS">{t('ews')}</option>
               </select>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
