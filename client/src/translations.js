@@ -53,7 +53,7 @@ const translations = {
     schemeType: "Scheme Type",
     central: "Central Government",
     state: "State Government",
-    selectState: "Select State",
+    selectState: "Select State/Union Territory",
     states: {
       "Andhra Pradesh": "Andhra Pradesh",
       "Arunachal Pradesh": "Arunachal Pradesh",
@@ -147,7 +147,7 @@ const translations = {
     schemeType: "योजना का प्रकार",
     central: "केंद्र सरकार",
     state: "राज्य सरकार",
-    selectState: "राज्य चुनें",
+    selectState: "राज्य/केंद्र शासित प्रदेश चुनें",
     states: {
       "Andhra Pradesh": "आंध्र प्रदेश",
       "Arunachal Pradesh": "अरुणाचल प्रदेश",
