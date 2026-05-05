@@ -15,6 +15,25 @@ const initAI = () => {
   return model;
 };
 
+// Retry helper for Gemini API calls with exponential backoff
+const retryGenerateContent = async (aiModel, prompt, maxRetries = 3) => {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const result = await aiModel.generateContent(prompt);
+      return result;
+    } catch (error) {
+      const isRetryable = error.message && (error.message.includes('503') || error.message.includes('429') || error.message.includes('high demand') || error.message.includes('overloaded'));
+      console.warn(`Gemini attempt ${attempt}/${maxRetries} failed:`, error.message);
+      if (!isRetryable || attempt === maxRetries) {
+        throw error;
+      }
+      const delay = Math.pow(2, attempt) * 1000; // 2s, 4s, 8s
+      console.log(`Retrying in ${delay}ms...`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+};
+
 const app = express();
 
 const corsOptions = {
@@ -141,7 +160,7 @@ app.post('/api/explain', async (req, res) => {
     2. Second sentence in Hindi explaining the same.
     Do not use markdown. Just plain text.`;
 
-    const result = await aiModel.generateContent(prompt);
+    const result = await retryGenerateContent(aiModel, prompt);
     const text = result.response.text().trim();
     const lines = text.split('\n').filter(l => l.trim());
     
@@ -151,7 +170,8 @@ app.post('/api/explain', async (req, res) => {
     });
   } catch (error) {
     console.error('Gemini Explain error:', error);
-    res.status(500).json({ error: 'AI explanation failed', detail: error.message });
+    const isOverload = error.message && (error.message.includes('503') || error.message.includes('429') || error.message.includes('high demand'));
+    res.status(isOverload ? 503 : 500).json({ error: isOverload ? 'AI_OVERLOADED' : 'AI explanation failed', detail: error.message });
   }
 });
 
@@ -187,11 +207,12 @@ Help the user understand their eligible schemes and how to apply. Keep answers s
       ? `${systemPrompt}\n\nUser: ${message}\nAssistant [In ${languageName}]:`
       : `${systemPrompt}\n\n${history.map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.text}`).join('\n')}\nUser: ${message}\nAssistant [In ${languageName}]:`;
 
-    const result = await aiModel.generateContent(fullMessage);
+    const result = await retryGenerateContent(aiModel, fullMessage);
     res.json({ reply: result.response.text().trim() });
   } catch (error) {
     console.error('Chat error full:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
-    res.status(500).json({ error: 'Chat failed', detail: error.message });
+    const isOverload = error.message && (error.message.includes('503') || error.message.includes('429') || error.message.includes('high demand'));
+    res.status(isOverload ? 503 : 500).json({ error: isOverload ? 'AI_OVERLOADED' : 'Chat failed', detail: error.message });
   }
 });
 

@@ -154,19 +154,23 @@ function App() {
       });
 
       if (!response.ok) {
-        throw new Error(`Server responded with ${response.status}`);
+        let errorType = 'unknown';
+        try {
+          const errData = await response.json();
+          errorType = errData.error || 'unknown';
+        } catch (_) {}
+        throw new Error(response.status === 503 || errorType === 'AI_OVERLOADED' ? 'AI_OVERLOADED' : `Server responded with ${response.status}`);
       }
 
       const data = await response.json();
       setMessages(prev => [...prev, { role: 'assistant', text: data.reply }]);
     } catch (error) {
-      const rawBase = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://scheme-connect-production.up.railway.app' : '');
       console.error('Chat Connection Error Details:', {
         message: error.message,
-        baseUrl: rawBase,
         env: import.meta.env.MODE
       });
-      setMessages(prev => [...prev, { role: 'assistant', text: t('chatError') }]);
+      const errorMsg = error.message === 'AI_OVERLOADED' ? t('chatOverloaded') : t('chatError');
+      setMessages(prev => [...prev, { role: 'assistant', text: errorMsg }]);
     } finally {
       setChatLoading(false);
     }
